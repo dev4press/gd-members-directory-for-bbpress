@@ -3,666 +3,167 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: GD Members Directory Pro for bbPress\n"
-"POT-Creation-Date: 11/14/2019 03:29:00 PM\n"
+"POT-Creation-Date: 12/23/2020 05:23:22 PM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: GD i18n 2.2\n"
+"X-Generator: GD i18n 2.5; www.dev4press.com\n"
 
-#: core/objects/core.query.php:266
+#: core/directory/Query.php:273
 msgid "Viewing %1$s result"
 msgid_plural "Viewing %1$s results"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/objects/core.query.php:268
+#: core/directory/Query.php:275
 msgid "Viewing %2$s results (of %4$s total)"
 msgid_plural "Viewing %1$s results - %2$s through %3$s (of %4$s total)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/admin/getback.php:41
-msgid "Only administrators can use export features."
+#: core/basic/Plugin.php:47
+msgid "All Roles"
 msgstr ""
 
-#: core/admin/options.php:35
-msgid "URL Rewrite"
+#: core/basic/Plugin.php:61
+msgid "Name"
 msgstr ""
 
-#: core/admin/options.php:36
-msgid "bbPress default slug"
+#: core/basic/Plugin.php:62
+msgid "Last Activity"
 msgstr ""
 
-#: core/admin/options.php:36
-msgid "Use the slug from the bbPress default settings for the single user base."
+#: core/basic/Plugin.php:63
+msgid "Last Posted"
 msgstr ""
 
-#: core/admin/options.php:37
-msgid "Custom slug"
+#: core/basic/Plugin.php:64
+msgid "Registration"
 msgstr ""
 
-#: core/admin/options.php:37
-msgid "If the previous option is disabled, set the slug to be used for the directory URL."
+#: core/basic/Plugin.php:65
+msgid "Topics Count"
 msgstr ""
 
-#: core/admin/options.php:41
-msgid "Query Basics"
+#: core/basic/Plugin.php:66
+msgid "Replies Count"
 msgstr ""
 
-#: core/admin/options.php:42
-msgid "Members with posts only"
+#: core/basic/Plugin.php:72
+msgid "Descending"
 msgstr ""
 
-#: core/admin/options.php:42
-msgid "Directory should include only users that have posted in the forums."
+#: core/basic/Plugin.php:73
+msgid "Ascending"
 msgstr ""
 
-#: core/admin/options.php:43
-msgid "Members listed per page"
+#: core/basic/Plugin.php:78
+#: core/basic/Plugin.php:82
+msgid "Members Directory"
 msgstr ""
 
-#: core/admin/options.php:43
-msgid "Number of members to show on a single directory page."
+#: core/basic/Plugin.php:86
+msgid "Members"
 msgstr ""
 
-#: core/admin/options.php:45
-msgid "Query Filters"
-msgstr ""
-
-#: core/admin/options.php:46
-msgid "User roles"
-msgstr ""
-
-#: core/admin/options.php:46
-msgid "Only users with selected roles will be available in the members directory."
-msgstr ""
-
-#: core/admin/options.php:48
-msgid "Query Advanced"
-msgstr ""
-
-#: core/admin/options.php:49
-msgid "Fix the Order issue"
-msgstr ""
-
-#: core/admin/options.php:49
-msgid "Built-in WordPress query has a problem when ordering data by meta fields, not showing the users that don't have particular meta field set. Because of that, ordering by last activity and few other things can return only few users as a result. This fix modifies SQL query to get proper results."
-msgstr ""
-
-#: core/admin/options.php:53
-msgid "Filtering Directory"
-msgstr ""
-
-#: core/admin/options.php:54
-msgid "Display roles filter"
-msgstr ""
-
-#: core/admin/options.php:54
-msgid "Show dropdown list of user roles to filter the list of members."
-msgstr ""
-
-#: core/admin/options.php:56
-msgid "Directory Display"
-msgstr ""
-
-#: core/admin/options.php:57
-msgid "Display member avatars"
-msgstr ""
-
-#: core/admin/options.php:57
-msgid "Show avatar for all members in the list."
-msgstr ""
-
-#: core/admin/plugin.php:26
-msgid "GD Members Directory Pro for bbPress"
-msgstr ""
-
-#: core/admin/plugin.php:30
-msgid "GD Members Directory"
-msgstr ""
-
-#: core/objects/core.member.php:39
+#: core/directory/Member.php:45
 msgctxt "User meta, registration date"
 msgid "Registered on: %s"
 msgstr ""
 
-#: core/objects/core.member.php:46
-#: core/objects/core.member.php:48
+#: core/directory/Member.php:52
+#: core/directory/Member.php:54
 msgctxt "User statistics column, topics count"
 msgid "Topics: %s"
 msgstr ""
 
-#: core/objects/core.member.php:56
-#: core/objects/core.member.php:58
+#: core/directory/Member.php:62
+#: core/directory/Member.php:64
 msgctxt "User statistics column, replies count"
 msgid "Replies: %s"
 msgstr ""
 
-#: core/objects/core.member.php:69
+#: core/directory/Member.php:75
 msgctxt "Latest post column, title and date"
 msgid "Reply: %s on %s"
 msgstr ""
 
-#: core/objects/core.member.php:74
+#: core/directory/Member.php:80
 msgctxt "Latest post column, title and date"
 msgid "Topic: %s on %s"
 msgstr ""
 
-#: core/objects/core.member.php:80
+#: core/directory/Member.php:86
 msgid "No activity found"
 msgstr ""
 
-#: core/plugin.php:49
-msgid "GD Members Directory Pro for bbPress requires WordPress 4.9 or newer. Plugin will now be disabled. To use this plugin, upgrade WordPress to 4.9 or newer version."
-msgstr ""
-
-#: core/plugin.php:61
-msgid "GD Members Directory Pro for bbPress requires bbPress plugin for WordPress version 2.5 or newer. Plugin will now be disabled. To use this plugin, make sure you are using bbPress 2.5 or newer version."
-msgstr ""
-
-#: core/plugin.php:82
-#: core/plugin.php:86
-msgid "Members Directory"
-msgstr ""
-
-#: core/plugin.php:90
-msgid "Members"
-msgstr ""
-
-#: core/plugin.php:118
-msgid "All Roles"
-msgstr ""
-
-#: core/plugin.php:132
-msgid "Name"
-msgstr ""
-
-#: core/plugin.php:133
-msgid "Last Activity"
-msgstr ""
-
-#: core/plugin.php:134
-msgid "Last Posted"
-msgstr ""
-
-#: core/plugin.php:135
-msgid "Registration"
-msgstr ""
-
-#: core/plugin.php:136
-msgid "Topics Count"
-msgstr ""
-
-#: core/plugin.php:137
-msgid "Replies Count"
-msgstr ""
-
-#: core/plugin.php:143
-msgid "Descending"
-msgstr ""
-
-#: core/plugin.php:144
-msgid "Ascending"
-msgstr ""
-
-#: forms/about/changelog.php:1
-#: forms/about/info.php:4
-#: forms/about/info.php:51
-#: forms/about/info.php:56
-#: forms/about/info.php:61
-#: forms/about/info.php:66
-#: forms/about/info.php:71
-#: forms/about/info.php:76
-#: forms/about/info.php:81
-#: forms/about/info.php:86
-#: forms/about/info.php:91
-#: forms/about/info.php:96
-#: forms/about/info.php:101
-#: forms/about/info.php:106
-#: forms/about/info.php:111
-#: forms/about/info.php:116
-#: forms/about/info.php:121
-#: forms/about/minor.php:3
-#: forms/about/minor.php:7
-#: forms/settings.php:40
+#: forms/content-about-changelog.php:1
+#: forms/content-about-changelog.php:11
+#: forms/content-about-minor.php:3
 msgid "Version"
 msgstr ""
 
-#: forms/about/header.php:11
-msgid "Back to plugin settings"
-msgstr ""
-
-#: forms/about/header.php:12
-msgid "What&#8217;s New"
-msgstr ""
-
-#: forms/about/header.php:13
-msgid "Info"
-msgstr ""
-
-#: forms/about/header.php:14
-msgid "Changelog"
-msgstr ""
-
-#: forms/about/header.php:15
-msgid "Dev4Press"
-msgstr ""
-
-#: forms/about/header.php:21
-msgid "Welcome to GD Members Directory Pro&nbsp;%s"
-msgstr ""
-
-#: forms/about/header.php:27
-msgid "Version %s"
-msgstr ""
-
-#: forms/about/info.php:5
-msgid "Date"
-msgstr ""
-
-#: forms/about/info.php:6
-msgid "Status"
-msgstr ""
-
-#: forms/about/info.php:7
-msgid "Build"
-msgstr ""
-
-#: forms/about/info.php:11
-msgid "First released"
-msgstr ""
-
-#: forms/about/info.php:17
-msgid "System Requirements"
-msgstr ""
-
-#: forms/about/info.php:20
-msgid "WordPress"
-msgstr ""
-
-#: forms/about/info.php:21
-msgid "PHP"
-msgstr ""
-
-#: forms/about/info.php:22
-msgid "MySQL"
-msgstr ""
-
-#: forms/about/info.php:28
-msgid "Knowledge Base and Support Forums"
-msgstr ""
-
-#: forms/about/info.php:41
-msgid "On Dev4Press"
-msgstr ""
-
-#: forms/about/info.php:47
-msgid "Translations"
-msgstr ""
-
-#: forms/about/info.php:31
-msgid "To learn more about the plugin, check out plugin %s articles and FAQ. To get additional help, you can use %s."
-msgstr ""
-
-#: forms/about/info.php:32
-msgid "knowledge base"
-msgstr ""
-
-#: forms/about/info.php:33
-msgid "support forum"
-msgstr ""
-
-#: forms/about/minor.php:1
+#: forms/content-about-minor.php:1
 msgid "Maintenance and Security Releases"
 msgstr ""
 
-#: forms/about/minor.php:11
+#: forms/content-about-minor.php:7
 msgid "For more information, see <a href='%s'>the changelog</a>."
 msgstr ""
 
-#: forms/shared/invalid.php:9
-msgid "Invalid Request"
-msgstr ""
-
-#: forms/shared/invalid.php:13
-msgid "Error"
-msgstr ""
-
-#: forms/shared/invalid.php:16
-msgid "Current request URL is invalid, and it can't be processed."
-msgstr ""
-
-#: forms/shared/notices.php:17
-#: forms/shared/notices.php:91
-msgid "Plugin Home Page"
-msgstr ""
-
-#: forms/shared/notices.php:18
-#: forms/shared/notices.php:92
-msgid "Do not show this notice anymore"
-msgstr ""
-
-#: forms/shared/top.php:31
-msgid "Settings are saved."
-msgstr ""
-
-#: forms/shared/top.php:34
-msgid "Removal operation completed."
-msgstr ""
-
-#: forms/shared/top.php:37
-msgid "Import operation completed."
-msgstr ""
-
-#: forms/shared/top.php:40
-msgid "Nothing to do."
-msgstr ""
-
-#: forms/tools/export.php:3
-#: forms/tools/import.php:1
-#: forms/tools/remove.php:1
-msgid "Important"
-msgstr ""
-
-#: forms/tools/export.php:5
-msgid "With this tool you export all plugin settings into plain text file (JSON). Do not modify export file, any change you make can make it unusable."
-msgstr ""
-
-#: forms/tools/export.php:6
-msgid "This will not export widgets added to any of the sidebars, only main plugin settings!"
-msgstr ""
-
-#: forms/tools/import.php:3
-msgid "With this tool you import all plugin settings from plain text file made using the Export tool. If you made changes to this file, it is very likely that import will fail."
-msgstr ""
-
-#: forms/tools/import.php:8
-msgid "Import File"
-msgstr ""
-
-#: forms/tools/import.php:10
-msgid "Select file you want to import"
-msgstr ""
-
-#: forms/tools/remove.php:3
-msgid "This tool can remove plugin settings saved in the WordPress options table."
-msgstr ""
-
-#: forms/tools/remove.php:4
-msgid "Deletion operations are not reversible, and it is recommended to create database backup before proceeding with this tool."
-msgstr ""
-
-#: forms/tools/remove.php:5
-msgid "If you choose to remove plugin settings, that will also reinitialize all plugin settings to default values."
-msgstr ""
-
-#: forms/tools/remove.php:9
-msgid "Choose what you want to delete"
-msgstr ""
-
-#: forms/tools/remove.php:12
-msgid "All Plugin Settings"
-msgstr ""
-
-#: forms/tools/remove.php:18
-msgid "Disable Plugin"
-msgstr ""
-
-#: forms/tools/remove.php:21
-msgid "Disable plugin"
-msgstr ""
-
-#: forms/widgets/directory-content.php:8
-msgid "Filtering"
-msgstr ""
-
-#: forms/widgets/directory-content.php:13
-msgid "User Role Filter"
-msgstr ""
-
-#: forms/widgets/directory-content.php:17
-msgid "Limit Number of Users"
-msgstr ""
-
-#: forms/widgets/directory-content.php:24
-msgid "Sorting"
-msgstr ""
-
-#: forms/widgets/directory-content.php:29
-msgid "Sort Method"
-msgstr ""
-
-#: forms/widgets/directory-content.php:33
-msgid "Sort Order"
-msgstr ""
-
-#: forms/widgets/shared-cache.php:0
-msgid "Results Caching"
-msgstr ""
-
-#: forms/widgets/shared-cache.php:5
-msgid "Cache Period"
-msgstr ""
-
-#: forms/widgets/shared-cache.php:9
-msgid "To use cache and speed up the widget, enter number of hours for cached results to be kept. Leave 0 to disable cache."
-msgstr ""
-
-#: forms/widgets/shared-display.php:0
-msgid "Extras"
-msgstr ""
-
-#: forms/widgets/shared-display.php:5
-msgid "Additional CSS Class"
-msgstr ""
-
-#: forms/widgets/shared-global.php:0
-#: forms/settings.php:10
-msgid "Basic"
-msgstr ""
-
-#: forms/widgets/shared-global.php:5
-msgid "Title"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:18
-msgid "Visibility"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:23
-msgid "Display To"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:27
-msgid "Visibility Hook"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:34
-msgid "Before and After Content"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:39
-msgid "Before"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:45
-msgid "After"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:5
-#: widgets/directory.php:37
-msgid "Global"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:6
-msgid "Everyone"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:6
-msgid "Only Visitors"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:6
-msgid "All Users"
-msgstr ""
-
-#: forms/widgets/shared-wrapper.php:7
-msgid "User Roles"
-msgstr ""
-
-#: forms/front.php:8
-#: forms/settings.php:60
-msgid "Settings"
-msgstr ""
-
-#: forms/front.php:9
-#: forms/settings.php:52
-#: forms/tools.php:37
-msgid "Tools"
-msgstr ""
-
-#: forms/front.php:10
-#: forms/settings.php:53
-msgid "About"
-msgstr ""
-
-#: forms/install.php:17
-msgid "Installation"
-msgstr ""
-
-#: forms/install.php:20
-msgid "Before you continue, make sure plugin installation was successful."
-msgstr ""
-
-#: forms/install.php:25
-#: forms/update.php:25
+#: forms/content-install.php:11
+#: forms/content-update.php:11
 msgid "All Done"
 msgstr ""
 
-#: forms/install.php:33
+#: forms/content-install.php:14
 msgid "Installation completed."
 msgstr ""
 
-#: forms/install.php:37
-#: forms/update.php:37
-msgid "Click here to continue."
+#: forms/content-install.php:19
+#: forms/content-update.php:19
+msgid "Click here to continue"
 msgstr ""
 
-#: forms/settings.php:67
-#: forms/settings.php:126
-msgid "Save Settings"
+#: forms/content-tools-export.php:2
+#: forms/content-tools-remove.php:2
+msgid "Important Information"
 msgstr ""
 
-#: forms/settings.php:70
-msgid "Return to top"
+#: forms/content-tools-export.php:4
+msgid "With this tool you export plugin settings into plain text file (JSON serialized content). Do not modify export file! Making changes to export file will make it unusable."
 msgstr ""
 
-#: forms/settings.php:101
-msgid "Settings Panel"
+#: forms/content-tools-remove.php:4
+msgid "This tool can remove plugin settings saved in the WordPress options table added by the plugin."
 msgstr ""
 
-#: forms/settings.php:6
-msgid "Settings Index"
+#: forms/content-tools-remove.php:6
+msgid "Deletion operations are not reversible, and it is highly recommended to create database backup before proceeding with this tool."
 msgstr ""
 
-#: forms/settings.php:7
-msgid "All plugin settings are split into several panels, and you access each starting from the right."
+#: forms/content-tools-remove.php:7
+msgid "If you choose to remove plugin settings, once that is done, all settings will be reinitialized to default values if you choose to leave plugin active."
 msgstr ""
 
-#: forms/settings.php:9
-msgid "Directory URL"
+#: forms/content-tools-remove.php:12
+msgid "Remove plugin settings"
 msgstr ""
 
-#: forms/settings.php:11
-msgid "These are basic settings for controling the URL for the members directory."
+#: forms/content-tools-remove.php:15
+msgid "Main Settings"
 msgstr ""
 
-#: forms/settings.php:13
-msgid "Query Control"
+#: forms/content-tools-remove.php:21
+msgid "Disable Plugin"
 msgstr ""
 
-#: forms/settings.php:14
-msgid "Frontend"
+#: forms/content-tools-remove.php:24
+msgid "Disable plugin"
 msgstr ""
 
-#: forms/settings.php:15
-msgid "These are basic settings for controling the members directory page query."
-msgstr ""
-
-#: forms/settings.php:17
-msgid "Display Control"
-msgstr ""
-
-#: forms/settings.php:18
-msgid "With these settings you can control some aspects of the members directory page display."
-msgstr ""
-
-#: forms/tools.php:74
-msgid "Tools Panel"
-msgstr ""
-
-#: forms/tools.php:6
-msgid "Tools Index"
-msgstr ""
-
-#: forms/tools.php:7
-msgid "All plugin tools are split into several panels, and you access each starting from the right."
-msgstr ""
-
-#: forms/tools.php:9
-msgid "Export Settings"
-msgstr ""
-
-#: forms/tools.php:10
-msgid "Import Export"
-msgstr ""
-
-#: forms/tools.php:11
-msgid "Export"
-msgstr ""
-
-#: forms/tools.php:12
-msgid "Export all plugin settings into file."
-msgstr ""
-
-#: forms/tools.php:14
-msgid "Import Settings"
-msgstr ""
-
-#: forms/tools.php:15
-msgid "Import"
-msgstr ""
-
-#: forms/tools.php:16
-msgid "Import all plugin settings from export file."
-msgstr ""
-
-#: forms/tools.php:18
-msgid "Remove Settings"
-msgstr ""
-
-#: forms/tools.php:19
-msgid "Maintenance"
-msgstr ""
-
-#: forms/tools.php:20
-msgid "Remove"
-msgstr ""
-
-#: forms/tools.php:21
-msgid "Remove selected plugin settings and information."
-msgstr ""
-
-#: forms/update.php:17
-msgid "Update"
-msgstr ""
-
-#: forms/update.php:20
-msgid "Before you continue, make sure plugin was successfully updated."
-msgstr ""
-
-#: forms/update.php:33
+#: forms/content-update.php:14
 msgid "Update completed."
 msgstr ""
 
@@ -691,27 +192,24 @@ msgstr ""
 msgid "Sort order"
 msgstr ""
 
+#: templates/default/bbpress/loop-members.php:9
+#: templates/default/bbpress/loop-members.php:29
 #: templates/quantum/bbpress/loop-members.php:7
 msgid "Member Info"
 msgstr ""
 
+#: templates/default/bbpress/loop-members.php:10
+#: templates/default/bbpress/loop-members.php:30
 #: templates/quantum/bbpress/loop-members.php:9
 msgid "Statistics"
 msgstr ""
 
+#: templates/default/bbpress/loop-members.php:11
 #: templates/quantum/bbpress/loop-members.php:10
 msgid "Latest Post"
 msgstr ""
 
-#: widgets/directory.php:27
-msgid "Show list of forum members."
-msgstr ""
-
-#: widgets/directory.php:38
-msgid "Content"
-msgstr ""
-
-#: widgets/directory.php:39
-msgid "Extra"
+#: templates/default/bbpress/loop-members.php:31
+msgid "Latest Activity"
 msgstr ""
 

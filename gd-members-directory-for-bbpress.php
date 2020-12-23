@@ -1,17 +1,21 @@
 <?php
 
 /*
-Plugin Name: GD Members Directory Pro for bbPress
-Plugin URI: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
-Description: Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
-Version: 1.1
-Author: Milan Petrovic
-Author URI: https://www.dev4press.com/
-Text Domain: gd-members-directory-for-bbpress
-Private: true
+Plugin Name:       GD Members Directory for bbPress
+Plugin URI:        https://plugins.dev4press.com/gd-members-directory-for-bbpress/
+Description:       Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
+Author:            Milan Petrovic
+Author URI:        https://www.dev4press.com/
+Text Domain:       gd-members-directory-for-bbpress
+Version:           2.0
+Requires at least: 5.0
+Tested up to:      5.6
+Requires PHP:      7.0
+License:           GPLv3 or later
+License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 == Copyright ==
-Copyright 2008 - 2019 Milan Petrovic (email: milan@gdragon.info)
+Copyright 2008 - 2020 Milan Petrovic (email: milan@gdragon.info)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36,56 +40,10 @@ define('GDMED_D4PLIB', $gdmed_dirname_basic.'d4plib/');
 
 require_once(GDMED_D4PLIB.'core.php');
 
-/*
-require_once(GDMED_D4PLIB.'d4p.core.php');
-
-d4p_includes(array(
-    array('name' => 'settings', 'directory' => 'plugin'),
-    array('name' => 'widget', 'directory' => 'plugin'),
-    array('name' => 'wpdb', 'directory' => 'core'),
-    array('name' => 'plugin', 'directory' => 'plugin'),
-    array('name' => 'cache-wordpress', 'directory' => 'functions'),
-    'functions',
-    'sanitize', 
-    'access', 
-    'wp'
-), GDMED_D4PLIB);
-
-global $_gdmed_plugin, $_gdmed_settings;
-
-require_once(GDMED_PATH.'core/version.php');
-require_once(GDMED_PATH.'core/plugin.php');
-require_once(GDMED_PATH.'core/settings.php');
-require_once(GDMED_PATH.'core/compatibility.php');
+require_once(GDMED_PATH.'core/autoload.php');
+require_once(GDMED_PATH.'core/bridge.php');
 require_once(GDMED_PATH.'core/functions.php');
 
-require_once(GDMED_PATH.'core/objects/core.user-query.php');
-require_once(GDMED_PATH.'core/objects/core.db.php');
-require_once(GDMED_PATH.'core/objects/core.expand.php');
-require_once(GDMED_PATH.'core/objects/core.member.php');
-require_once(GDMED_PATH.'core/objects/core.query.php');
+gdmed();
 
-$_gdmed_plugin = new gdmed_core_plugin();
-$_gdmed_settings = new gdmed_core_settings();
-
-/** @return gdmed_core_plugin */
-function gdmed() {
-    global $_gdmed_plugin;
-    return $_gdmed_plugin;
-}
-
-/** return gdmed_core_settings */
-function gdmed_settings() {
-    global $_gdmed_settings;
-    return $_gdmed_settings;
-}
-
-if (D4P_ADMIN) {
-    d4p_includes(array(
-        array('name' => 'functions', 'directory' => 'admin'),
-        array('name' => 'admin-basic', 'directory' => 'plugin'),
-        array('name' => 'admin-options', 'directory' => 'plugin')
-    ), GDMED_D4PLIB);
-
-    require_once(GDMED_PATH.'core/admin/plugin.php');
-}
+gdmed_settings();
