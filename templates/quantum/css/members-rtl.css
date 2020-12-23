@@ -1,0 +1,111 @@
+#bbpress-forums .bbp-the-list.bbp-members {
+  padding: 0;
+  margin: 15px 0;
+}
+#bbpress-forums .bbp-the-list.bbp-members .bbp-body .bbp-member-avatar {
+  display: block;
+  margin: 0 0 0 10px;
+  float: right;
+}
+#bbpress-forums .bbp-the-list.bbp-members .bbp-body .bbp-member-avatar img {
+  vertical-align: top;
+}
+#bbpress-forums .bbp-the-list.bbp-members .bbp-body .bbp-member-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#bbpress-forums .bbp-the-list.bbp-members .bbp-body .bbp-member-meta {
+  margin: 0;
+  padding: 0;
+}
+#bbpress-forums .bbp-the-list .bbp-item .bbp-item-meta .bbp-item-statistics {
+  width: 40%;
+}
+#bbpress-forums form.bbp-members-directory-filter {
+  clear: both;
+  margin: 0 0 15px;
+  overflow: auto;
+}
+#bbpress-forums form.bbp-members-directory-filter .bbp-members-filter {
+  float: right;
+}
+#bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
+  float: left;
+}
+#bbpress-forums form.bbp-members-directory-filter select,
+#bbpress-forums form.bbp-members-directory-filter input {
+  border-radius: 0;
+  padding: 4px;
+  margin: 0;
+  line-height: 22px;
+  height: 22px;
+  width: auto;
+  box-sizing: content-box;
+  box-shadow: none;
+  vertical-align: top;
+}
+#bbpress-forums form.bbp-members-directory-filter button {
+  width: auto;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 10px;
+}
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member p {
+  margin: 0;
+  padding: 0;
+}
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member .bbp-member-avatar {
+  display: block;
+  margin: 0 0 0 10px;
+  float: right;
+}
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member .bbp-member-avatar img {
+  vertical-align: top;
+}
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member .bbp-member-meta {
+  margin: 5px 0 0;
+  clear: both;
+}
+.gdmed-widget.gdmed-widget-directory .gdmed-directory-member:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 720px) {
+  #bbpress-forums .bbp-the-list .bbp-item.bbp-header .bbp-item-meta .bbp-item-statistics, #bbpress-forums .bbp-the-list .bbp-item.bbp-row .bbp-item-meta .bbp-item-statistics {
+    display: none;
+  }
+  #bbpress-forums form.bbp-members-directory-filter .bbp-members-filter,
+#bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
+    float: none;
+    text-align: center;
+  }
+  #bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
+    margin-top: 10px;
+  }
+}
+#bbpress-forums form.bbp-members-directory-filter select,
+#bbpress-forums form.bbp-members-directory-filter input {
+  background: #ffffff;
+  color: #222222;
+  border: 2px solid #e1e1e1;
+}
+#bbpress-forums form.bbp-members-directory-filter select:focus,
+#bbpress-forums form.bbp-members-directory-filter input:focus {
+  border-color: #bbbbbb;
+}
+#bbpress-forums form.bbp-members-directory-filter button {
+  background: #d5d5d5;
+  color: #990000;
+}
+#bbpress-forums form.bbp-members-directory-filter button:hover {
+  background: #bbbbbb;
+  color: #4d0000;
+}
