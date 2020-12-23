@@ -168,22 +168,22 @@ $grid-break-medium: 720px !default;
     form.bbp-members-directory-filter {
         select,
         input {
-            background: #ffffff;
-            color :#222222;
-            border: 2px solid #e1e1e1;
+            background: #FFF;
+            color: #222;
+            border: 2px solid #E1E1E1;
 
             &:focus {
-                border-color: #bbbbbb;
+                border-color: #BBB;
             }
         }
 
         button {
-            background: #d5d5d5;
-            color: #990000;
+            background: #D5D5D5;
+            color: #900;
 
             &:hover {
-                background: #bbbbbb;
-                color: #4d0000;
+                background: #BBB;
+                color: #4D0000;
             }
         }
     }

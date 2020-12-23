@@ -8,7 +8,7 @@
         <h1 class="entry-title"><?php echo gdmed()->get_page_title(); ?></h1>
         <div class="entry-content">
 
-            <?php bbp_get_template_part( 'content', 'members-directory' ); ?>
+			<?php bbp_get_template_part( 'content', 'members-directory' ); ?>
 
         </div>
     </div>
