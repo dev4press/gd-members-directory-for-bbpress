@@ -19,23 +19,23 @@ class Settings extends PanelSettings {
 
 		$this->subpanels = $this->subpanels + array(
 				'rewrite' => array(
-					'title'      => __( "Directory URL", "breadcrumbspress" ),
+					'title'      => __( "Directory URL", "gd-members-directory-for-bbpress" ),
 					'icon'       => 'ui-cog',
-					'break'      => __( "Basic", "breadcrumbspress" ),
+					'break'      => __( "Basic", "gd-members-directory-for-bbpress" ),
 					'break-icon' => 'ui-tasks',
-					'info'       => __( "These are basic settings for controling the URL for the members directory.", "breadcrumbspress" )
+					'info'       => __( "These are basic settings for controling the URL for the members directory.", "gd-members-directory-for-bbpress" )
 				),
 				'query'   => array(
-					'title' => __( "Query Control", "breadcrumbspress" ),
-					'icon'  => 'ui-code',
-					'break'      => __( "Frontend", "breadcrumbspress" ),
+					'title'      => __( "Query Control", "gd-members-directory-for-bbpress" ),
+					'icon'       => 'ui-code',
+					'break'      => __( "Frontend", "gd-members-directory-for-bbpress" ),
 					'break-icon' => 'ui-tasks',
-					'info'  => __( "These are basic settings for controling the members directory page query.", "breadcrumbspress" )
+					'info'       => __( "These are basic settings for controling the members directory page query.", "gd-members-directory-for-bbpress" )
 				),
-				'display'  => array(
-					'title' => __( "Display Control", "breadcrumbspress" ),
+				'display' => array(
+					'title' => __( "Display Control", "gd-members-directory-for-bbpress" ),
 					'icon'  => 'ui-palette',
-					'info'  => __( "With these settings you can control some aspects of the members directory page display.", "breadcrumbspress" )
+					'info'  => __( "With these settings you can control some aspects of the members directory page display.", "gd-members-directory-for-bbpress" )
 				)
 			);
 	}

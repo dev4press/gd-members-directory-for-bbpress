@@ -1,5 +1,6 @@
 <?php
 
+use Dev4Press\Plugin\GDMED\Admin\Plugin as AdminPlugin;
 use Dev4Press\Plugin\GDMED\Basic\Plugin;
 use Dev4Press\Plugin\GDMED\Basic\Settings;
 use Dev4Press\Plugin\GDMED\Directory\DB;
@@ -36,6 +37,13 @@ function gdmed_db() {
  */
 function gdmed_expand() {
 	return Expand::instance();
+}
+
+/**
+ * @return \Dev4Press\Core\Admin\Menu\Plugin|\Dev4Press\Core\Admin\Plugin|\Dev4Press\Core\Admin\Submenu\Plugin|\Dev4Press\Plugin\GDMED\Admin\Plugin
+ */
+function gdmed_admin() {
+	return AdminPlugin::instance();
 }
 
 /**

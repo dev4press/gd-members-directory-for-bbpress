@@ -11,8 +11,9 @@
 		<?php if ( gdmed_settings()->get( 'display_roles_filter' ) ) { ?>
 
             <label for="gdmed-filter-role" class="screen-reader-text"><?php _e( "Filter by role", "gd-members-directory-for-bbpress" ); ?></label>
-			<?php gdmed_form_select( gdmed()->get_filter_roles_values(), gdmed_members_query()->get_filter_value( 'role' ), array( 'id'   => 'gdmed-filter-role',
-			                                                                                                                       'name' => 'role'
+			<?php gdmed_form_select( gdmed()->get_filter_roles_values(), gdmed_members_query()->get_filter_value( 'role' ), array(
+				'id'   => 'gdmed-filter-role',
+				'name' => 'role'
 			) ); ?>
 
 		<?php } ?>
@@ -27,13 +28,15 @@
     <div class="bbp-members-sort">
 
         <label for="gdmed-sort-orderby" class="screen-reader-text"><?php _e( "Sort by", "gd-members-directory-for-bbpress" ); ?></label>
-		<?php gdmed_form_select( gdmed()->get_sort_orderby_values(), gdmed_members_query()->get_filter_value( 'orderby' ), array( 'id'   => 'gdmed-sort-orderby',
-		                                                                                                                          'name' => 'orderby'
+		<?php gdmed_form_select( gdmed()->get_sort_orderby_values(), gdmed_members_query()->get_filter_value( 'orderby' ), array(
+			'id'   => 'gdmed-sort-orderby',
+			'name' => 'orderby'
 		), array( 'onchange' => 'this.form.submit()' ) ); ?>
 
         <label for="gdmed-sort-order" class="screen-reader-text"><?php _e( "Sort order", "gd-members-directory-for-bbpress" ); ?></label>
-		<?php gdmed_form_select( gdmed()->get_sort_order_values(), gdmed_members_query()->get_filter_value( 'order' ), array( 'id'   => 'gdmed-sort-order',
-		                                                                                                                      'name' => 'order'
+		<?php gdmed_form_select( gdmed()->get_sort_order_values(), gdmed_members_query()->get_filter_value( 'order' ), array(
+			'id'   => 'gdmed-sort-order',
+			'name' => 'order'
 		), array( 'onchange' => 'this.form.submit()' ) ); ?>
 
     </div>

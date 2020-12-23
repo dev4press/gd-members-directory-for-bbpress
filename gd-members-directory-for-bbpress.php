@@ -47,3 +47,7 @@ require_once(GDMED_PATH.'core/functions.php');
 gdmed();
 
 gdmed_settings();
+
+if (D4P_ADMIN) {
+	gdmed_admin();
+}

@@ -22,34 +22,39 @@ class Plugin extends BasePlugin {
 	public function after_setup_theme() {
 		$this->setup_items = array(
 			'install' => array(
-				'title' => __( "Install", "breadcrumbspress" ),
+				'title' => __( "Install", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-traffic',
 				'type'  => 'setup',
-				'info'  => __( "Before you continue, make sure plugin installation was successful.", "breadcrumbspress" ),
+				'info'  => __( "Before you continue, make sure plugin installation was successful.", "gd-members-directory-for-bbpress" ),
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Install'
 			),
 			'update'  => array(
-				'title' => __( "Update", "breadcrumbspress" ),
+				'title' => __( "Update", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-traffic',
 				'type'  => 'setup',
-				'info'  => __( "Before you continue, make sure plugin was successfully updated.", "breadcrumbspress" ),
+				'info'  => __( "Before you continue, make sure plugin was successfully updated.", "gd-members-directory-for-bbpress" ),
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Update'
 			)
 		);
 
 		$this->menu_items = array(
-			'settings'  => array(
-				'title' => __( "Settings", "breadcrumbspress" ),
+			'dashboard' => array(
+				'title' => __( "Dashboard", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-cog',
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Settings'
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Dashboard'
 			),
-			'about'     => array(
-				'title' => __( "About", "breadcrumbspress" ),
+			'about'    => array(
+				'title' => __( "About", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-info',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\About'
 			),
-			'tools'     => array(
-				'title' => __( "Tools", "breadcrumbspress" ),
+			'settings' => array(
+				'title' => __( "Settings", "gd-members-directory-for-bbpress" ),
+				'icon'  => 'ui-cog',
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Settings'
+			),
+			'tools'    => array(
+				'title' => __( "Tools", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-wrench',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Tools'
 			)
