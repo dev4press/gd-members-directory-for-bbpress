@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: GD Members Directory Pro for bbPress\n"
-"POT-Creation-Date: 12/23/2020 05:23:22 PM\n"
+"POT-Creation-Date: 12/23/2020 08:57:26 PM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,6 +21,158 @@ msgid "Viewing %2$s results (of %4$s total)"
 msgid_plural "Viewing %1$s results - %2$s through %3$s (of %4$s total)"
 msgstr[0] ""
 msgstr[1] ""
+
+#: core/admin/panel/Settings.php:21
+msgid "Directory URL"
+msgstr ""
+
+#: core/admin/panel/Settings.php:23
+msgid "Basic"
+msgstr ""
+
+#: core/admin/panel/Settings.php:25
+msgid "These are basic settings for controling the URL for the members directory."
+msgstr ""
+
+#: core/admin/panel/Settings.php:28
+msgid "Query Control"
+msgstr ""
+
+#: core/admin/panel/Settings.php:30
+msgid "Frontend"
+msgstr ""
+
+#: core/admin/panel/Settings.php:32
+msgid "These are basic settings for controling the members directory page query."
+msgstr ""
+
+#: core/admin/panel/Settings.php:35
+msgid "Display Control"
+msgstr ""
+
+#: core/admin/panel/Settings.php:37
+msgid "With these settings you can control some aspects of the members directory page display."
+msgstr ""
+
+#: core/admin/Plugin.php:24
+msgid "Install"
+msgstr ""
+
+#: core/admin/Plugin.php:27
+msgid "Before you continue, make sure plugin installation was successful."
+msgstr ""
+
+#: core/admin/Plugin.php:31
+msgid "Update"
+msgstr ""
+
+#: core/admin/Plugin.php:34
+msgid "Before you continue, make sure plugin was successfully updated."
+msgstr ""
+
+#: core/admin/Plugin.php:41
+msgid "Settings"
+msgstr ""
+
+#: core/admin/Plugin.php:46
+msgid "About"
+msgstr ""
+
+#: core/admin/Plugin.php:51
+msgid "Tools"
+msgstr ""
+
+#: core/admin/Settings.php:21
+msgid "URL Rewrite"
+msgstr ""
+
+#: core/admin/Settings.php:28
+msgid "Use bbPress default slug"
+msgstr ""
+
+#: core/admin/Settings.php:28
+msgid "Use the slug from the bbPress default settings for the single user base."
+msgstr ""
+
+#: core/admin/Settings.php:32
+msgid "Custom URL slug"
+msgstr ""
+
+#: core/admin/Settings.php:36
+msgid "Slug"
+msgstr ""
+
+#: core/admin/Settings.php:36
+msgid "If the previous option is disabled, set the slug to be used for the directory URL."
+msgstr ""
+
+#: core/admin/Settings.php:44
+msgid "Query Basics"
+msgstr ""
+
+#: core/admin/Settings.php:51
+msgid "Members with posts only"
+msgstr ""
+
+#: core/admin/Settings.php:51
+msgid "Directory should include only users that have posted in the forums."
+msgstr ""
+
+#: core/admin/Settings.php:52
+msgid "Members listed per page"
+msgstr ""
+
+#: core/admin/Settings.php:52
+msgid "Number of members to show on a single directory page."
+msgstr ""
+
+#: core/admin/Settings.php:58
+msgid "Query Filters"
+msgstr ""
+
+#: core/admin/Settings.php:65
+msgid "User roles"
+msgstr ""
+
+#: core/admin/Settings.php:65
+msgid "Only users with selected roles will be available in the members directory."
+msgstr ""
+
+#: core/admin/Settings.php:71
+msgid "Query Advanced"
+msgstr ""
+
+#: core/admin/Settings.php:78
+msgid "Fix the Order issue"
+msgstr ""
+
+#: core/admin/Settings.php:78
+msgid "Built-in WordPress query has a problem when ordering data by meta fields, not showing the users that don't have particular meta field set. Because of that, ordering by last activity and few other things can return only few users as a result. This fix modifies SQL query to get proper results."
+msgstr ""
+
+#: core/admin/Settings.php:86
+msgid "Directory Filtering"
+msgstr ""
+
+#: core/admin/Settings.php:93
+msgid "Display roles filter"
+msgstr ""
+
+#: core/admin/Settings.php:93
+msgid "Show dropdown list of user roles to filter the list of members."
+msgstr ""
+
+#: core/admin/Settings.php:99
+msgid "Directory Display"
+msgstr ""
+
+#: core/admin/Settings.php:106
+msgid "Display member avatars"
+msgstr ""
+
+#: core/admin/Settings.php:106
+msgid "Show avatar for all members in the list."
+msgstr ""
 
 #: core/basic/Plugin.php:47
 msgid "All Roles"
@@ -176,19 +328,19 @@ msgstr ""
 msgid "Filter by role"
 msgstr ""
 
-#: templates/default/bbpress/filter-members.php:17
+#: templates/default/bbpress/filter-members.php:19
 msgid "Search members"
 msgstr ""
 
-#: templates/default/bbpress/filter-members.php:20
+#: templates/default/bbpress/filter-members.php:22
 msgid "Filter"
 msgstr ""
 
-#: templates/default/bbpress/filter-members.php:26
+#: templates/default/bbpress/filter-members.php:28
 msgid "Sort by"
 msgstr ""
 
-#: templates/default/bbpress/filter-members.php:29
+#: templates/default/bbpress/filter-members.php:33
 msgid "Sort order"
 msgstr ""
 
