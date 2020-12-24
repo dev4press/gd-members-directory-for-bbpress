@@ -18,6 +18,8 @@ class Information extends BaseInformation {
 	public $updated = '2020.12.28';
 	public $released = '2019.10.14';
 
+	public $is_bbpress_plugin = true;
+
 	public function __construct() {
 		$this->plugins['bbpress'] = '2.6.2';
 	}

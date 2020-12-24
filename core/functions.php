@@ -64,17 +64,6 @@ function gdmet_get_root_url() {
 	return bbp_get_forums_url();
 }
 
-function gdmed_has_bbpress() {
-	if ( function_exists( 'bbp_get_version' ) ) {
-		$version = bbp_get_version();
-		$version = intval( substr( str_replace( '.', '', $version ), 0, 2 ) );
-
-		return $version > 24;
-	} else {
-		return false;
-	}
-}
-
 function gdmed_get_members_rewrite_id() {
 	return gdmed()->members_id;
 }

@@ -56,6 +56,7 @@ class Directory extends Widget {
 	}
 
 	public function store_instance( $instance ) {
+		$instance = wp_parse_args((array)$instance, $this->get_defaults());
 		gdmed()->store_widget_instance( $instance );
 	}
 }

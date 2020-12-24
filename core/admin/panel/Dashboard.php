@@ -9,4 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Dashboard extends PanelDashboard {
+	public function include_notices() {
+
+	}
 }
