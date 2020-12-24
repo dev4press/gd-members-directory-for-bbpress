@@ -2,7 +2,7 @@
     <div class="d4p-update-info">
 		<?php
 
-		include(GDMED_PATH.'forms/setup/rules.php');
+		include( GDMED_PATH . 'forms/setup/rules.php' );
 
 		gdmed_settings()->set( 'install', false, 'info' );
 		gdmed_settings()->set( 'update', false, 'info', true );

@@ -29,7 +29,13 @@ class Plugin extends Core {
 
 		do_action( 'gdmed_load_settings' );
 
+		add_action( 'widgets_init', array( $this, 'widgets_init' ) );
+
 		do_action( 'gdmed_plugin_core_ready' );
+	}
+
+	public function widgets_init() {
+		register_widget( 'Dev4Press\Plugin\GDMED\Widget\Directory' );
 	}
 
 	public function after_setup_theme() {

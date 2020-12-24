@@ -39,6 +39,11 @@ class Expand {
 		foreach ( $bbp_filters as $class_action => $priority ) {
 			add_filter( 'bbp_' . $class_action, array( $this, $class_action ), $priority );
 		}
+
+		if ( gdmed()->theme_package == 'quantum' ) {
+			add_action( 'bbp_template_start_widget_directory', array( $this, 'enqueue_style' ) );
+			add_action( 'bbp_template_before_members_loop', array( $this, 'enqueue_style' ) );
+		}
 	}
 
 	public static function instance() {
@@ -184,5 +189,9 @@ class Expand {
 		);
 
 		return $styles;
+	}
+
+	public function enqueue_style() {
+		wp_enqueue_style( 'gdmed-members-directory' );
 	}
 }

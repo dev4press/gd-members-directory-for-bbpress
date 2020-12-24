@@ -14,6 +14,8 @@ class Plugin extends BasePlugin {
 	public $plugin_menu = 'GD Members Directory';
 	public $plugin_title = 'GD Members Directory for bbPress';
 
+	public $has_widgets = true;
+
 	public function constructor() {
 		$this->url  = GDMED_URL;
 		$this->path = GDMED_PATH;
@@ -40,20 +42,20 @@ class Plugin extends BasePlugin {
 		$this->menu_items = array(
 			'dashboard' => array(
 				'title' => __( "Dashboard", "gd-members-directory-for-bbpress" ),
-				'icon'  => 'ui-cog',
+				'icon'  => 'ui-home',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Dashboard'
 			),
-			'about'    => array(
+			'about'     => array(
 				'title' => __( "About", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-info',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\About'
 			),
-			'settings' => array(
+			'settings'  => array(
 				'title' => __( "Settings", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-cog',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Settings'
 			),
-			'tools'    => array(
+			'tools'     => array(
 				'title' => __( "Tools", "gd-members-directory-for-bbpress" ),
 				'icon'  => 'ui-wrench',
 				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Tools'

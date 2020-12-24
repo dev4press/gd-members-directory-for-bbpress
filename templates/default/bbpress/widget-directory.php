@@ -1,6 +1,10 @@
 <div class="gdmed-widget gdmed-widget-directory">
 	<?php
 
+	do_action( 'bbp_template_start_widget_directory' );
+
+	$instance = gdmed()->widget_instance();
+
 	$members = gdmed_members_query( array(
 		'members_per_page' => $instance['limit'],
 		'orderby'          => $instance['orderby'],
@@ -35,6 +39,8 @@
 	else :
 		esc_html_e( "No members found matching the request criteria.", "gd-members-directory-for-bbpress" );
 	endif;
+
+	do_action( 'bbp_template_end_widget_directory' );
 
 	?>
 </div>

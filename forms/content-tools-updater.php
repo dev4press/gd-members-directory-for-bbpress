@@ -4,7 +4,7 @@
         <div class="d4p-group-inner">
 			<?php
 
-			include(GDMED_PATH.'forms/setup/rules.php');
+			include( GDMED_PATH . 'forms/setup/rules.php' );
 
 			?>
         </div>

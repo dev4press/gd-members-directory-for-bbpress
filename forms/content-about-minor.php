@@ -5,6 +5,6 @@
         Few fixes.
     </p>
     <p>
-		<?php printf( __( "For more information, see <a href='%s'>the changelog</a>.", "gd-members-directory-for-bbpress" ), 'admin.php?page=gd-topic-polls-about&panel=changelog' ); ?>
+		<?php printf( __( "For more information, see <a href='%s'>the changelog</a>.", "gd-members-directory-for-bbpress" ), 'options-general.php?page=gd-members-directory-for-bbpress&panel=about&subpanel=changelog' ); ?>
     </p>
 </div>
