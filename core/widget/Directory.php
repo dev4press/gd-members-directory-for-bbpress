@@ -43,20 +43,20 @@ class Directory extends Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = parent::update( $new_instance, $old_instance );
 
-		$instance['limit'] = absint($new_instance['limit']);
-		$instance['orderby'] = d4p_sanitize_slug($new_instance['orderby']);
-		$instance['order'] = d4p_sanitize_slug($new_instance['order']);
-		$instance['role'] = d4p_sanitize_slug($new_instance['role']);
+		$instance['limit']   = absint( $new_instance['limit'] );
+		$instance['orderby'] = d4p_sanitize_slug( $new_instance['orderby'] );
+		$instance['order']   = d4p_sanitize_slug( $new_instance['order'] );
+		$instance['role']    = d4p_sanitize_slug( $new_instance['role'] );
 
 		return $instance;
 	}
 
 	public function the_render( $instance, $results = false ) {
-		include(bbp_locate_template('widget-directory.php', false));
+		include( bbp_locate_template( 'widget-directory.php', false ) );
 	}
 
 	public function store_instance( $instance ) {
-		$instance = wp_parse_args((array)$instance, $this->get_defaults());
+		$instance = wp_parse_args( (array) $instance, $this->get_defaults() );
 		gdmed()->store_widget_instance( $instance );
 	}
 }
