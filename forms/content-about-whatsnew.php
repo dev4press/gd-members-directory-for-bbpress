@@ -27,7 +27,7 @@
                 </p>
             </div>
             <div class="d4p-layout-unit half align-left">
-                <img src="https://dev4press.s3.amazonaws.com/plugins/gd-members-directory-for-bbpress/1.0/about/directory.jpg"/>
+                <img src="<?php echo GDMED_URL; ?>gfx/directory.jpg"/>
             </div>
         </div>
     </div>
