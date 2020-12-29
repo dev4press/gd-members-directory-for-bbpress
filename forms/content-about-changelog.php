@@ -1,7 +1,7 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php _e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
-        <h4>Version: 2.0 / december 28 2020</h4>
+        <h4>Version: 2.0 / december 29 2020</h4>
         <ul>
             <li><strong>new</strong> the plugin is now available for free</li>
             <li><strong>new</strong> mostly rewritten with autoloader and namespaces</li>

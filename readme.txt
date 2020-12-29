@@ -24,6 +24,9 @@ The plugin has few settings, to control number of users per page, URL enpoint sl
 
 Plugin default templates and styling are based on the default bbPress theme package. And, like with bbPress, all the templates used by the plugin can be replaced via theme. The plugin has full support for [GD Quantum Theme Pro for bbPress](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) plugin by Dev4Press, including additional templates and styling.
 
+= Quick Overview Video =
+https://www.youtube.com/watch?v=IoU_s5-cBfU
+
 = Home and GitHub =
 * Learn more about the plugin: [GD Members Directory for bbPress Website](https://plugins.dev4press.com/gd-members-directory-for-bbpress/)
 * Contribute to plugin development: [GD Members Directory for bbPress on GitHub](https://github.com/dev4press/gd-members-directory-for-bbpress)
@@ -53,7 +56,7 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
-= Version: 2.0 / december 28 2020 =
+= Version: 2.0 / december 29 2020 =
 * New: the plugin is now available for free
 * New: mostly rewritten with autoloader and namespaces
 * Edit: d4pLib 3.3.1

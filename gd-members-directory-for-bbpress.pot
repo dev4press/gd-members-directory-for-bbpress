@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
 "Project-Id-Version: GD Members Directory for bbPress\n"
-"POT-Creation-Date: 12/24/2020 05:02:14 PM\n"
+"POT-Creation-Date: 12/29/2020 09:56:15 AM\n"
 "Language-Team: Milan Petrovic <support@dev4press.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -278,19 +278,19 @@ msgstr ""
 msgid "User Role Filter"
 msgstr ""
 
-#: forms/widgets/directory-content.php:21
+#: forms/widgets/directory-content.php:22
 msgid "Limit Number of Users"
 msgstr ""
 
-#: forms/widgets/directory-content.php:28
+#: forms/widgets/directory-content.php:29
 msgid "Sorting"
 msgstr ""
 
-#: forms/widgets/directory-content.php:33
+#: forms/widgets/directory-content.php:34
 msgid "Sort Method"
 msgstr ""
 
-#: forms/widgets/directory-content.php:41
+#: forms/widgets/directory-content.php:43
 msgid "Sort Order"
 msgstr ""
 
