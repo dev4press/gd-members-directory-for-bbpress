@@ -3,15 +3,12 @@
 namespace Dev4Press\Plugin\GDMED\Admin\Panel;
 
 use Dev4Press\Core\UI\Admin\PanelSettings;
-use Dev4Press\Plugin\GDMED\Traits\Panel as TraitPanel;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Settings extends PanelSettings {
-	use TraitPanel;
-
 	public $settings_class = '\\Dev4Press\\Plugin\\GDMED\\Admin\\Settings';
 
 	public function __construct( $admin ) {
@@ -38,9 +35,5 @@ class Settings extends PanelSettings {
 					'info'  => __( "With these settings you can control some aspects of the members directory page display.", "gd-members-directory-for-bbpress" )
 				)
 			);
-	}
-
-	public function enqueue_scripts() {
-		$this->local_enqueue_scripts( $this->a() );
 	}
 }
