@@ -168,6 +168,12 @@ class Query {
 		$this->_query = new MemberQuery( $this->_r );
 		$this->_pager = new stdClass();
 
+		if ( empty( $this->_query->get_results() ) && $this->_query->get_total() > 0 && $this->_r['paged'] > 1 ) {
+			$this->_r['paged'] = 1;
+
+			$this->_query = new MemberQuery( $this->_r );
+		}
+
 		$this->members     = array();
 		$this->members_ids = array();
 

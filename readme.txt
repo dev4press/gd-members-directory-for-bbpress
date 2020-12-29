@@ -59,7 +59,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 = Version: 2.0 / december 29 2020 =
 * New: the plugin is now available for free
 * New: mostly rewritten with autoloader and namespaces
+* Edit: few improvements to the main members query
 * Edit: d4pLib 3.3.1
+* Fix: members search issue when using paged results
 
 = Version: 1.1 / november 18 2019 =
 * Edit: default styling for Quantum theme updated

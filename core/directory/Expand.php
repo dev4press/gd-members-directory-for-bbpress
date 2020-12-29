@@ -41,7 +41,7 @@ class Expand {
 		}
 
 		if ( gdmed()->theme_package == 'quantum' ) {
-			add_action( 'bbp_template_start_widget_directory', array( $this, 'enqueue_style' ) );
+			add_action( 'bbp_template_before_members_directory', array( $this, 'enqueue_style' ) );
 			add_action( 'bbp_template_before_members_loop', array( $this, 'enqueue_style' ) );
 		}
 	}

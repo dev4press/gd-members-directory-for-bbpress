@@ -5,7 +5,9 @@
         <ul>
             <li><strong>new</strong> the plugin is now available for free</li>
             <li><strong>new</strong> mostly rewritten with autoloader and namespaces</li>
+            <li><strong>edit</strong> few improvements to the main members query</li>
             <li><strong>edit</strong> d4pLib 3.3.1</li>
+            <li><strong>fix</strong> members search issue when using paged results</li>
         </ul>
     </div>
 </div>
