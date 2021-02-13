@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class DB extends DBLite {
-	public function get_users_last_posts( $user_ids ) {
+	public function get_users_last_posts( $user_ids ) : array {
 		$user_ids = (array) $user_ids;
 		$user_ids = array_map( 'absint', $user_ids );
 		$user_ids = array_unique( $user_ids );
@@ -25,7 +25,7 @@ class DB extends DBLite {
 		return wp_list_pluck( $raw, 'post_id', 'post_author' );
 	}
 
-	public function get_reply_parents( $reply_ids ) {
+	public function get_reply_parents( $reply_ids ) : array {
 		$reply_ids = (array) $reply_ids;
 		$reply_ids = array_map( 'absint', $reply_ids );
 		$reply_ids = array_unique( $reply_ids );

@@ -46,7 +46,7 @@ class Expand {
 		}
 	}
 
-	public static function instance() {
+	public static function instance() : Expand {
 		static $_instance = false;
 
 		if ( $_instance === false ) {
@@ -109,7 +109,7 @@ class Expand {
 		return $classes;
 	}
 
-	public function is_bbpress( $retval ) {
+	public function is_bbpress( $retval ) : bool {
 		if ( gdmed_is_members_directory() ) {
 			$retval = true;
 		}

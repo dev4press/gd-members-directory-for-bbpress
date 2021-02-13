@@ -8,6 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/**
+ * @property int|mixed $ID
+ * @property string $user_registered
+ */
 class Member {
 	/** @var WP_User|null */
 	private $_user = null;
@@ -29,7 +33,7 @@ class Member {
 		return strtotime( $this->user_registered );
 	}
 
-	public function get_meta_info( $sep = ' &middot; ' ) {
+	public function get_meta_info( $sep = ' &middot; ' ) : string {
 		$items = array(
 			'role'       => $this->get_meta_info_role(),
 			'registered' => $this->get_meta_info_registered()
@@ -38,15 +42,15 @@ class Member {
 		return join( $sep, $items );
 	}
 
-	public function get_meta_info_role() {
+	public function get_meta_info_role() : string {
 		return '<span class="role ' . $this->role() . '">' . bbp_get_dynamic_role_name( $this->role() ) . '</span>';
 	}
 
-	public function get_meta_info_registered() {
+	public function get_meta_info_registered() : string {
 		return '<span class="registration">' . sprintf( _x( "Registered on: %s", "User meta, registration date", "gd-members-directory-for-bbpress" ), date( 'F j, Y', $this->registration_timestamp() ) ) . '</span>';
 	}
 
-	public function get_topics_info() {
+	public function get_topics_info() : string {
 		$count = get_user_option( '_bbp_topic_count', $this->ID );
 
 		if ( $count == 0 ) {
@@ -56,7 +60,7 @@ class Member {
 		}
 	}
 
-	public function get_replies_info() {
+	public function get_replies_info() : string {
 		$count = get_user_option( '_bbp_reply_count', $this->ID );
 
 		if ( $count == 0 ) {
@@ -66,7 +70,7 @@ class Member {
 		}
 	}
 
-	public function get_latest_activity() {
+	public function get_latest_activity() : string {
 		if ( isset( gdmed_members_query()->members_latest[ $this->ID ] ) ) {
 			$id = gdmed_members_query()->members_latest[ $this->ID ];
 

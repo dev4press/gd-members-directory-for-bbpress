@@ -2,7 +2,7 @@
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
-Stable tag: 2.0
+Stable tag: 2.0.1
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 7.0
@@ -56,6 +56,9 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.0.1 / february 15 2021 =
+* Edit: d4pLib 3.4
+
 = Version: 2.0 / december 29 2020 =
 * New: the plugin is now available for free
 * New: mostly rewritten with autoloader and namespaces

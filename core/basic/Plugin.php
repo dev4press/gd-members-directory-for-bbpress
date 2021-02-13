@@ -46,7 +46,7 @@ class Plugin extends Core {
 		gdmed_expand();
 	}
 
-	public function get_filter_roles_values() {
+	public function get_filter_roles_values() : array {
 		$available     = gdmed_settings()->get( 'members_roles_available' );
 		$dynamic_roles = bbp_get_dynamic_roles();
 
@@ -63,7 +63,7 @@ class Plugin extends Core {
 		return $roles;
 	}
 
-	public function get_sort_orderby_values() {
+	public function get_sort_orderby_values() : array {
 		return array(
 			'name'          => __( "Name", "gd-members-directory-for-bbpress" ),
 			'last_activity' => __( "Last Activity", "gd-members-directory-for-bbpress" ),
@@ -74,22 +74,22 @@ class Plugin extends Core {
 		);
 	}
 
-	public function get_sort_order_values() {
+	public function get_sort_order_values() : array {
 		return array(
 			'DESC' => __( "Descending", "gd-members-directory-for-bbpress" ),
 			'ASC'  => __( "Ascending", "gd-members-directory-for-bbpress" )
 		);
 	}
 
-	public function get_page_title() {
+	public function get_page_title() : string {
 		return apply_filters( 'gdmed_get_page_title', __( "Members Directory", "gd-members-directory-for-bbpress" ) );
 	}
 
-	public function get_breadcrumb_title() {
+	public function get_breadcrumb_title() : string {
 		return apply_filters( 'gdmed_get_breadcrumb_title', __( "Members Directory", "gd-members-directory-for-bbpress" ) );
 	}
 
-	public function get_breadcrumb_for_user_title() {
+	public function get_breadcrumb_for_user_title() : string {
 		return apply_filters( 'gdmed_get_breadcrumb_for_user_title', __( "Members", "gd-members-directory-for-bbpress" ) );
 	}
 }

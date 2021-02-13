@@ -40,10 +40,13 @@ class Query {
 		$this->_run_query();
 	}
 
-	/** @param array $args
+	/**
+	 * @param array $args
+	 * @param bool  $parse_request
+	 *
 	 * @return Query
 	 */
-	public static function instance( $args = array(), $parse_request = true ) {
+	public static function instance( $args = array(), $parse_request = true ) : Query {
 		static $_members_query = false;
 
 		if ( $_members_query === false ) {
@@ -230,7 +233,7 @@ class Query {
 		$this->_member = $this->members[ $this->current_member ];
 	}
 
-	public function have_members() {
+	public function have_members() : bool {
 		if ( $this->current_member + 1 < $this->members_count ) {
 			return true;
 		} else if ( $this->current_member + 1 == $this->members_count && $this->members_count > 0 ) {
@@ -297,7 +300,7 @@ class Query {
 		return apply_filters( 'gdmed_get_members_pagination_links', $this->_pager->pagination );
 	}
 
-	public function order_id() {
+	public function order_id() : int {
 		return $this->current_member;
 	}
 
@@ -305,7 +308,7 @@ class Query {
 		echo $this->get_member_class();
 	}
 
-	public function get_member_class() {
+	public function get_member_class() : string {
 		$even_odd = ( $this->order_id() % 2 ) ? 'even' : 'odd';
 
 		$classes = array(
