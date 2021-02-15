@@ -4,7 +4,7 @@ Donate link: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
 Stable tag: 2.0.1
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -36,6 +36,13 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 
 * Plugin Documentation: [GD Members Directory for bbPress Website](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
 * Support Forum: [Dev4Press Support](https://support.dev4press.com/forums/forum/plugins/gd-members-directory-for-bbpress/)
+
+= More free dev4Press.com plugins for bbPress =
+* [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
+* [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
+* [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
+* [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
+* [GD bbPress Tools](https://wordpress.org/plugins/gd-bbpress-tools/) - various expansion tools for forums
 
 == Installation ==
 = General Requirements =
