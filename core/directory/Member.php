@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * @property int|mixed $ID
- * @property string $user_registered
+ * @property string    $user_registered
  */
 class Member {
 	/** @var WP_User|null */
@@ -25,7 +25,7 @@ class Member {
 		return $this->_user->$key;
 	}
 
-	public function role() {
+	public function role() : string {
 		return bbp_get_user_role( $this->ID );
 	}
 

@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function gdmed_use_pretty_urls() {
+function gdmed_use_pretty_urls() : bool {
 	if ( function_exists( 'bbp_use_pretty_urls' ) ) {
 		return bbp_use_pretty_urls();
 	}
@@ -14,7 +14,7 @@ function gdmed_use_pretty_urls() {
 	return $wp_rewrite->using_permalinks();
 }
 
-function gdmed_paginate_links( $args = array() ) {
+function gdmed_paginate_links( $args = array() ) : string {
 	if ( function_exists( 'bbp_paginate_links' ) ) {
 		return bbp_paginate_links( $args );
 	}
@@ -56,7 +56,7 @@ function gdmed_make_first_page_canonical( $pagination_links = '' ) {
 	return apply_filters( 'bbp_make_first_page_canonical', $retval, $pagination_links );
 }
 
-function gdmet_get_root_url() {
+function gdmed_get_root_url() : string {
 	if ( function_exists( 'bbp_get_root_url' ) ) {
 		return bbp_get_root_url();
 	}
@@ -64,11 +64,11 @@ function gdmet_get_root_url() {
 	return bbp_get_forums_url();
 }
 
-function gdmed_get_members_rewrite_id() {
+function gdmed_get_members_rewrite_id() : string {
 	return gdmed()->members_id;
 }
 
-function gdmed_get_members_directory_template() {
+function gdmed_get_members_directory_template() : string {
 	$templates = array(
 		'members-directory.php'
 	);
@@ -76,7 +76,7 @@ function gdmed_get_members_directory_template() {
 	return bbp_get_query_template( 'members_directory', $templates );
 }
 
-function gdmed_get_members_slug( $default = 'users' ) {
+function gdmed_get_members_slug( $default = 'users' ) : string {
 	if ( gdmed_settings()->get( 'rewrite_default' ) ) {
 		$slug = get_option( '_bbp_user_slug', $default );
 	} else {
@@ -86,7 +86,7 @@ function gdmed_get_members_slug( $default = 'users' ) {
 	return apply_filters( 'gdmed_get_members_slug', bbp_maybe_get_root_slug() . $slug );
 }
 
-function gdmed_is_members_directory() {
+function gdmed_is_members_directory() : bool {
 	global $wp_query;
 
 	$retval = false;
@@ -106,7 +106,7 @@ function gdmed_is_members_directory() {
 	return (bool) apply_filters( 'gdmed_is_members_directory', $retval );
 }
 
-function gdmed_get_members_pagination_base() {
+function gdmed_get_members_pagination_base() : string {
 	if ( gdmed_use_pretty_urls() ) {
 		if ( is_page() || is_single() ) {
 			$base = get_permalink();
@@ -122,7 +122,7 @@ function gdmed_get_members_pagination_base() {
 	return apply_filters( 'gdmed_get_members_pagination_base', $base );
 }
 
-function gdmet_display_members_directory( $attr = array(), $content = '' ) {
+function gdmed_display_members_directory( $attr = array(), $content = '' ) : string {
 	if ( ! empty( $content ) ) {
 		return $content;
 	}
@@ -137,7 +137,7 @@ function gdmet_display_members_directory( $attr = array(), $content = '' ) {
 	return ob_get_clean();
 }
 
-function gdmed_get_user_roles() {
+function gdmed_get_user_roles() : array {
 	$roles = array();
 
 	$dynamic_roles = bbp_get_dynamic_roles();
@@ -149,13 +149,13 @@ function gdmed_get_user_roles() {
 	return $roles;
 }
 
-function gdmed_members_directory_url() {
+function gdmed_members_directory_url() : string {
 	echo esc_url( gdmed_get_members_directory_url() );
 }
 
-function gdmed_get_members_directory_url() {
+function gdmed_get_members_directory_url() : string {
 	if ( gdmed_use_pretty_urls() ) {
-		$url = gdmet_get_root_url() . bbp_get_user_slug();
+		$url = gdmed_get_root_url() . bbp_get_user_slug();
 
 		$url = user_trailingslashit( $url );
 		$url = home_url( $url );
@@ -168,7 +168,7 @@ function gdmed_get_members_directory_url() {
 	return apply_filters( 'gdmed_get_members_directory_url', $url );
 }
 
-function gdmed_form_select_attributes( $args = array(), $attr = array() ) {
+function gdmed_form_select_attributes( $args = array(), $attr = array() ) : array {
 	$defaults = array(
 		'name'     => '',
 		'id'       => '',
@@ -179,6 +179,14 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) {
 	);
 	$args     = wp_parse_args( $args, $defaults );
 
+	/**
+	 * @var string $name
+	 * @var string $id
+	 * @var string $class
+	 * @var string $style
+	 * @var bool   $multi
+	 * @var bool   $readonly
+	 */
 	extract( $args );
 
 	$name = $multi ? $name . '[]' : $name;
@@ -211,7 +219,7 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) {
 	return $attributes;
 }
 
-function gdmed_form_select( $values, $s, $args = array(), $attr = array(), $echo = true ) {
+function gdmed_form_select( $values, $s, $args = array(), $attr = array(), $echo = true ) : string {
 	$attributes = gdmed_form_select_attributes( $args, $attr );
 	$selected   = is_null( $s ) ? array_keys( $values ) : (array) $s;
 
@@ -226,7 +234,7 @@ function gdmed_form_select( $values, $s, $args = array(), $attr = array(), $echo
 
 	if ( $echo ) {
 		echo $render;
-	} else {
-		return $render;
 	}
+
+	return $render;
 }

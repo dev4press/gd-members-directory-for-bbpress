@@ -20,14 +20,14 @@ class Settings extends PanelSettings {
 					'icon'       => 'ui-cog',
 					'break'      => __( "Basic", "gd-members-directory-for-bbpress" ),
 					'break-icon' => 'ui-tasks',
-					'info'       => __( "These are basic settings for controling the URL for the members directory.", "gd-members-directory-for-bbpress" )
+					'info'       => __( "These are basic settings for controlling the URL for the members directory.", "gd-members-directory-for-bbpress" )
 				),
 				'query'   => array(
 					'title'      => __( "Query Control", "gd-members-directory-for-bbpress" ),
 					'icon'       => 'ui-code',
 					'break'      => __( "Frontend", "gd-members-directory-for-bbpress" ),
 					'break-icon' => 'ui-tasks',
-					'info'       => __( "These are basic settings for controling the members directory page query.", "gd-members-directory-for-bbpress" )
+					'info'       => __( "These are basic settings for controlling the members directory page query.", "gd-members-directory-for-bbpress" )
 				),
 				'display' => array(
 					'title' => __( "Display Control", "gd-members-directory-for-bbpress" ),

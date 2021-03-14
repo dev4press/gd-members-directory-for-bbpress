@@ -2,7 +2,7 @@
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
-Stable tag: 2.0.1
+Stable tag: 2.1
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -14,7 +14,7 @@ Easy to use plugin for adding forum members directory page into bbPress powered 
 == Description ==
 Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar. The plugin adds new URL endpoint based on the existing bbPress 'users' profile URL, and using theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
 
-The plugin has few settings, to control number of users per page, URL enpoint slug and few more things. The plugin features are listed here:
+The plugin has few settings, to control number of users per page, URL endpoint slug and few more things. The plugin features are listed here:
 
 * Members list shows various user information
 * Options to filter list by role or keyword

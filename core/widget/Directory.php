@@ -29,7 +29,7 @@ class Directory extends Widget {
 		parent::__construct( $id_base, $name, $widget_options, $control_options );
 	}
 
-	public function the_form( $instance ) {
+	public function the_form( $instance ) : array {
 		$this->widgets_render = Widgets::instance( $this->widget_base, gdmed_admin() );
 
 		return array(
@@ -40,7 +40,7 @@ class Directory extends Widget {
 		);
 	}
 
-	public function update( $new_instance, $old_instance ) {
+	public function update( $new_instance, $old_instance ) : array {
 		$instance = parent::update( $new_instance, $old_instance );
 
 		$instance['limit']   = absint( $new_instance['limit'] );

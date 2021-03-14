@@ -137,22 +137,22 @@ class Expand {
 		return $new_title;
 	}
 
-	public function after_get_breadcrumb_parse_args( $r ) {
+	public function after_get_breadcrumb_parse_args( $r ) : array {
 		if ( gdmed_is_members_directory() ) {
 			$r['current_text'] = gdmed()->get_breadcrumb_title();
 		}
 
-		return $r;
+		return (array)$r;
 	}
 
-	public function template_include_theme_compat( $template ) {
+	public function template_include_theme_compat( $template ) : string {
 		if ( gdmed_is_members_directory() ) {
 			bbp_theme_compat_reset_post( array(
 				'ID'             => 0,
 				'post_title'     => gdmed()->get_page_title(),
 				'post_author'    => 0,
 				'post_date'      => 0,
-				'post_content'   => gdmet_display_members_directory(),
+				'post_content'   => gdmed_display_members_directory(),
 				'post_type'      => '',
 				'post_status'    => bbp_get_public_status_id(),
 				'is_archive'     => true,
@@ -167,7 +167,7 @@ class Expand {
 		return $template;
 	}
 
-	public function get_template_stack( $stack ) {
+	public function get_template_stack( $stack ) : array {
 		if ( gdmed()->theme_package == 'quantum' ) {
 			$stack[] = GDMED_PATH . 'templates/quantum/bbpress';
 			$stack[] = GDMED_PATH . 'templates/quantum';
@@ -176,10 +176,10 @@ class Expand {
 		$stack[] = GDMED_PATH . 'templates/default/bbpress';
 		$stack[] = GDMED_PATH . 'templates/default';
 
-		return $stack;
+		return (array)$stack;
 	}
 
-	public function default_styles( $styles ) {
+	public function default_styles( $styles ) : array {
 		$rtl = is_rtl() ? '-rtl' : '';
 		$min = gdmed()->is_debug ? '' : '.min';
 
@@ -188,7 +188,7 @@ class Expand {
 			'dependencies' => array()
 		);
 
-		return $styles;
+		return (array)$styles;
 	}
 
 	public function enqueue_style() {

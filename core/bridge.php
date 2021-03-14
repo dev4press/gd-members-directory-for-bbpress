@@ -33,17 +33,17 @@ function gdmed_db() {
 }
 
 /**
- * @return \Dev4Press\Plugin\GDMED\Directory\Expand
- */
-function gdmed_expand() {
-	return Expand::instance();
-}
-
-/**
  * @return \Dev4Press\Core\Admin\Menu\Plugin|\Dev4Press\Core\Admin\Plugin|\Dev4Press\Core\Admin\Submenu\Plugin|\Dev4Press\Plugin\GDMED\Admin\Plugin
  */
 function gdmed_admin() {
 	return AdminPlugin::instance();
+}
+
+/**
+ * @return \Dev4Press\Plugin\GDMED\Directory\Expand
+ */
+function gdmed_expand() : Expand {
+	return Expand::instance();
 }
 
 /**
@@ -52,6 +52,6 @@ function gdmed_admin() {
  *
  * @return \Dev4Press\Plugin\GDMED\Directory\Query
  */
-function gdmed_members_query( $args = array(), $parse_request = true ) {
+function gdmed_members_query( $args = array(), $parse_request = true ) : Query {
 	return Query::instance( $args, $parse_request );
 }

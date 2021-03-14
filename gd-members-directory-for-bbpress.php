@@ -7,7 +7,7 @@ Description:       Easy to use plugin for adding forum members directory page in
 Author:            Milan Petrovic
 Author URI:        https://www.dev4press.com/
 Text Domain:       gd-members-directory-for-bbpress
-Version:           2.0.1
+Version:           2.1
 Requires at least: 5.0
 Tested up to:      5.7
 Requires PHP:      7.0
@@ -15,7 +15,7 @@ License:           GPLv3 or later
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 == Copyright ==
-Copyright 2008 - 2020 Milan Petrovic (email: support@dev4press.com)
+Copyright 2008 - 2021 Milan Petrovic (email: support@dev4press.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -31,23 +31,23 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>
 */
 
-$gdmed_dirname_basic = dirname(__FILE__).'/';
-$gdmed_urlname_basic = plugins_url('/', __FILE__);
+$gdmed_dirname_basic = dirname( __FILE__ ) . '/';
+$gdmed_urlname_basic = plugins_url( '/', __FILE__ );
 
-define('GDMED_PATH', $gdmed_dirname_basic);
-define('GDMED_URL', $gdmed_urlname_basic);
-define('GDMED_D4PLIB', $gdmed_dirname_basic.'d4plib/');
+define( 'GDMED_PATH', $gdmed_dirname_basic );
+define( 'GDMED_URL', $gdmed_urlname_basic );
+define( 'GDMED_D4PLIB', $gdmed_dirname_basic . 'd4plib/' );
 
-require_once(GDMED_D4PLIB.'core.php');
+require_once( GDMED_D4PLIB . 'core.php' );
 
-require_once(GDMED_PATH.'core/autoload.php');
-require_once(GDMED_PATH.'core/bridge.php');
-require_once(GDMED_PATH.'core/functions.php');
+require_once( GDMED_PATH . 'core/autoload.php' );
+require_once( GDMED_PATH . 'core/bridge.php' );
+require_once( GDMED_PATH . 'core/functions.php' );
 
 gdmed();
 
 gdmed_settings();
 
-if (D4P_ADMIN) {
+if ( D4P_ADMIN ) {
 	gdmed_admin();
 }

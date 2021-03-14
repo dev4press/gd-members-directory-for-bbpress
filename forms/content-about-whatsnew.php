@@ -23,7 +23,7 @@
                     The members directory is added as a new page into bbPress using the same URL slug as user profiles, or you can use plugin options to change it.
                 </p>
                 <p>
-                    The directory page shows list of users with additional filter and sorting controls. For each member, plugin shows member role, registraton date, topics and replies counts and last post for the user.
+                    The directory page shows list of users with additional filter and sorting controls. For each member, plugin shows member role, registration date, topics and replies counts and last post for the user.
                 </p>
             </div>
             <div class="d4p-layout-unit half align-left">
