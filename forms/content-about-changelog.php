@@ -5,6 +5,7 @@
         <ul>
             <li><strong>edit</strong> various updates to the plugin code</li>
             <li><strong>edit</strong> d4pLib 3.4.1</li>
+            <li><strong>fix</strong> problem with the function to generate pagination</li>
             <li><strong>fix</strong> various typos or other wording issues</li>
             <li><strong>fix</strong> wrong names for some of the core functions</li>
         </ul>

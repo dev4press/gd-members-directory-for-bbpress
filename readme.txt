@@ -66,6 +66,7 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 = Version: 2.1 / april 5 2021 =
 * Edit: various updates to the plugin code
 * Edit: d4pLib 3.4.1
+* Fix: problem with the function to generate pagination
 * Fix: various typos or other wording issues
 * Fix: wrong names for some of the core functions
 

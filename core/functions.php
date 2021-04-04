@@ -15,33 +15,38 @@ function gdmed_use_pretty_urls() : bool {
 }
 
 function gdmed_paginate_links( $args = array() ) : string {
+	$render = '';
+
 	if ( function_exists( 'bbp_paginate_links' ) ) {
-		return bbp_paginate_links( $args );
+		$render = bbp_paginate_links( $args );
+	} else {
+
+		$add_args = empty( $args['add_args'] ) && bbp_get_view_all()
+			? array( 'view' => 'all' )
+			: false;
+
+		$r = bbp_parse_args( $args, array(
+			'base'               => '',
+			'total'              => 1,
+			'current'            => bbp_get_paged(),
+			'prev_next'          => true,
+			'prev_text'          => is_rtl() ? '&rarr;' : '&larr;',
+			'next_text'          => is_rtl() ? '&larr;' : '&rarr;',
+			'mid_size'           => 1,
+			'end_size'           => 3,
+			'add_args'           => $add_args,
+			'show_all'           => false,
+			'type'               => 'plain',
+			'format'             => '',
+			'add_fragment'       => '',
+			'before_page_number' => '',
+			'after_page_number'  => ''
+		), 'paginate_links' );
+
+		$render = gdmed_make_first_page_canonical( paginate_links( $r ) );
 	}
 
-	$add_args = empty( $args['add_args'] ) && bbp_get_view_all()
-		? array( 'view' => 'all' )
-		: false;
-
-	$r = bbp_parse_args( $args, array(
-		'base'               => '',
-		'total'              => 1,
-		'current'            => bbp_get_paged(),
-		'prev_next'          => true,
-		'prev_text'          => is_rtl() ? '&rarr;' : '&larr;',
-		'next_text'          => is_rtl() ? '&larr;' : '&rarr;',
-		'mid_size'           => 1,
-		'end_size'           => 3,
-		'add_args'           => $add_args,
-		'show_all'           => false,
-		'type'               => 'plain',
-		'format'             => '',
-		'add_fragment'       => '',
-		'before_page_number' => '',
-		'after_page_number'  => ''
-	), 'paginate_links' );
-
-	return gdmed_make_first_page_canonical( paginate_links( $r ) );
+	return $render ? (string) $render : '';
 }
 
 function gdmed_make_first_page_canonical( $pagination_links = '' ) {
