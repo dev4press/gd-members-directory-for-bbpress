@@ -63,6 +63,12 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.1 / april 5 2021 =
+* Edit: various updates to the plugin code
+* Edit: d4pLib 3.4.1
+* Fix: various typos or other wording issues
+* Fix: wrong names for some of the core functions
+
 = Version: 2.0.1 / february 15 2021 =
 * Edit: d4pLib 3.4
 
@@ -92,6 +98,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.1 =
+Minor updates and improvements
+
 = 2.0 =
 Mostly rewritten with autoloader and namespaces.
 

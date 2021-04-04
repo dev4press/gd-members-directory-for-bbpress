@@ -1,10 +1,10 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php _e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
-        <h4>Version: 2.1 / march 29 2021</h4>
+        <h4>Version: 2.1 / april 5 2021</h4>
         <ul>
             <li><strong>edit</strong> various updates to the plugin code</li>
-            <li><strong>edit</strong> d4pLib 3.5</li>
+            <li><strong>edit</strong> d4pLib 3.4.1</li>
             <li><strong>fix</strong> various typos or other wording issues</li>
             <li><strong>fix</strong> wrong names for some of the core functions</li>
         </ul>
