@@ -1,6 +1,11 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php _e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
+        <h4>Version: 2.1.1 / july 6 2021</h4>
+        <ul>
+            <li><strong>fix</strong> showing all members (with no posts) not working</li>
+        </ul>
+
         <h4>Version: 2.1 / april 5 2021</h4>
         <ul>
             <li><strong>edit</strong> various updates to the plugin code</li>

@@ -11,11 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Information extends BaseInformation {
 	public $code = 'gd-members-directory-for-bbpress';
 
-	public $version = '2.1';
-	public $build = 112;
+	public $version = '2.1.1';
+	public $build = 115;
 	public $edition = 'pro';
 	public $status = 'stable';
-	public $updated = '2021.04.05';
+	public $updated = '2021.07.06';
 	public $released = '2019.10.14';
 
 	public $is_bbpress_plugin = true;

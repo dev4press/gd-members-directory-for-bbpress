@@ -142,7 +142,7 @@ class Expand {
 			$r['current_text'] = gdmed()->get_breadcrumb_title();
 		}
 
-		return (array)$r;
+		return (array) $r;
 	}
 
 	public function template_include_theme_compat( $template ) : string {
@@ -176,7 +176,7 @@ class Expand {
 		$stack[] = GDMED_PATH . 'templates/default/bbpress';
 		$stack[] = GDMED_PATH . 'templates/default';
 
-		return (array)$stack;
+		return (array) $stack;
 	}
 
 	public function default_styles( $styles ) : array {
@@ -188,7 +188,7 @@ class Expand {
 			'dependencies' => array()
 		);
 
-		return (array)$styles;
+		return (array) $styles;
 	}
 
 	public function enqueue_style() {

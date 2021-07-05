@@ -122,21 +122,23 @@ class Query {
 			$d['role__in'] = $args['members_roles_available'];
 		}
 
-		$d['meta_query'] = array(
-			'relation' => 'OR',
-			array(
-				'key'     => gdmed_db()->prefix() . '_bbp_topic_count',
-				'value'   => 0,
-				'type'    => 'numeric',
-				'compare' => '>'
-			),
-			array(
-				'key'     => gdmed_db()->prefix() . '_bbp_reply_count',
-				'value'   => 0,
-				'type'    => 'numeric',
-				'compare' => '>'
-			)
-		);
+		if ( $args['members_with_posts_only'] ) {
+			$d['meta_query'] = array(
+				'relation' => 'OR',
+				array(
+					'key'     => gdmed_db()->prefix() . '_bbp_topic_count',
+					'value'   => 0,
+					'type'    => 'numeric',
+					'compare' => '>'
+				),
+				array(
+					'key'     => gdmed_db()->prefix() . '_bbp_reply_count',
+					'value'   => 0,
+					'type'    => 'numeric',
+					'compare' => '>'
+				)
+			);
+		}
 
 		switch ( $args['orderby'] ) {
 			default:
