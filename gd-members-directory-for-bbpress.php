@@ -7,8 +7,8 @@ Description:       Easy to use plugin for adding forum members directory page in
 Author:            Milan Petrovic
 Author URI:        https://www.dev4press.com/
 Text Domain:       gd-members-directory-for-bbpress
-Version:           2.1.1
-Requires at least: 5.0
+Version:           2.1.2
+Requires at least: 5.1
 Tested up to:      5.8
 Requires PHP:      7.0
 License:           GPLv3 or later
