@@ -12,7 +12,7 @@ class Information extends BaseInformation {
 	public $code = 'gd-members-directory-for-bbpress';
 
 	public $version = '2.1.2';
-	public $build = 117;
+	public $build = 120;
 	public $edition = 'pro';
 	public $status = 'stable';
 	public $updated = '2021.07.26';

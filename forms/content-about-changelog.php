@@ -4,7 +4,8 @@
         <h4>Version: 2.1.2 / july 26 2021</h4>
         <ul>
             <li><strong>new</strong> tested with WordPress 5.8</li>
-            <li><strong>edit</strong> d4pLib 3.4.2</li>
+            <li><strong>edit</strong> d4pLib 3.4.3</li>
+            <li><strong>fix</strong> several issues with WordPress 5.8 Block Widgets</li>
         </ul>
 
         <h4>Version: 2.1.1 / july 6 2021</h4>
