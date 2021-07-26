@@ -63,9 +63,10 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
-= Version: 2.1.1 / july 6 2021 =
+= Version: 2.1.2 / july 26 2021 =
 * New: tested with WordPress 5.8
-* Fix: d4pLib 3.4.2
+* Fix: d4pLib 3.4.3
+* Fix: several issues with WordPress 5.8 Block Widgets
 
 = Version: 2.1.1 / july 6 2021 =
 * Fix: showing all members (with no posts) not working
