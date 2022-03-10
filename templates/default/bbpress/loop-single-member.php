@@ -7,7 +7,7 @@
 		<?php do_action( 'bbp_theme_before_member_avatar' ); ?>
 
 		<?php if ( gdmed_settings()->get( 'display_avatar_in_list' ) ) { ?>
-            <a class="bbp-member-avatar" href="<?php bbp_user_profile_url( $member->ID ); ?>" title="<?php echo $member->display_name ?>">
+            <a class="bbp-member-avatar" href="<?php bbp_user_profile_url( $member->ID ); ?>" title="<?php echo esc_attr( $member->display_name ); ?>">
 				<?php echo get_avatar( $member->ID, 36 ); ?>
             </a>
 		<?php } ?>
@@ -15,7 +15,7 @@
 		<?php do_action( 'bbp_theme_before_member_name' ); ?>
 
         <a class="bbp-member-name" href="<?php bbp_user_profile_url( $member->ID ); ?>">
-			<?php echo $member->display_name ?>
+			<?php echo esc_html( $member->display_name ); ?>
         </a>
 
 		<?php do_action( 'bbp_theme_after_member_name' ); ?>

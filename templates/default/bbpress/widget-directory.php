@@ -19,11 +19,11 @@
 			?>
 
             <div class="gdmed-directory-member">
-                <a class="bbp-member-avatar" href="<?php bbp_user_profile_url( $user->ID ); ?>" title="<?php echo $user->display_name ?>">
+                <a class="bbp-member-avatar" href="<?php bbp_user_profile_url( $user->ID ); ?>" title="<?php echo esc_attr( $user->display_name ); ?>">
 					<?php echo get_avatar( $user->ID, 36 ); ?>
                 </a>
                 <a class="bbp-member-name" href="<?php bbp_user_profile_url( $user->ID ); ?>">
-					<?php echo $user->display_name ?>
+					<?php echo esc_html( $user->display_name ); ?>
                 </a>
                 <br/><?php echo $user->get_meta_info_role(); ?>
                 <p class="bbp-member-meta">

@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\Core\UI\Admin\Panel as BasePanel;
+use Dev4Press\v37\Core\UI\Admin\Panel as BasePanel;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

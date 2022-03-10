@@ -18,7 +18,7 @@
 
 		<?php } ?>
 
-        <label for="gdmed-filter-search" class="screen-reader-text"><?php _e( "Search members", "gd-members-directory-for-bbpress" ); ?></label>
+        <label for="gdmed-filter-search" class="screen-reader-text"><?php esc_html_e( "Search members", "gd-members-directory-for-bbpress" ); ?></label>
         <input id="gdmed-filter-search" name="search" value="<?php echo esc_attr( gdmed_members_query()->get_filter_value( 'search' ) ); ?>"/>
 
         <button type="submit"><?php _e( "Filter", "gd-members-directory-for-bbpress" ); ?></button>
@@ -27,7 +27,7 @@
 
     <div class="bbp-members-sort">
 
-        <label for="gdmed-sort-orderby" class="screen-reader-text"><?php _e( "Sort by", "gd-members-directory-for-bbpress" ); ?></label>
+        <label for="gdmed-sort-orderby" class="screen-reader-text"><?php esc_html_e( "Sort by", "gd-members-directory-for-bbpress" ); ?></label>
 		<?php gdmed_form_select( gdmed()->get_sort_orderby_values(), gdmed_members_query()->get_filter_value( 'orderby' ), array(
 			'id'   => 'gdmed-sort-orderby',
 			'name' => 'orderby'

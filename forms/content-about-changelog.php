@@ -1,6 +1,18 @@
 <div class="d4p-info-block d4p-info-block-changelog">
-    <h3><?php _e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
+    <h3><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
+        <h4>Version: 2.2 / march 11 2022</h4>
+        <ul>
+            <li><strong>new</strong> tested with WordPress 5.9</li>
+            <li><strong>new</strong> improved admin side interface through updated shared library</li>
+            <li><strong>edit</strong> few more improvements to core PHP code</li>
+            <li><strong>edit</strong> many improvements to sanitation and escaping on echo</li>
+            <li><strong>edit</strong> more string translations using escape functions</li>
+            <li><strong>edit</strong> updated plugin requirements</li>
+            <li><strong>edit</strong> d4pLib 3.7.4</li>
+            <li><strong>fix</strong> wrong function for getting topic post date</li>
+        </ul>
+
         <h4>Version: 2.1.2 / july 26 2021</h4>
         <ul>
             <li><strong>new</strong> tested with WordPress 5.8</li>
@@ -40,7 +52,7 @@
 </div>
 
 <div class="d4p-info-block d4p-info-block-changelog">
-    <h3><?php _e( "Version", "gd-members-directory-for-bbpress" ); ?> 1</h3>
+    <h3><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> 1</h3>
     <div class="d4p-group-inner">
         <h4>Version: 1.1 / november 18 2019</h4>
         <ul>

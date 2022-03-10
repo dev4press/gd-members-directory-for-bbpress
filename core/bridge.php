@@ -11,47 +11,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/**
- * @return \Dev4Press\Core\Plugins\Core|\Dev4Press\Plugin\GDMED\Basic\Plugin
- */
-function gdmed() {
+function gdmed() : Plugin {
 	return Plugin::instance();
 }
 
-/**
- * @return \Dev4Press\Core\Plugins\Settings|\Dev4Press\Plugin\GDMED\Basic\Settings
- */
-function gdmed_settings() {
+function gdmed_settings() : Settings {
 	return Settings::instance();
 }
 
-/**
- * @return \Dev4Press\Core\Plugins\DBLite|\Dev4Press\Plugin\GDMED\Directory\DB
- */
-function gdmed_db() {
+function gdmed_db() : DB {
 	return DB::instance();
 }
 
-/**
- * @return \Dev4Press\Core\Admin\Menu\Plugin|\Dev4Press\Core\Admin\Plugin|\Dev4Press\Core\Admin\Submenu\Plugin|\Dev4Press\Plugin\GDMED\Admin\Plugin
- */
-function gdmed_admin() {
+function gdmed_admin() : AdminPlugin {
 	return AdminPlugin::instance();
 }
 
-/**
- * @return \Dev4Press\Plugin\GDMED\Directory\Expand
- */
 function gdmed_expand() : Expand {
 	return Expand::instance();
 }
 
-/**
- * @param array $args
- * @param bool  $parse_request
- *
- * @return \Dev4Press\Plugin\GDMED\Directory\Query
- */
-function gdmed_members_query( $args = array(), $parse_request = true ) : Query {
+function gdmed_members_query( array $args = array(), bool $parse_request = true ) : Query {
 	return Query::instance( $args, $parse_request );
 }

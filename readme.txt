@@ -2,10 +2,10 @@
 Contributors: GDragoN
 Donate link: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
-Stable tag: 2.1.2
-Requires at least: 5.1
-Tested up to: 5.8
-Requires PHP: 7.0
+Stable tag: 2.2
+Requires at least: 5.3
+Tested up to: 5.9
+Requires PHP: 7.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,11 +46,11 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 
 == Installation ==
 = General Requirements =
-* PHP: 7.0 or newer
+* PHP: 7.2 or newer
 * bbPress 2.6 or newer
 
 = WordPress Requirements =
-* WordPress: 5.0 or newer
+* WordPress: 5.3 or newer
 
 = Basic Installation =
 * Plugin folder in the WordPress plugins folder should be `gd-members-directory-for-bbpress`.
@@ -63,9 +63,19 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.2 / march 11 2022 =
+* New: tested with WordPress 5.9
+* New: improved admin side interface through updated shared library
+* Edit: few more improvements to core PHP code
+* Edit: many improvements to sanitation and escaping on echo
+* Edit: more string translations using escape functions
+* Edit: updated plugin requirements
+* Edit: d4pLib 3.7.4
+* Fix: wrong function for getting topic post date
+
 = Version: 2.1.2 / july 26 2021 =
 * New: tested with WordPress 5.8
-* Fix: d4pLib 3.4.3
+* Edit: d4pLib 3.4.3
 * Fix: several issues with WordPress 5.8 Block Widgets
 
 = Version: 2.1.1 / july 6 2021 =
@@ -107,6 +117,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.2 =
+Various updates and improvements
+
 = 2.1 =
 Minor updates and improvements
 

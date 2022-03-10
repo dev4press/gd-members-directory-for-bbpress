@@ -2,6 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
+use Dev4Press\v37\Core\Quick\Sanitize;
 use stdClass;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -40,13 +41,7 @@ class Query {
 		$this->_run_query();
 	}
 
-	/**
-	 * @param array $args
-	 * @param bool  $parse_request
-	 *
-	 * @return Query
-	 */
-	public static function instance( $args = array(), $parse_request = true ) : Query {
+	public static function instance( array $args = array(), bool $parse_request = true ) : Query {
 		static $_members_query = false;
 
 		if ( $_members_query === false ) {
@@ -71,7 +66,7 @@ class Query {
 		if ( $parse_request ) {
 			if ( isset( $_GET['orderby'] ) && ! empty( $_GET['orderby'] ) ) {
 				$valid = array_keys( gdmed()->get_sort_orderby_values() );
-				$value = d4p_sanitize_slug( $_GET['orderby'] );
+				$value = Sanitize::slug( $_GET['orderby'] );
 
 				if ( in_array( $value, $valid ) ) {
 					$default['orderby'] = $value;
@@ -80,7 +75,7 @@ class Query {
 
 			if ( isset( $_GET['order'] ) && ! empty( $_GET['order'] ) ) {
 				$valid = array_keys( gdmed()->get_sort_order_values() );
-				$value = strtoupper( d4p_sanitize_slug( $_GET['order'] ) );
+				$value = strtoupper( Sanitize::slug( $_GET['order'] ) );
 
 				if ( in_array( $value, $valid ) ) {
 					$default['order'] = $value;
@@ -93,7 +88,7 @@ class Query {
 
 			if ( isset( $_GET['role'] ) && ! empty( $_GET['role'] ) ) {
 				$valid = array_keys( gdmed()->get_filter_roles_values() );
-				$value = d4p_sanitize_slug( $_GET['role'] );
+				$value = Sanitize::slug( $_GET['role'] );
 
 				if ( in_array( $value, $valid ) ) {
 					$default['role'] = $value;
@@ -255,11 +250,11 @@ class Query {
 		}
 	}
 
-	public function query() {
+	public function query() : ?MemberQuery {
 		return $this->_query;
 	}
 
-	public function pager() {
+	public function pager() : ?stdClass {
 		return $this->_pager;
 	}
 
@@ -275,7 +270,7 @@ class Query {
 		$total_int = $this->_pager->total;
 		$ppp_int   = $this->_pager->per_page;
 		$start_int = absint( ( $this->_pager->current - 1 ) * $ppp_int ) + 1;
-		$to_int    = absint( $start_int + ( $ppp_int - 1 ) > $total_int ? $total_int : $start_int + ( $ppp_int - 1 ) );
+		$to_int    = absint( min( $start_int + ( $ppp_int - 1 ), $total_int ) );
 
 		$total_num = bbp_number_format( $total_int );
 		$from_num  = bbp_number_format( $start_int );

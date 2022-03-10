@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\Core\Admin\Submenu\Plugin as BasePlugin;
+use Dev4Press\v37\Core\Admin\Submenu\Plugin as BasePlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -14,11 +14,22 @@ class Plugin extends BasePlugin {
 	public $plugin_menu = 'GD Members Directory';
 	public $plugin_title = 'GD Members Directory for bbPress';
 
+	public $auto_mod_interface_colors = true;
 	public $has_widgets = true;
 
 	public function constructor() {
 		$this->url  = GDMED_URL;
 		$this->path = GDMED_PATH;
+	}
+
+	public static function instance() : Plugin {
+		static $instance = false;
+
+		if ( ! $instance ) {
+			$instance = new Plugin();
+		}
+
+		return $instance;
 	}
 
 	public function after_setup_theme() {
@@ -75,7 +86,7 @@ class Plugin extends BasePlugin {
 		return gdmed_settings();
 	}
 
-	public function settings_definitions() {
+	public function settings_definitions() : Settings {
 		return Settings::instance();
 	}
 }

@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\Core\Plugins\Settings as BaseSettings;
+use Dev4Press\v37\Core\Plugins\Settings as BaseSettings;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -36,5 +36,15 @@ class Settings extends BaseSettings {
 		$this->info = new Information();
 
 		add_action( 'gdmed_load_settings', array( $this, 'init' ), 2 );
+	}
+
+	public static function instance() : Settings {
+		static $instance = false;
+
+		if ( ! $instance ) {
+			$instance = new Settings();
+		}
+
+		return $instance;
 	}
 }

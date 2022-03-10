@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\Core\Plugins\Core;
+use Dev4Press\v37\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -18,6 +18,16 @@ class Plugin extends Core {
 		$this->url = GDMED_URL;
 
 		parent::__construct();
+	}
+
+	public static function instance() : Plugin {
+		static $instance = false;
+
+		if ( ! $instance ) {
+			$instance = new Plugin();
+		}
+
+		return $instance;
 	}
 
 	public function s() {
@@ -64,14 +74,14 @@ class Plugin extends Core {
 	}
 
 	public function get_sort_orderby_values() : array {
-		return array(
+		return apply_filters( 'gdmed_filter_orderby_list', array(
 			'name'          => __( "Name", "gd-members-directory-for-bbpress" ),
 			'last_activity' => __( "Last Activity", "gd-members-directory-for-bbpress" ),
 			'last_posted'   => __( "Last Posted", "gd-members-directory-for-bbpress" ),
 			'registered'    => __( "Registration", "gd-members-directory-for-bbpress" ),
 			'topics'        => __( "Topics Count", "gd-members-directory-for-bbpress" ),
 			'replies'       => __( "Replies Count", "gd-members-directory-for-bbpress" )
-		);
+		) );
 	}
 
 	public function get_sort_order_values() : array {

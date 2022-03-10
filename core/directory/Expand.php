@@ -2,6 +2,8 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
+use Dev4Press\v37\WordPress;
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -181,7 +183,7 @@ class Expand {
 
 	public function default_styles( $styles ) : array {
 		$rtl = is_rtl() ? '-rtl' : '';
-		$min = gdmed()->is_debug ? '' : '.min';
+		$min = WordPress::instance()->is_debug() ? '' : '.min';
 
 		$styles['gdmed-members-directory'] = array(
 			'file'         => 'css/members' . $rtl . $min . '.css',

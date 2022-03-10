@@ -14,10 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 class Member {
 	/** @var WP_User|null */
-	private $_user = null;
+	private $_user;
 
-	/** @param $user WP_User */
-	public function __construct( $user ) {
+	public function __construct( WP_User $user ) {
 		$this->_user = $user;
 	}
 
@@ -43,7 +42,7 @@ class Member {
 	}
 
 	public function get_meta_info_role() : string {
-		return '<span class="role ' . $this->role() . '">' . bbp_get_dynamic_role_name( $this->role() ) . '</span>';
+		return '<span class="role ' . esc_attr( $this->role() ) . '">' . bbp_get_dynamic_role_name( $this->role() ) . '</span>';
 	}
 
 	public function get_meta_info_registered() : string {
@@ -83,10 +82,10 @@ class Member {
 				$url   = get_permalink( $id );
 				$title = bbp_get_topic_title( $id );
 				$what  = _x( "Topic: %s on %s", "Latest post column, title and date", "gd-members-directory-for-bbpress" );
-				$date  = bbp_get_reply_post_date( $id );
+				$date  = bbp_get_topic_post_date( $id );
 			}
 
-			return sprintf( $what, '<a href="' . $url . '">' . $title . '</a>', $date );
+			return sprintf( $what, '<a href="' . esc_url( $url ) . '">' . $title . '</a>', $date );
 		} else {
 			return __( "No activity found", "gd-members-directory-for-bbpress" );
 		}

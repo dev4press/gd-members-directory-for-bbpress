@@ -2,8 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\Core\Plugins\Widget;
-use Dev4Press\Core\UI\Widgets;
+use Dev4Press\v37\Core\Plugins\Widget;
+use Dev4Press\v37\Core\Quick\Sanitize;
+use Dev4Press\v37\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -44,9 +45,9 @@ class Directory extends Widget {
 		$instance = parent::update( $new_instance, $old_instance );
 
 		$instance['limit']   = absint( $new_instance['limit'] );
-		$instance['orderby'] = d4p_sanitize_slug( $new_instance['orderby'] );
-		$instance['order']   = d4p_sanitize_slug( $new_instance['order'] );
-		$instance['role']    = d4p_sanitize_slug( $new_instance['role'] );
+		$instance['orderby'] = Sanitize::slug( $new_instance['orderby'] );
+		$instance['order']   = Sanitize::slug( $new_instance['order'] );
+		$instance['role']    = Sanitize::slug( $new_instance['role'] );
 
 		return $instance;
 	}
@@ -57,6 +58,7 @@ class Directory extends Widget {
 
 	public function store_instance( $instance ) {
 		$instance = wp_parse_args( (array) $instance, $this->get_defaults() );
+
 		gdmed()->store_widget_instance( $instance );
 	}
 }

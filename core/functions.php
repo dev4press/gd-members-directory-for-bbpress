@@ -154,7 +154,7 @@ function gdmed_get_user_roles() : array {
 	return $roles;
 }
 
-function gdmed_members_directory_url() : string {
+function gdmed_members_directory_url() {
 	echo esc_url( gdmed_get_members_directory_url() );
 }
 
