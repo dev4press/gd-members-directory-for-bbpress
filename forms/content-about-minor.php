@@ -1,18 +1,12 @@
 <div class="d4p-about-minor">
     <h3><?php esc_html_e( "Maintenance and Security Releases", "gd-members-directory-for-bbpress" ); ?></h3>
     <p>
+        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.3</span></strong> &minus;
+        Various updates and fixes.
+    </p>
+    <p>
         <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.2</span></strong> &minus;
         Various updates and fixes.
-    </p>
-    <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?>
-            <span>2.1.2</span></strong> &minus;
-        Various updates and fixes.
-    </p>
-    <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?>
-            <span>2.1.1</span></strong> &minus;
-        Bug fix.
     </p>
     <p>
         <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.1</span></strong> &minus;

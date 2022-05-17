@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v37\Core\Plugins\Information as BaseInformation;
+use Dev4Press\v38\Core\Plugins\Information as BaseInformation;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -11,11 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Information extends BaseInformation {
 	public $code = 'gd-members-directory-for-bbpress';
 
-	public $version = '2.2';
-	public $build = 130;
+	public $version = '2.3';
+	public $build = 140;
 	public $edition = 'free';
 	public $status = 'stable';
-	public $updated = '2022.03.11';
+	public $updated = '2022.05.17';
 	public $released = '2019.10.14';
 
 	public $is_bbpress_plugin = true;

@@ -1,6 +1,14 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
+        <h4>Version: 2.3 / may 17 2022</h4>
+        <ul>
+            <li><strong>new</strong> tested with WordPress 6.0</li>
+            <li><strong>edit</strong> few minor updates for the plugin interface</li>
+            <li><strong>edit</strong> d4pLib 3.8</li>
+            <li><strong>fix</strong> wrong class reference for one of the panels</li>
+        </ul>
+
         <h4>Version: 2.2 / march 11 2022</h4>
         <ul>
             <li><strong>new</strong> tested with WordPress 5.9</li>

@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v37\Core\Plugins\Core;
+use Dev4Press\v38\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

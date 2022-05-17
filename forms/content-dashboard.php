@@ -19,12 +19,10 @@
         <h3><?php esc_html_e( "Troubleshooting", "gd-members-directory-for-bbpress" ); ?></h3>
         <div class="d4p-group-inner">
             <p><?php esc_html_e( "The plugin should work after activation without any additional changes. But, there are few things to keep in mind.", "gd-members-directory-for-bbpress" ); ?></p>
-            <ul class="d4p-with-bullets d4p-full-width">
+            <ul class="d4p-with-bullets d4p-full-width" style="margin-bottom: 1em">
                 <li><?php esc_html_e( "If you make changes to the URL slug, make sure to clear the WordPress permalinks.", "gd-members-directory-for-bbpress" ); ?></li>
             </ul>
-        </div>
 
-        <div class="d4p-group-footer">
             <a href="options-general.php?page=gd-members-directory-for-bbpress&panel=tools&subpanel=updater" class="button-primary"><?php esc_html_e( "Plugin Recheck and Update", "gd-members-directory-for-bbpress" ); ?></a>
             <a href="options-permalink.php" class="button-secondary"><?php esc_html_e( "WordPress Permalinks", "gd-members-directory-for-bbpress" ); ?></a>
         </div>

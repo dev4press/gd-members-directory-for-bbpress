@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\v37\Core\Plugins\Widget;
-use Dev4Press\v37\Core\Quick\Sanitize;
-use Dev4Press\v37\Core\UI\Widgets;
+use Dev4Press\v38\Core\Plugins\Widget;
+use Dev4Press\v38\Core\Quick\Sanitize;
+use Dev4Press\v38\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

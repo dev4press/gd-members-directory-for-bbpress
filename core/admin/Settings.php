@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v37\Core\Options\Element as EL;
-use Dev4Press\v37\Core\Options\Settings as BaseSettings;
-use Dev4Press\v37\Core\Options\Type;
+use Dev4Press\v38\Core\Options\Element as EL;
+use Dev4Press\v38\Core\Options\Settings as BaseSettings;
+use Dev4Press\v38\Core\Options\Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
