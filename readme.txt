@@ -63,6 +63,15 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.4 / february 14 2023 =
+* New: updated plugin system requirements
+* New: various updates for the plugin interface
+* New: tested with WordPress 6.1
+* New: tested with PHP 8.0, 8.1 and 8.2
+* Edit: d4pLib 3.9.3
+* Fix: dashboard shows wrong Directory URL in some cases
+* Fix: function to determine Directory URL returns wrong value
+
 = Version: 2.3 / may 17 2022 =
 * New: tested with WordPress 6.0
 * Edit: few minor updates for the plugin interface
@@ -123,6 +132,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.4 =
+Various updates and improvements
+
 = 2.3 =
 Various updates and improvements
 
@@ -131,9 +143,6 @@ Various updates and improvements
 
 = 2.1 =
 Minor updates and improvements
-
-= 2.0 =
-Mostly rewritten with autoloader and namespaces.
 
 == Screenshots ==
 1. Members Directory page
