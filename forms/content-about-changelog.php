@@ -1,6 +1,17 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
+        <h4>Version: 2.4 / february 14 2023</h4>
+        <ul>
+            <li><strong>new</strong> updated plugin system requirements</li>
+            <li><strong>new</strong> various updates for the plugin interface</li>
+            <li><strong>new</strong> tested with WordPress 6.1</li>
+            <li><strong>new</strong> tested with PHP 8.0, 8.1 and 8.2</li>
+            <li><strong>edit</strong> d4pLib 3.9.3</li>
+            <li><strong>fix</strong> dashboard shows wrong Directory URL in some cases</li>
+            <li><strong>fix</strong> function to determine Directory URL returns wrong value</li>
+        </ul>
+
         <h4>Version: 2.3 / may 17 2022</h4>
         <ul>
             <li><strong>new</strong> tested with WordPress 6.0</li>
@@ -39,7 +50,7 @@
             <li><strong>edit</strong> d4pLib 3.4.1</li>
             <li><strong>fix</strong> problem with the function to generate pagination</li>
             <li><strong>fix</strong> various typos or other wording issues</li>
-            <li><strong>fix</strong> wrong names for some of the core functions</li>
+            <li><strong>fix</strong> wrong names for some core functions</li>
         </ul>
 
         <h4>Version: 2.0.1 / february 15 2021</h4>

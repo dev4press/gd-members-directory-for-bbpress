@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\v38\Core\Plugins\Widget;
-use Dev4Press\v38\Core\Quick\Sanitize;
-use Dev4Press\v38\Core\UI\Widgets;
+use Dev4Press\v39\Core\Plugins\Widget;
+use Dev4Press\v39\Core\Quick\Sanitize;
+use Dev4Press\v39\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -53,7 +53,7 @@ class Directory extends Widget {
 	}
 
 	public function the_render( $instance, $results = false ) {
-		include( bbp_locate_template( 'widget-directory.php', false ) );
+		include( bbp_locate_template( 'widget-directory.php' ) );
 	}
 
 	public function store_instance( $instance ) {

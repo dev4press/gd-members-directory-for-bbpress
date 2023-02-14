@@ -160,7 +160,7 @@ function gdmed_members_directory_url() {
 
 function gdmed_get_members_directory_url() : string {
 	if ( gdmed_use_pretty_urls() ) {
-		$url = gdmed_get_root_url() . bbp_get_user_slug();
+		$url = gdmed_get_root_url() . gdmed_get_members_slug();
 
 		$url = user_trailingslashit( $url );
 		$url = home_url( $url );
