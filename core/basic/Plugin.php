@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v39\Core\Plugins\Core;
+use Dev4Press\v42\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -20,18 +20,12 @@ class Plugin extends Core {
 		parent::__construct();
 	}
 
-	public static function instance() : Plugin {
-		static $instance = false;
-
-		if ( ! $instance ) {
-			$instance = new Plugin();
-		}
-
-		return $instance;
-	}
-
 	public function s() {
 		return gdmed_settings();
+	}
+
+	public function f() {
+		return null;
 	}
 
 	public function run() {
@@ -66,7 +60,7 @@ class Plugin extends Core {
 
 		foreach ( $dynamic_roles as $role => $obj ) {
 			if ( in_array( $role, $available ) ) {
-				$roles[ $role ] = $obj['name'];
+				$roles[ $role ] = $obj[ 'name' ];
 			}
 		}
 

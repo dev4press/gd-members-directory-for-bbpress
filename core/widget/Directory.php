@@ -2,16 +2,16 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\v39\Core\Plugins\Widget;
-use Dev4Press\v39\Core\Quick\Sanitize;
-use Dev4Press\v39\Core\UI\Widgets;
+use Dev4Press\v42\WordPress\Legacy\Widget;
+use Dev4Press\v42\Core\Quick\Sanitize;
+use Dev4Press\v42\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Directory extends Widget {
-	public $results_cachable = true;
+	public $results_cacheable = true;
 
 	public $widget_base = 'd4p_gdmed_directory';
 
@@ -44,10 +44,10 @@ class Directory extends Widget {
 	public function update( $new_instance, $old_instance ) : array {
 		$instance = parent::update( $new_instance, $old_instance );
 
-		$instance['limit']   = absint( $new_instance['limit'] );
-		$instance['orderby'] = Sanitize::slug( $new_instance['orderby'] );
-		$instance['order']   = Sanitize::slug( $new_instance['order'] );
-		$instance['role']    = Sanitize::slug( $new_instance['role'] );
+		$instance[ 'limit' ]   = absint( $new_instance[ 'limit' ] );
+		$instance[ 'orderby' ] = Sanitize::slug( $new_instance[ 'orderby' ] );
+		$instance[ 'order' ]   = Sanitize::slug( $new_instance[ 'order' ] );
+		$instance[ 'role' ]    = Sanitize::slug( $new_instance[ 'role' ] );
 
 		return $instance;
 	}

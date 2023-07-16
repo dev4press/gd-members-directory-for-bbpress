@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v39\WordPress;
+use Dev4Press\v42\WordPress;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -133,7 +133,7 @@ class Expand {
 
 	public function before_title_parse_args( $new_title ) {
 		if ( gdmed_is_members_directory() ) {
-			$new_title['text'] = gdmed()->get_page_title();
+			$new_title[ 'text' ] = gdmed()->get_page_title();
 		}
 
 		return $new_title;
@@ -141,7 +141,7 @@ class Expand {
 
 	public function after_get_breadcrumb_parse_args( $r ) : array {
 		if ( gdmed_is_members_directory() ) {
-			$r['current_text'] = gdmed()->get_breadcrumb_title();
+			$r[ 'current_text' ] = gdmed()->get_breadcrumb_title();
 		}
 
 		return (array) $r;
@@ -185,7 +185,7 @@ class Expand {
 		$rtl = is_rtl() ? '-rtl' : '';
 		$min = WordPress::instance()->is_debug() ? '' : '.min';
 
-		$styles['gdmed-members-directory'] = array(
+		$styles[ 'gdmed-members-directory' ] = array(
 			'file'         => 'css/members' . $rtl . $min . '.css',
 			'dependencies' => array()
 		);

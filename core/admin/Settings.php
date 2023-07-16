@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v39\Core\Options\Element as EL;
-use Dev4Press\v39\Core\Options\Settings as BaseSettings;
-use Dev4Press\v39\Core\Options\Type;
+use Dev4Press\v42\Core\Options\Element as EL;
+use Dev4Press\v42\Core\Options\Settings as BaseSettings;
+use Dev4Press\v42\Core\Options\Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -111,15 +111,5 @@ class Settings extends BaseSettings {
 				)
 			)
 		);
-	}
-
-	public static function instance() : Settings {
-		static $instance = false;
-
-		if ( ! $instance ) {
-			$instance = new Settings();
-		}
-
-		return $instance;
 	}
 }

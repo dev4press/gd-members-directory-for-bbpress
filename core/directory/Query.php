@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v39\Core\Quick\Sanitize;
+use Dev4Press\v42\Core\Quick\Sanitize;
 use stdClass;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -64,34 +64,34 @@ class Query {
 		);
 
 		if ( $parse_request ) {
-			if ( isset( $_GET['orderby'] ) && ! empty( $_GET['orderby'] ) ) {
+			if ( isset( $_GET[ 'orderby' ] ) && ! empty( $_GET[ 'orderby' ] ) ) {
 				$valid = array_keys( gdmed()->get_sort_orderby_values() );
-				$value = Sanitize::slug( $_GET['orderby'] );
+				$value = Sanitize::slug( $_GET[ 'orderby' ] );
 
 				if ( in_array( $value, $valid ) ) {
-					$default['orderby'] = $value;
+					$default[ 'orderby' ] = $value;
 				}
 			}
 
-			if ( isset( $_GET['order'] ) && ! empty( $_GET['order'] ) ) {
+			if ( isset( $_GET[ 'order' ] ) && ! empty( $_GET[ 'order' ] ) ) {
 				$valid = array_keys( gdmed()->get_sort_order_values() );
-				$value = strtoupper( Sanitize::slug( $_GET['order'] ) );
+				$value = strtoupper( Sanitize::slug( $_GET[ 'order' ] ) );
 
 				if ( in_array( $value, $valid ) ) {
-					$default['order'] = $value;
+					$default[ 'order' ] = $value;
 				}
 			}
 
-			if ( isset( $_GET['search'] ) && ! empty( $_GET['search'] ) ) {
-				$default['search'] = sanitize_title( $_GET['search'] );
+			if ( isset( $_GET[ 'search' ] ) && ! empty( $_GET[ 'search' ] ) ) {
+				$default[ 'search' ] = sanitize_title( $_GET[ 'search' ] );
 			}
 
-			if ( isset( $_GET['role'] ) && ! empty( $_GET['role'] ) ) {
+			if ( isset( $_GET[ 'role' ] ) && ! empty( $_GET[ 'role' ] ) ) {
 				$valid = array_keys( gdmed()->get_filter_roles_values() );
-				$value = Sanitize::slug( $_GET['role'] );
+				$value = Sanitize::slug( $_GET[ 'role' ] );
 
 				if ( in_array( $value, $valid ) ) {
-					$default['role'] = $value;
+					$default[ 'role' ] = $value;
 				}
 			}
 		}
@@ -103,22 +103,22 @@ class Query {
 		$d = array(
 			'fields' => 'all_with_meta',
 			'paged'  => bbp_get_paged(),
-			'number' => $args['members_per_page'],
-			'order'  => strtolower( $args['order'] ) == 'asc' ? 'ASC' : 'DESC'
+			'number' => $args[ 'members_per_page' ],
+			'order'  => strtolower( $args[ 'order' ] ) == 'asc' ? 'ASC' : 'DESC'
 		);
 
-		if ( ! empty( $args['search'] ) ) {
-			$d['search'] = '*' . $args['search'] . '*';
+		if ( ! empty( $args[ 'search' ] ) ) {
+			$d[ 'search' ] = '*' . $args[ 'search' ] . '*';
 		}
 
-		if ( ! empty( $args['role'] ) ) {
-			$d['role__in'] = $args['role'];
+		if ( ! empty( $args[ 'role' ] ) ) {
+			$d[ 'role__in' ] = $args[ 'role' ];
 		} else {
-			$d['role__in'] = $args['members_roles_available'];
+			$d[ 'role__in' ] = $args[ 'members_roles_available' ];
 		}
 
-		if ( $args['members_with_posts_only'] ) {
-			$d['meta_query'] = array(
+		if ( $args[ 'members_with_posts_only' ] ) {
+			$d[ 'meta_query' ] = array(
 				'relation' => 'OR',
 				array(
 					'key'     => gdmed_db()->prefix() . '_bbp_topic_count',
@@ -135,29 +135,29 @@ class Query {
 			);
 		}
 
-		switch ( $args['orderby'] ) {
+		switch ( $args[ 'orderby' ] ) {
 			default:
 			case 'last_activity':
-				$d['orderby']  = 'meta_value_num';
-				$d['meta_key'] = gdmed_db()->prefix() . 'bbp_last_activity';
+				$d[ 'orderby' ]  = 'meta_value_num';
+				$d[ 'meta_key' ] = gdmed_db()->prefix() . 'bbp_last_activity';
 				break;
 			case 'last_posted':
-				$d['orderby']  = 'meta_value_num';
-				$d['meta_key'] = gdmed_db()->prefix() . '_bbp_last_posted';
+				$d[ 'orderby' ]  = 'meta_value_num';
+				$d[ 'meta_key' ] = gdmed_db()->prefix() . '_bbp_last_posted';
 				break;
 			case 'topics':
-				$d['orderby']  = 'meta_value_num';
-				$d['meta_key'] = gdmed_db()->prefix() . '_bbp_topic_count';
+				$d[ 'orderby' ]  = 'meta_value_num';
+				$d[ 'meta_key' ] = gdmed_db()->prefix() . '_bbp_topic_count';
 				break;
 			case 'replies':
-				$d['orderby']  = 'meta_value_num';
-				$d['meta_key'] = gdmed_db()->prefix() . '_bbp_reply_count';
+				$d[ 'orderby' ]  = 'meta_value_num';
+				$d[ 'meta_key' ] = gdmed_db()->prefix() . '_bbp_reply_count';
 				break;
 			case 'name':
-				$d['orderby'] = 'display_name';
+				$d[ 'orderby' ] = 'display_name';
 				break;
 			case 'registered':
-				$d['orderby'] = 'registered';
+				$d[ 'orderby' ] = 'registered';
 				break;
 		}
 
@@ -168,8 +168,8 @@ class Query {
 		$this->_query = new MemberQuery( $this->_r );
 		$this->_pager = new stdClass();
 
-		if ( empty( $this->_query->get_results() ) && $this->_query->get_total() > 0 && $this->_r['paged'] > 1 ) {
-			$this->_r['paged'] = 1;
+		if ( empty( $this->_query->get_results() ) && $this->_query->get_total() > 0 && $this->_r[ 'paged' ] > 1 ) {
+			$this->_r[ 'paged' ] = 1;
 
 			$this->_query = new MemberQuery( $this->_r );
 		}
@@ -195,8 +195,8 @@ class Query {
 		$this->current_member = - 1;
 		$this->in_the_loop    = false;
 
-		$this->_pager->per_page = $this->_r['number'];
-		$this->_pager->current  = $this->_r['paged'];
+		$this->_pager->per_page = $this->_r[ 'number' ];
+		$this->_pager->current  = $this->_r[ 'paged' ];
 		$this->_pager->count    = $this->members_count;
 		$this->_pager->total    = $this->_query->get_total();
 
@@ -246,7 +246,7 @@ class Query {
 		$this->current_member = - 1;
 
 		if ( $this->members_count > 0 ) {
-			$this->_member = $this->members[0];
+			$this->_member = $this->members[ 0 ];
 		}
 	}
 

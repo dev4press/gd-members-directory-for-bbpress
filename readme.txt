@@ -1,10 +1,10 @@
 === GD Members Directory for bbPress ===
 Contributors: GDragoN
-Donate link: https://plugins.dev4press.com/gd-members-directory-for-bbpress/
+Donate link: https://buymeacoffee.com/millan
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
-Stable tag: 2.4
+Stable tag: 2.5
 Requires at least: 5.5
-Tested up to: 6.1
+Tested up to: 6.3
 Requires PHP: 7.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -28,13 +28,13 @@ Plugin default templates and styling are based on the default bbPress theme pack
 https://www.youtube.com/watch?v=IoU_s5-cBfU
 
 = Home and GitHub =
-* Learn more about the plugin: [GD Members Directory for bbPress Website](https://plugins.dev4press.com/gd-members-directory-for-bbpress/)
-* Contribute to plugin development: [GD Members Directory for bbPress on GitHub](https://github.com/dev4press/gd-members-directory-for-bbpress)
+* Learn more: [GD Members Directory for bbPress](https://plugins.dev4press.com/gd-members-directory-for-bbpress/) Website
+* Contribute: [GD Members Directory for bbPress](https://github.com/dev4press/gd-members-directory-for-bbpress) on GitHub
 
 = Documentation and Support =
 To get help with the plugin, you can use WordPress.org support forums, or you can use Dev4Press.com support forums.
 
-* Plugin Documentation: [GD Members Directory for bbPress Website](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
+* Documentation: [GD Members Directory for bbPress](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
 * Support Forum: [Dev4Press Support](https://support.dev4press.com/forums/forum/plugins/gd-members-directory-for-bbpress/)
 
 = More free dev4Press.com plugins for bbPress =
@@ -46,11 +46,11 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 
 == Installation ==
 = General Requirements =
-* PHP: 7.2 or newer
+* PHP: 7.3 or newer
 * bbPress 2.6 or newer
 
 = WordPress Requirements =
-* WordPress: 5.3 or newer
+* WordPress: 5.5 or newer
 
 = Basic Installation =
 * Plugin folder in the WordPress plugins folder should be `gd-members-directory-for-bbpress`.
@@ -63,6 +63,10 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.5 / july 16 2023 =
+* New: tested with WordPress 6.2 and 6.3
+* Edit: Dev4Press Library 4.2
+
 = Version: 2.4 / february 14 2023 =
 * New: updated plugin system requirements
 * New: various updates for the plugin interface
@@ -132,6 +136,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.5 =
+Various updates and improvements
+
 = 2.4 =
 Various updates and improvements
 

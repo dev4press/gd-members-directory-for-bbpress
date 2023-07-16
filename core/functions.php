@@ -21,7 +21,7 @@ function gdmed_paginate_links( $args = array() ) : string {
 		$render = bbp_paginate_links( $args );
 	} else {
 
-		$add_args = empty( $args['add_args'] ) && bbp_get_view_all()
+		$add_args = empty( $args[ 'add_args' ] ) && bbp_get_view_all()
 			? array( 'view' => 'all' )
 			: false;
 
@@ -148,7 +148,7 @@ function gdmed_get_user_roles() : array {
 	$dynamic_roles = bbp_get_dynamic_roles();
 
 	foreach ( $dynamic_roles as $role => $obj ) {
-		$roles[ $role ] = $obj['name'];
+		$roles[ $role ] = $obj[ 'name' ];
 	}
 
 	return $roles;
