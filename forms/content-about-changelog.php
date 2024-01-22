@@ -1,6 +1,11 @@
 <div class="d4p-info-block d4p-info-block-changelog">
     <h3><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> 2</h3>
     <div>
+        <h4>Version: 2.6 / February 16 2024</h4>
+        <ul>
+            <li><strong>edit</strong> Dev4Press Library 4.7</li>
+        </ul>
+
         <h4>Version: 2.5 / July 16 2023</h4>
         <ul>
             <li><strong>new</strong> tested with WordPress 6.2 and 6.3</li>

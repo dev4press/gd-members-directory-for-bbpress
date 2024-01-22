@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v42\Core\Quick\Sanitize;
+use Dev4Press\v47\Core\Quick\Sanitize;
 use stdClass;
 
 if ( ! defined( 'ABSPATH' ) ) {

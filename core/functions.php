@@ -121,7 +121,7 @@ function gdmed_get_members_pagination_base() : string {
 
 		$base = trailingslashit( $base ) . user_trailingslashit( bbp_get_paged_slug() . '/%#%/' );
 	} else {
-		$base = add_query_arg( 'paged', '%#%' );
+		$base = add_query_arg( bbp_get_paged_rewrite_id(), '%#%' );
 	}
 
 	return apply_filters( 'gdmed_get_members_pagination_base', $base );

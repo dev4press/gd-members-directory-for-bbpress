@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\v42\WordPress\Legacy\Widget;
-use Dev4Press\v42\Core\Quick\Sanitize;
-use Dev4Press\v42\Core\UI\Widgets;
+use Dev4Press\v47\WordPress\Legacy\Widget;
+use Dev4Press\v47\Core\Quick\Sanitize;
+use Dev4Press\v47\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

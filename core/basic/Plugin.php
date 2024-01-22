@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v42\Core\Plugins\Core;
+use Dev4Press\v47\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -16,6 +16,7 @@ class Plugin extends Core {
 
 	public function __construct() {
 		$this->url = GDMED_URL;
+		$this->path = GDMED_PATH;
 
 		parent::__construct();
 	}
@@ -25,6 +26,14 @@ class Plugin extends Core {
 	}
 
 	public function f() {
+		return null;
+	}
+
+	public function b() {
+		return null;
+	}
+
+	public function l() {
 		return null;
 	}
 

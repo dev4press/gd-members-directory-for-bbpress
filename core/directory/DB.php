@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v42\Core\Plugins\DBLite;
+use Dev4Press\v47\Core\Plugins\DBLite;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

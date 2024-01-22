@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v42\Core\Admin\Submenu\Plugin as BasePlugin;
+use Dev4Press\v47\Core\Admin\Submenu\Plugin as BasePlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -83,5 +83,9 @@ class Plugin extends BasePlugin {
 
 	public function settings_definitions() : Settings {
 		return Settings::instance();
+	}
+
+	public function wizard() {
+		return null;
 	}
 }

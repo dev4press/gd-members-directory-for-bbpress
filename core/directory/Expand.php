@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v42\WordPress;
+use Dev4Press\v47\WordPress;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

@@ -1,6 +1,6 @@
 <?php
 
-use Dev4Press\v42\Core\Quick\WPR;
+use Dev4Press\v47\Core\Quick\WPR;
 
 ?>
 <div class="d4p-install-block">

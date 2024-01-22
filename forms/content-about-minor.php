@@ -1,23 +1,11 @@
 <div class="d4p-about-minor">
     <h3><?php esc_html_e( "Maintenance and Security Releases", "gd-members-directory-for-bbpress" ); ?></h3>
     <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.5</span></strong> &minus;
-        Updated shared library.
-    </p>
-    <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.4</span></strong> &minus;
+        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.4 / 2.5 / 2.6</span></strong> &minus;
         Updated shared library. Various updates and fixes.
     </p>
     <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.3</span></strong> &minus;
-        Various updates and fixes.
-    </p>
-    <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.2</span></strong> &minus;
-        Various updates and fixes.
-    </p>
-    <p>
-        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.1</span></strong> &minus;
+        <strong><?php esc_html_e( "Version", "gd-members-directory-for-bbpress" ); ?> <span>2.1 / 2.2 / 2.3</span></strong> &minus;
         Various updates and fixes.
     </p>
     <p>
