@@ -15,7 +15,7 @@ class Plugin extends Core {
 	public $theme_package = 'default';
 
 	public function __construct() {
-		$this->url = GDMED_URL;
+		$this->url  = GDMED_URL;
 		$this->path = GDMED_PATH;
 
 		parent::__construct();
@@ -64,12 +64,12 @@ class Plugin extends Core {
 		$dynamic_roles = bbp_get_dynamic_roles();
 
 		$roles = array(
-			'' => __( "All Roles", "gd-members-directory-for-bbpress" )
+			'' => __( 'All Roles', 'gd-members-directory-for-bbpress' ),
 		);
 
 		foreach ( $dynamic_roles as $role => $obj ) {
 			if ( in_array( $role, $available ) ) {
-				$roles[ $role ] = $obj[ 'name' ];
+				$roles[ $role ] = $obj['name'];
 			}
 		}
 
@@ -78,31 +78,31 @@ class Plugin extends Core {
 
 	public function get_sort_orderby_values() : array {
 		return apply_filters( 'gdmed_filter_orderby_list', array(
-			'name'          => __( "Name", "gd-members-directory-for-bbpress" ),
-			'last_activity' => __( "Last Activity", "gd-members-directory-for-bbpress" ),
-			'last_posted'   => __( "Last Posted", "gd-members-directory-for-bbpress" ),
-			'registered'    => __( "Registration", "gd-members-directory-for-bbpress" ),
-			'topics'        => __( "Topics Count", "gd-members-directory-for-bbpress" ),
-			'replies'       => __( "Replies Count", "gd-members-directory-for-bbpress" )
+			'name'          => __( 'Name', 'gd-members-directory-for-bbpress' ),
+			'last_activity' => __( 'Last Activity', 'gd-members-directory-for-bbpress' ),
+			'last_posted'   => __( 'Last Posted', 'gd-members-directory-for-bbpress' ),
+			'registered'    => __( 'Registration', 'gd-members-directory-for-bbpress' ),
+			'topics'        => __( 'Topics Count', 'gd-members-directory-for-bbpress' ),
+			'replies'       => __( 'Replies Count', 'gd-members-directory-for-bbpress' ),
 		) );
 	}
 
 	public function get_sort_order_values() : array {
 		return array(
-			'DESC' => __( "Descending", "gd-members-directory-for-bbpress" ),
-			'ASC'  => __( "Ascending", "gd-members-directory-for-bbpress" )
+			'DESC' => __( 'Descending', 'gd-members-directory-for-bbpress' ),
+			'ASC'  => __( 'Ascending', 'gd-members-directory-for-bbpress' ),
 		);
 	}
 
 	public function get_page_title() : string {
-		return apply_filters( 'gdmed_get_page_title', __( "Members Directory", "gd-members-directory-for-bbpress" ) );
+		return apply_filters( 'gdmed_get_page_title', __( 'Members Directory', 'gd-members-directory-for-bbpress' ) );
 	}
 
 	public function get_breadcrumb_title() : string {
-		return apply_filters( 'gdmed_get_breadcrumb_title', __( "Members Directory", "gd-members-directory-for-bbpress" ) );
+		return apply_filters( 'gdmed_get_breadcrumb_title', __( 'Members Directory', 'gd-members-directory-for-bbpress' ) );
 	}
 
 	public function get_breadcrumb_for_user_title() : string {
-		return apply_filters( 'gdmed_get_breadcrumb_for_user_title', __( "Members", "gd-members-directory-for-bbpress" ) );
+		return apply_filters( 'gdmed_get_breadcrumb_for_user_title', __( 'Members', 'gd-members-directory-for-bbpress' ) );
 	}
 }

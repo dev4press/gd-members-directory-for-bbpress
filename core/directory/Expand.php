@@ -12,12 +12,12 @@ class Expand {
 	public function __construct() {
 		$wp_actions = array(
 			'parse_query' => 3,
-			'is_bbpress'  => 10
+			'is_bbpress'  => 10,
 		);
 
 		$bbp_actions = array(
 			'add_rewrite_tags'  => 6,
-			'add_rewrite_rules' => 4
+			'add_rewrite_rules' => 4,
 		);
 
 		$bbp_filters = array(
@@ -27,7 +27,7 @@ class Expand {
 			'after_get_breadcrumb_parse_args' => 10,
 			'template_include_theme_supports' => 10,
 			'template_include_theme_compat'   => 10,
-			'default_styles'                  => 10
+			'default_styles'                  => 10,
 		);
 
 		foreach ( $wp_actions as $class_action => $priority ) {
@@ -133,7 +133,7 @@ class Expand {
 
 	public function before_title_parse_args( $new_title ) {
 		if ( gdmed_is_members_directory() ) {
-			$new_title[ 'text' ] = gdmed()->get_page_title();
+			$new_title['text'] = gdmed()->get_page_title();
 		}
 
 		return $new_title;
@@ -141,7 +141,7 @@ class Expand {
 
 	public function after_get_breadcrumb_parse_args( $r ) : array {
 		if ( gdmed_is_members_directory() ) {
-			$r[ 'current_text' ] = gdmed()->get_breadcrumb_title();
+			$r['current_text'] = gdmed()->get_breadcrumb_title();
 		}
 
 		return (array) $r;
@@ -158,7 +158,7 @@ class Expand {
 				'post_type'      => '',
 				'post_status'    => bbp_get_public_status_id(),
 				'is_archive'     => true,
-				'comment_status' => 'closed'
+				'comment_status' => 'closed',
 			) );
 
 			bbp_remove_all_filters( 'the_content' );
@@ -185,9 +185,9 @@ class Expand {
 		$rtl = is_rtl() ? '-rtl' : '';
 		$min = WordPress::instance()->is_debug() ? '' : '.min';
 
-		$styles[ 'gdmed-members-directory' ] = array(
+		$styles['gdmed-members-directory'] = array(
 			'file'         => 'css/members' . $rtl . $min . '.css',
-			'dependencies' => array()
+			'dependencies' => array(),
 		);
 
 		return (array) $styles;

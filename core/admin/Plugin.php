@@ -26,42 +26,42 @@ class Plugin extends BasePlugin {
 	public function after_setup_theme() {
 		$this->setup_items = array(
 			'install' => array(
-				'title' => __( "Install", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'Install', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-traffic',
 				'type'  => 'setup',
-				'info'  => __( "Before you continue, make sure plugin installation was successful.", "gd-members-directory-for-bbpress" ),
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Install'
+				'info'  => __( 'Before you continue, make sure plugin installation was successful.', 'gd-members-directory-for-bbpress' ),
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Install',
 			),
 			'update'  => array(
-				'title' => __( "Update", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'Update', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-traffic',
 				'type'  => 'setup',
-				'info'  => __( "Before you continue, make sure plugin was successfully updated.", "gd-members-directory-for-bbpress" ),
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Update'
-			)
+				'info'  => __( 'Before you continue, make sure plugin was successfully updated.', 'gd-members-directory-for-bbpress' ),
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Update',
+			),
 		);
 
 		$this->menu_items = array(
 			'dashboard' => array(
-				'title' => __( "Dashboard", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'Dashboard', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-home',
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Dashboard'
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Dashboard',
 			),
 			'about'     => array(
-				'title' => __( "About", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'About', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-info',
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\About'
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\About',
 			),
 			'settings'  => array(
-				'title' => __( "Settings", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'Settings', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-cog',
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Settings'
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Settings',
 			),
 			'tools'     => array(
-				'title' => __( "Tools", "gd-members-directory-for-bbpress" ),
+				'title' => __( 'Tools', 'gd-members-directory-for-bbpress' ),
 				'icon'  => 'ui-wrench',
-				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Tools'
-			)
+				'class' => '\\Dev4Press\\Plugin\\GDMED\\Admin\\Panel\\Tools',
+			),
 		);
 	}
 

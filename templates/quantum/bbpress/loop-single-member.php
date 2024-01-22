@@ -14,7 +14,7 @@ $member = Members::i()->member();
 			<?php do_action( 'bbp_theme_before_forummod_member_avatar' ); ?>
 
             <a class="bbp-member-avatar" href="<?php bbp_user_profile_url( $member->ID ); ?>" title="<?php echo esc_attr( $member->display_name ); ?>">
-		        <?php echo get_avatar( $member->ID, 44 ); ?>
+				<?php echo get_avatar( $member->ID, 44 ); ?>
             </a>
 
 			<?php do_action( 'bbp_theme_before_forummod_member_name' ); ?>

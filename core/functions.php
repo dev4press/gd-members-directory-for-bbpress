@@ -21,7 +21,7 @@ function gdmed_paginate_links( $args = array() ) : string {
 		$render = bbp_paginate_links( $args );
 	} else {
 
-		$add_args = empty( $args[ 'add_args' ] ) && bbp_get_view_all()
+		$add_args = empty( $args['add_args'] ) && bbp_get_view_all()
 			? array( 'view' => 'all' )
 			: false;
 
@@ -40,7 +40,7 @@ function gdmed_paginate_links( $args = array() ) : string {
 			'format'             => '',
 			'add_fragment'       => '',
 			'before_page_number' => '',
-			'after_page_number'  => ''
+			'after_page_number'  => '',
 		), 'paginate_links' );
 
 		$render = gdmed_make_first_page_canonical( paginate_links( $r ) );
@@ -75,7 +75,7 @@ function gdmed_get_members_rewrite_id() : string {
 
 function gdmed_get_members_directory_template() : string {
 	$templates = array(
-		'members-directory.php'
+		'members-directory.php',
 	);
 
 	return bbp_get_query_template( 'members_directory', $templates );
@@ -148,7 +148,7 @@ function gdmed_get_user_roles() : array {
 	$dynamic_roles = bbp_get_dynamic_roles();
 
 	foreach ( $dynamic_roles as $role => $obj ) {
-		$roles[ $role ] = $obj[ 'name' ];
+		$roles[ $role ] = $obj['name'];
 	}
 
 	return $roles;
@@ -166,7 +166,7 @@ function gdmed_get_members_directory_url() : string {
 		$url = home_url( $url );
 	} else {
 		$url = add_query_arg( array(
-			gdmed_get_members_rewrite_id() => 1
+			gdmed_get_members_rewrite_id() => 1,
 		), home_url( '/' ) );
 	}
 
@@ -180,7 +180,7 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) : arra
 		'class'    => '',
 		'style'    => '',
 		'multi'    => false,
-		'readonly' => false
+		'readonly' => false,
 	);
 	$args     = wp_parse_args( $args, $defaults );
 
@@ -198,7 +198,7 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) : arra
 
 	$attributes = array(
 		'id="' . $id . '"',
-		'name="' . $name . '"'
+		'name="' . $name . '"',
 	);
 
 	if ( $class != '' ) {

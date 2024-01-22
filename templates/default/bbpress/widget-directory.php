@@ -9,7 +9,7 @@
 		'members_per_page' => $instance['limit'],
 		'orderby'          => $instance['orderby'],
 		'order'            => $instance['order'],
-		'role'             => $instance['role']
+		'role'             => $instance['role'],
 	), false );
 
 	if ( $members->has_results() ) :
@@ -37,7 +37,7 @@
 
 		endwhile;
 	else :
-		esc_html_e( "No members found matching the request criteria.", "gd-members-directory-for-bbpress" );
+		esc_html_e( 'No members found matching the request criteria.', 'gd-members-directory-for-bbpress' );
 	endif;
 
 	do_action( 'bbp_template_end_widget_directory' );

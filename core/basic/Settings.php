@@ -13,7 +13,7 @@ class Settings extends BaseSettings {
 
 	public $settings = array(
 		'core'     => array(
-			'activated' => 0
+			'activated' => 0,
 		),
 		'settings' => array(
 			'rewrite_default'         => true,
@@ -25,11 +25,11 @@ class Settings extends BaseSettings {
 				'bbp_keymaster',
 				'bbp_moderator',
 				'bbp_participant',
-				'bbp_spectator'
+				'bbp_spectator',
 			),
 			'display_roles_filter'    => true,
-			'display_avatar_in_list'  => true
-		)
+			'display_avatar_in_list'  => true,
+		),
 	);
 
 	protected function constructor() {

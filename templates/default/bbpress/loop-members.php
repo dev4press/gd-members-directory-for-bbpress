@@ -7,9 +7,9 @@
         <li class="bbp-header">
 
             <ul class="members-titles">
-                <li class="bbp-member-info"><?php esc_html_e( "Member Info", "gd-members-directory-for-bbpress" ); ?></li>
-                <li class="bbp-member-statistics"><?php esc_html_e( "Statistics", "gd-members-directory-for-bbpress" ); ?></li>
-                <li class="bbp-member-activity"><?php esc_html_e( "Latest Post", "gd-members-directory-for-bbpress" ); ?></li>
+                <li class="bbp-member-info"><?php esc_html_e( 'Member Info', 'gd-members-directory-for-bbpress' ); ?></li>
+                <li class="bbp-member-statistics"><?php esc_html_e( 'Statistics', 'gd-members-directory-for-bbpress' ); ?></li>
+                <li class="bbp-member-activity"><?php esc_html_e( 'Latest Post', 'gd-members-directory-for-bbpress' ); ?></li>
             </ul>
 
         </li>
@@ -27,9 +27,9 @@
         <li class="bbp-footer">
 
             <ul class="members-titles">
-                <li class="bbp-member-info"><?php esc_html_e( "Member Info", "gd-members-directory-for-bbpress" ); ?></li>
-                <li class="bbp-member-statistics"><?php esc_html_e( "Statistics", "gd-members-directory-for-bbpress" ); ?></li>
-                <li class="bbp-member-activity"><?php esc_html_e( "Latest Activity", "gd-members-directory-for-bbpress" ); ?></li>
+                <li class="bbp-member-info"><?php esc_html_e( 'Member Info', 'gd-members-directory-for-bbpress' ); ?></li>
+                <li class="bbp-member-statistics"><?php esc_html_e( 'Statistics', 'gd-members-directory-for-bbpress' ); ?></li>
+                <li class="bbp-member-activity"><?php esc_html_e( 'Latest Activity', 'gd-members-directory-for-bbpress' ); ?></li>
             </ul>
 
         </li>

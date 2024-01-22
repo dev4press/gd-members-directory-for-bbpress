@@ -20,12 +20,12 @@ class Directory extends Widget {
 		'role'    => '',
 		'orderby' => 'name',
 		'order'   => 'ASC',
-		'limit'   => 5
+		'limit'   => 5,
 	);
 
 	public function __construct( $id_base = false, $name = '', $widget_options = array(), $control_options = array() ) {
 		$this->widget_name        = 'GD Members Directory';
-		$this->widget_description = __( "Show list of forum members.", "gd-members-directory-for-bbpress" );
+		$this->widget_description = __( 'Show list of forum members.', 'gd-members-directory-for-bbpress' );
 
 		parent::__construct( $id_base, $name, $widget_options, $control_options );
 	}
@@ -35,19 +35,19 @@ class Directory extends Widget {
 
 		return array(
 			'content' => array(
-				'name'    => __( "Content", "gd-members-directory-for-bbpress" ),
-				'include' => array( 'directory-content' )
-			)
+				'name'    => __( 'Content', 'gd-members-directory-for-bbpress' ),
+				'include' => array( 'directory-content' ),
+			),
 		);
 	}
 
 	public function update( $new_instance, $old_instance ) : array {
 		$instance = parent::update( $new_instance, $old_instance );
 
-		$instance[ 'limit' ]   = absint( $new_instance[ 'limit' ] );
-		$instance[ 'orderby' ] = Sanitize::slug( $new_instance[ 'orderby' ] );
-		$instance[ 'order' ]   = Sanitize::slug( $new_instance[ 'order' ] );
-		$instance[ 'role' ]    = Sanitize::slug( $new_instance[ 'role' ] );
+		$instance['limit']   = absint( $new_instance['limit'] );
+		$instance['orderby'] = Sanitize::slug( $new_instance['orderby'] );
+		$instance['order']   = Sanitize::slug( $new_instance['order'] );
+		$instance['role']    = Sanitize::slug( $new_instance['role'] );
 
 		return $instance;
 	}
