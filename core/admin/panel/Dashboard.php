@@ -9,4 +9,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Dashboard extends PanelDashboard {
+
 }

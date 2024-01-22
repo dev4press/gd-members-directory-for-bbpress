@@ -1,13 +1,40 @@
+#bbpress-forums.bbpress-members-directory {
+  font-size: 14px;
+}
+#bbpress-forums.bbpress-members-directory .bbp-pagination {
+  float: none;
+  clear: both;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-direction: row;
+}
+@media only screen and (max-width: 639px) {
+  #bbpress-forums.bbpress-members-directory .bbp-pagination {
+    flex-direction: column;
+  }
+}
+#bbpress-forums.bbpress-members-directory .bbp-pagination .bbp-pagination-count,
+#bbpress-forums.bbpress-members-directory .bbp-pagination .bbp-pagination-links {
+  float: none;
+}
 #bbpress-forums form.bbp-members-directory-filter {
   clear: both;
   margin: 0 0 15px;
-  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-direction: row;
 }
-#bbpress-forums form.bbp-members-directory-filter .bbp-members-filter {
-  float: left;
-}
-#bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
-  float: right;
+@media only screen and (max-width: 639px) {
+  #bbpress-forums form.bbp-members-directory-filter {
+    flex-direction: column;
+  }
 }
 #bbpress-forums form.bbp-members-directory-filter select,
 #bbpress-forums form.bbp-members-directory-filter input,
@@ -119,7 +146,7 @@
 
 @media only screen and (max-width: 720px) {
   #bbpress-forums form.bbp-members-directory-filter .bbp-members-filter,
-#bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
+  #bbpress-forums form.bbp-members-directory-filter .bbp-members-sort {
     float: none;
     text-align: center;
   }

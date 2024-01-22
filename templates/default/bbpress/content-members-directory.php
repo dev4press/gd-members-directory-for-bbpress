@@ -1,6 +1,6 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
 
-<div id="bbpress-forums" class="bbpress-wrapper">
+<div id="bbpress-forums" class="bbpress-wrapper bbpress-members-directory">
 
 	<?php bbp_breadcrumb(); ?>
 

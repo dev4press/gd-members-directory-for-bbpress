@@ -3,29 +3,57 @@
 $grid-break-medium: 720px !default;
 
 #bbpress-forums {
+    &.bbpress-members-directory {
+        font-size: 14px;
+
+        .bbp-pagination {
+            float: none;
+            clear: both;
+            margin: 0 0 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 20px;
+            row-gap: 10px;
+
+            @include ltr {
+                flex-direction: row;
+            }
+
+            @include rtl {
+                flex-direction: row-reverse;
+            }
+
+            @media only screen and (max-width: 639px) {
+                flex-direction: column;
+            }
+
+            .bbp-pagination-count,
+            .bbp-pagination-links {
+                float: none;
+            }
+        }
+    }
+
     form.bbp-members-directory-filter {
         clear: both;
         margin: 0 0 15px;
-        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 10px;
 
-        .bbp-members-filter {
-            @include ltr {
-                float: left;
-            }
-
-            @include rtl {
-                float: right;
-            }
+        @include ltr {
+            flex-direction: row;
         }
 
-        .bbp-members-sort {
-            @include ltr {
-                float: right;
-            }
+        @include rtl {
+            flex-direction: row-reverse;
+        }
 
-            @include rtl {
-                float: left;
-            }
+        @media only screen and (max-width: 639px) {
+            flex-direction: column;
         }
 
         select,

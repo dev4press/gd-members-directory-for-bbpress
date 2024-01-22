@@ -3,9 +3,9 @@ Contributors: GDragoN
 Donate link: https://buymeacoffee.com/millan
 Tags: dev4press, bbpress, members, directory, widget, filter, search, users
 Stable tag: 2.6
-Requires at least: 5.5
-Tested up to: 6.3
-Requires PHP: 7.3
+Requires at least: 5.8
+Tested up to: 6.4
+Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,11 +46,11 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 
 == Installation ==
 = General Requirements =
-* PHP: 7.3 or newer
+* PHP: 7.4 or newer
 * bbPress 2.6 or newer
 
 = WordPress Requirements =
-* WordPress: 5.5 or newer
+* WordPress: 5.8 or newer
 
 = Basic Installation =
 * Plugin folder in the WordPress plugins folder should be `gd-members-directory-for-bbpress`.
@@ -63,6 +63,8 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.6 / february 16 2024 =
+
 = Version: 2.5 / july 16 2023 =
 * New: tested with WordPress 6.2 and 6.3
 * Edit: Dev4Press Library 4.2
