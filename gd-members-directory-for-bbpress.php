@@ -32,18 +32,16 @@
 
 use Dev4Press\v47\WordPress;
 
-$gdmed_dirname_basic = dirname( __FILE__ ) . '/';
+$gdmed_dirname_basic = __DIR__ . '/';
 $gdmed_urlname_basic = plugins_url( '/', __FILE__ );
 
 define( 'GDMED_PATH', $gdmed_dirname_basic );
 define( 'GDMED_URL', $gdmed_urlname_basic );
-define( 'GDMED_D4PLIB', $gdmed_dirname_basic . 'd4plib/' );
 
-require_once( GDMED_D4PLIB . 'core.php' );
-
-require_once( GDMED_PATH . 'core/autoload.php' );
-require_once( GDMED_PATH . 'core/bridge.php' );
-require_once( GDMED_PATH . 'core/functions.php' );
+require_once GDMED_PATH . 'd4plib/core.php';
+require_once GDMED_PATH . 'core/autoload.php';
+require_once GDMED_PATH . 'core/bridge.php';
+require_once GDMED_PATH . 'core/functions.php';
 
 gdmed();
 

@@ -16,7 +16,7 @@
                 <p style="margin-bottom: 4em;"><?php esc_html_e( 'The members directory for the bbPress powered forum, can be accessed via the URL displayed below. The directory follows the URL structure defined by bbPress, with the option to change the URL slug through plugin settings.', 'gd-members-directory-for-bbpress' ); ?></p>
             </div>
             <div class="d4p-group-footer">
-                <a class="button-primary" target="_blank" href="<?php echo gdmed_get_members_directory_url(); ?>"><?php echo gdmed_get_members_directory_url(); ?></a>
+                <a class="button-primary" target="_blank" href="<?php echo esc_url(gdmed_get_members_directory_url()); ?>"><?php echo esc_url(gdmed_get_members_directory_url()); ?></a>
             </div>
         </div>
 
@@ -26,8 +26,8 @@
                 <p style="margin-bottom: 4em;"><?php esc_html_e( 'The plugin should work after activation without any additional changes. If you make changes to the URL slug, make sure to clear the WordPress permalinks.', 'gd-members-directory-for-bbpress' ); ?></p>
             </div>
             <div class="d4p-group-footer">
-                <a href="<?php echo admin_url( 'options-general.php?page=gd-members-directory-for-bbpress&panel=tools&subpanel=updater' ); ?>" class="button-primary"><?php esc_html_e( 'Plugin Recheck and Update', 'gd-members-directory-for-bbpress' ); ?></a>
-                <a href="<?php echo admin_url( 'options-permalink.php' ); ?>" class="button-secondary"><?php esc_html_e( 'WordPress Permalinks', 'gd-members-directory-for-bbpress' ); ?></a>
+                <a href="<?php echo esc_url( admin_url( 'options-general.php?page=gd-members-directory-for-bbpress&panel=tools&subpanel=updater' ) ); ?>" class="button-primary"><?php esc_html_e( 'Plugin Recheck and Update', 'gd-members-directory-for-bbpress' ); ?></a>
+                <a href="<?php echo esc_url( admin_url( 'options-permalink.php' ) ); ?>" class="button-secondary"><?php esc_html_e( 'WordPress Permalinks', 'gd-members-directory-for-bbpress' ); ?></a>
             </div>
         </div>
     </div>

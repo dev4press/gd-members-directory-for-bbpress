@@ -1,4 +1,4 @@
-<?php include( GDMED_PATH . 'forms/content-about-minor.php' ); ?>
+<?php include GDMED_PATH . 'forms/content-about-minor.php'; ?>
 
 <div class="d4p-about-whatsnew">
     <div class="d4p-whatsnew-section d4p-whatsnew-heading">
@@ -27,7 +27,7 @@
                 </p>
             </div>
             <div class="core-col-sm-12 core-col-md-6">
-                <img src="<?php echo GDMED_URL; ?>gfx/directory.jpg"/>
+                <img src="<?php echo esc_url(GDMED_URL); ?>gfx/directory.jpg" alt=""/>
             </div>
         </div>
     </div>

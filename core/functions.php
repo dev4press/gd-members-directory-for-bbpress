@@ -238,7 +238,7 @@ function gdmed_form_select( $values, $s, $args = array(), $attr = array(), $echo
 	$render .= '</select>';
 
 	if ( $echo ) {
-		echo $render;
+		echo $render; // phpcs:ignore WordPress.Security.EscapeOutput
 	}
 
 	return $render;

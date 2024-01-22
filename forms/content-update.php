@@ -9,7 +9,7 @@ use function Dev4Press\v47\Functions\panel;
         <div class="d4p-update-info">
 			<?php
 
-			include( GDMED_PATH . 'forms/setup/rules.php' );
+			include GDMED_PATH . 'forms/setup/rules.php';
 
 			gdmed_settings()->set( 'install', false, 'info' );
 			gdmed_settings()->set( 'update', false, 'info', true );
@@ -26,7 +26,7 @@ use function Dev4Press\v47\Functions\panel;
             </div>
 
             <div class="d4p-install-confirm">
-                <a class="button-primary" href="<?php echo panel()->a()->panel_url( 'about' ) ?>&update"><?php esc_html_e( 'Click here to continue', 'gd-members-directory-for-bbpress' ); ?></a>
+                <a class="button-primary" href="<?php echo panel()->a()->panel_url( 'about' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>&update"><?php esc_html_e( 'Click here to continue', 'gd-members-directory-for-bbpress' ); ?></a>
             </div>
         </div>
     </div>

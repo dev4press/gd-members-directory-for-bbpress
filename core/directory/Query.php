@@ -64,31 +64,31 @@ class Query {
 		);
 
 		if ( $parse_request ) {
-			if ( isset( $_GET['orderby'] ) && ! empty( $_GET['orderby'] ) ) {
+			if ( ! empty( $_GET['orderby'] ) ) {
 				$valid = array_keys( gdmed()->get_sort_orderby_values() );
-				$value = Sanitize::slug( $_GET['orderby'] );
+				$value = Sanitize::slug( $_GET['orderby'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 
 				if ( in_array( $value, $valid ) ) {
 					$default['orderby'] = $value;
 				}
 			}
 
-			if ( isset( $_GET['order'] ) && ! empty( $_GET['order'] ) ) {
+			if ( ! empty( $_GET['order'] ) ) {
 				$valid = array_keys( gdmed()->get_sort_order_values() );
-				$value = strtoupper( Sanitize::slug( $_GET['order'] ) );
+				$value = strtoupper( Sanitize::slug( $_GET['order'] ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 
 				if ( in_array( $value, $valid ) ) {
 					$default['order'] = $value;
 				}
 			}
 
-			if ( isset( $_GET['search'] ) && ! empty( $_GET['search'] ) ) {
-				$default['search'] = sanitize_title( $_GET['search'] );
+			if ( ! empty( $_GET['search'] ) ) {
+				$default['search'] = sanitize_title( $_GET['search'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 			}
 
-			if ( isset( $_GET['role'] ) && ! empty( $_GET['role'] ) ) {
+			if ( ! empty( $_GET['role'] ) ) {
 				$valid = array_keys( gdmed()->get_filter_roles_values() );
-				$value = Sanitize::slug( $_GET['role'] );
+				$value = Sanitize::slug( $_GET['role'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 
 				if ( in_array( $value, $valid ) ) {
 					$default['role'] = $value;
@@ -263,7 +263,7 @@ class Query {
 	}
 
 	public function pagination_count() {
-		echo $this->get_pagination_count();
+		echo esc_html( $this->get_pagination_count() );
 	}
 
 	public function get_pagination_count() {
@@ -282,11 +282,11 @@ class Query {
 			$retstr = sprintf( _n( 'Viewing %2$s results (of %4$s total)', 'Viewing %1$s results - %2$s through %3$s (of %4$s total)', $this->_pager->count, 'gd-members-directory-for-bbpress' ), $this->_pager->count, $from_num, $to_num, $total_num );
 		}
 
-		return apply_filters( 'gdmed_get_members_pagination_count', esc_html( $retstr ) );
+		return apply_filters( 'gdmed_get_members_pagination_count', $retstr );
 	}
 
 	public function pagination_links() {
-		echo $this->get_pagination_links();
+		echo $this->get_pagination_links(); // phpcs:ignore WordPress.Security.EscapeOutput
 	}
 
 	public function get_pagination_links() {
@@ -302,7 +302,7 @@ class Query {
 	}
 
 	public function member_class() {
-		echo $this->get_member_class();
+		echo $this->get_member_class(); // phpcs:ignore WordPress.Security.EscapeOutput
 	}
 
 	public function get_member_class() : string {
@@ -316,7 +316,7 @@ class Query {
 
 		$classes = apply_filters( 'gdmed_get_member_class', $classes, $this );
 
-		return 'class="' . implode( ' ', $classes ) . '"';
+		return 'class="' . Sanitize::html_classes( $classes ) . '"';
 	}
 
 	public function get_filter_value( $name, $default = '' ) {

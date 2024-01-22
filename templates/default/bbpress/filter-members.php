@@ -10,7 +10,7 @@
 
 		<?php if ( gdmed_settings()->get( 'display_roles_filter' ) ) { ?>
 
-            <label for="gdmed-filter-role" class="screen-reader-text"><?php _e( 'Filter by role', 'gd-members-directory-for-bbpress' ); ?></label>
+            <label for="gdmed-filter-role" class="screen-reader-text"><?php esc_html_e( 'Filter by role', 'gd-members-directory-for-bbpress' ); ?></label>
 			<?php gdmed_form_select( gdmed()->get_filter_roles_values(), gdmed_members_query()->get_filter_value( 'role' ), array(
 				'id'   => 'gdmed-filter-role',
 				'name' => 'role',
@@ -21,7 +21,7 @@
         <label for="gdmed-filter-search" class="screen-reader-text"><?php esc_html_e( 'Search members', 'gd-members-directory-for-bbpress' ); ?></label>
         <input id="gdmed-filter-search" name="search" value="<?php echo esc_attr( gdmed_members_query()->get_filter_value( 'search' ) ); ?>"/>
 
-        <button type="submit"><?php _e( 'Filter', 'gd-members-directory-for-bbpress' ); ?></button>
+        <button type="submit"><?php esc_html_e( 'Filter', 'gd-members-directory-for-bbpress' ); ?></button>
 
     </div>
 
@@ -33,7 +33,7 @@
 			'name' => 'orderby',
 		), array( 'onchange' => 'this.form.submit()' ) ); ?>
 
-        <label for="gdmed-sort-order" class="screen-reader-text"><?php _e( 'Sort order', 'gd-members-directory-for-bbpress' ); ?></label>
+        <label for="gdmed-sort-order" class="screen-reader-text"><?php esc_html_e( 'Sort order', 'gd-members-directory-for-bbpress' ); ?></label>
 		<?php gdmed_form_select( gdmed()->get_sort_order_values(), gdmed_members_query()->get_filter_value( 'order' ), array(
 			'id'   => 'gdmed-sort-order',
 			'name' => 'order',

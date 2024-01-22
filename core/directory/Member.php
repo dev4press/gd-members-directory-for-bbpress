@@ -46,7 +46,7 @@ class Member {
 	}
 
 	public function get_meta_info_registered() : string {
-		return '<span class="registration">' . sprintf( _x( 'Registered on: %s', 'User meta, registration date', 'gd-members-directory-for-bbpress' ), date( 'F j, Y', $this->registration_timestamp() ) ) . '</span>';
+		return '<span class="registration">' . esc_html( sprintf( _x( 'Registered on: %s', 'User meta, registration date', 'gd-members-directory-for-bbpress' ), gmdate( 'F j, Y', $this->registration_timestamp() ) ) ) . '</span>';
 	}
 
 	public function get_topics_info() : string {

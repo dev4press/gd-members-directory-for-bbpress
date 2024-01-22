@@ -6,6 +6,7 @@
 
 * **edit** many improvements to the default styling
 * **edit** Dev4Press Library 4.7
+* **edit** changes related to WordPress and PHP code standards
 
 ### Version: 2.5 / July 16 2023
 

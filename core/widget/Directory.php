@@ -53,7 +53,7 @@ class Directory extends Widget {
 	}
 
 	public function the_render( $instance, $results = false ) {
-		include( bbp_locate_template( 'widget-directory.php' ) );
+		include bbp_locate_template( 'widget-directory.php' );
 	}
 
 	public function store_instance( $instance ) {

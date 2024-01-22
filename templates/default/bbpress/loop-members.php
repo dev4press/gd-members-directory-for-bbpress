@@ -16,11 +16,16 @@
 
         <li class="bbp-body">
 
-			<?php while ( gdmed_members_query()->have_members() ) : gdmed_members_query()->the_member(); ?>
+			<?php
 
-				<?php bbp_get_template_part( 'loop', 'single-member' ); ?>
+			while ( gdmed_members_query()->have_members() ) :
+				gdmed_members_query()->the_member();
 
-			<?php endwhile; ?>
+				bbp_get_template_part( 'loop', 'single-member' );
+
+			endwhile;
+
+			?>
 
         </li>
 

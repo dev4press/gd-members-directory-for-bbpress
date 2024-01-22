@@ -13,7 +13,9 @@
 	), false );
 
 	if ( $members->has_results() ) :
-		while ( $members->have_members() ) : $members->the_member();
+		while ( $members->have_members() ) :
+			$members->the_member();
+
 			$user = gdmed_members_query()->member();
 
 			?>
@@ -25,11 +27,12 @@
                 <a class="bbp-member-name" href="<?php bbp_user_profile_url( $user->ID ); ?>">
 					<?php echo esc_html( $user->display_name ); ?>
                 </a>
-                <br/><?php echo $user->get_meta_info_role(); ?>
+                <br/><?php echo $user->get_meta_info_role(); // phpcs:ignore WordPress.Security.EscapeOutput
+				?>
                 <p class="bbp-member-meta">
-					<?php echo $user->get_meta_info_registered(); ?>
+					<?php echo $user->get_meta_info_registered(); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                     <br/>
-					<?php echo $user->get_topics_info(); ?> &middot; <?php echo $user->get_replies_info(); ?>
+					<?php echo $user->get_topics_info() . ' &middot; ' . $user->get_replies_info(); // phpcs:ignore WordPress.Security.EscapeOutput ?>
                 </p>
             </div>
 

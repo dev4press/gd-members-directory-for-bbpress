@@ -9,11 +9,10 @@
         Various updates and fixes.
     </p>
     <p>
-        <strong><?php esc_html_e( 'Version', 'gd-members-directory-for-bbpress' ); ?>
-            <span>2.0.1</span></strong> &minus;
+        <strong><?php esc_html_e( 'Version', 'gd-members-directory-for-bbpress' ); ?> <span>2.0.1</span></strong> &minus;
         Few fixes.
     </p>
     <p>
-		<?php printf( __( 'For more information, see <a href=\'%s\'>the changelog</a>.', 'gd-members-directory-for-bbpress' ), 'options-general.php?page=gd-members-directory-for-bbpress&panel=about&subpanel=changelog' ); ?>
+		<?php printf( __( 'For more information, see <a href=\'%s\'>the changelog</a>.', 'gd-members-directory-for-bbpress' ), 'options-general.php?page=gd-members-directory-for-bbpress&panel=about&subpanel=changelog' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
     </p>
 </div>

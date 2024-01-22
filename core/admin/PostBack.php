@@ -16,7 +16,7 @@ class PostBack extends BasePostBack {
 	}
 
 	protected function remove() {
-		$data = $_POST['gdmedtools'];
+		$data = $_POST['gdmedtools'] ?? array(); // phpcs:ignore WordPress.Security.NonceVerification,WordPress.Security.ValidatedSanitizedInput
 
 		$remove  = isset( $data['remove'] ) ? (array) $data['remove'] : array();
 		$message = 'nothing-removed';
