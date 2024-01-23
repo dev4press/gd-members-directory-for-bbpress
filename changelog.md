@@ -5,8 +5,10 @@
 ### Version: 2.6 / February 16 2024
 
 * **edit** many improvements to the default styling
+* **edit** admin interface improvements related to shared library
 * **edit** Dev4Press Library 4.7
 * **edit** changes related to WordPress and PHP code standards
+* **fix** few small fixes related to the main query objects
 
 ### Version: 2.5 / July 16 2023
 
