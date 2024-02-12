@@ -14,13 +14,13 @@ Easy to use plugin for adding forum members directory page into bbPress powered 
 == Description ==
 Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar. The plugin adds new URL endpoint based on the existing bbPress 'users' profile URL, and using theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
 
-The plugin has few settings, to control number of users per page, URL endpoint slug and few more things. The plugin features are listed here:
+The plugin has few settings to control the number of users per page, URL endpoint slug and a few more things. The plugin features are listed here:
 
 * Members list shows various user information
-* Options to filter list by role or keyword
+* Options to a filter list by role or keyword
 * Change results sorting (activity, registration, name...)
 * Full RTL support for the directory styling
-* Simple Widget for showing list of members
+* Simple Widget for showing a list of members
 
 Plugin default templates and styling are based on the default bbPress theme package. And, like with bbPress, all the templates used by the plugin can be replaced via theme. The plugin has full support for [GD Quantum Theme Pro for bbPress](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) plugin by Dev4Press, including additional templates and styling.
 
@@ -63,7 +63,14 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
-= Version: 2.6 / february 16 2024 =
+= Version: 2.6 / february 12 2024 =
+* New: tested with WordPress 6.4
+* New: tested with PHP 8.3
+* Edit: many improvements to the default styling
+* Edit: admin interface improvements related to a shared library
+* Edit: Dev4Press Library 4.7
+* Edit: changes related to WordPress and PHP code standards
+* Fix: few small fixes related to the main query objects
 
 = Version: 2.5 / july 16 2023 =
 * New: tested with WordPress 6.2 and 6.3
@@ -138,6 +145,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.6 =
+Various updates and improvements
+
 = 2.5 =
 Various updates and improvements
 
@@ -149,9 +159,6 @@ Various updates and improvements
 
 = 2.2 =
 Various updates and improvements
-
-= 2.1 =
-Minor updates and improvements
 
 == Screenshots ==
 1. Members Directory page

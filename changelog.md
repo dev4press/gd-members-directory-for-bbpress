@@ -4,6 +4,8 @@
 
 ### Version: 2.6 / February 12 2024
 
+* **new** tested with WordPress 6.4
+* **new** tested with PHP 8.3
 * **edit** many improvements to the default styling
 * **edit** admin interface improvements related to a shared library
 * **edit** Dev4Press Library 4.7
