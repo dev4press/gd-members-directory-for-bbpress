@@ -1,4 +1,4 @@
-=== GD Members Directory for bbPress ===
+=== GD Members Directory: plugin for WordPress and bbPress ===
 Contributors: GDragoN
 Donate link: https://buymeacoffee.com/millan
 Tags: dev4press, bbpress, directory, filter, users
@@ -66,6 +66,13 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.7 / june 14 2024 =
+* Edit: several small improvements to the plugin core code
+* Edit: minor updates to the plugin readme file
+* Edit: few more changes related to WordPress and PHP code standards
+* Edit: protect all PHP files from direct file access
+* Edit: Dev4Press Library 4.9.1
+
 = Version: 2.6 / february 12 2024 =
 * New: tested with WordPress 6.4
 * New: tested with PHP 8.3
