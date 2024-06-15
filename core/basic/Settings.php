@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v47\Core\Plugins\Settings as BaseSettings;
+use Dev4Press\v49\Core\Plugins\Settings as BaseSettings;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Settings extends BaseSettings {
 	public $base = 'gdmed';
+	public $plugin = 'gd-members-directory-for-bbpress';
 
 	public $settings = array(
 		'core'     => array(

@@ -1,3 +1,10 @@
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+?>
 <div class="d4p-content">
     <div class="d4p-cards-wrapper">
         <div class="d4p-group d4p-dashboard-card d4p-card-double d4p-dashboard-status">

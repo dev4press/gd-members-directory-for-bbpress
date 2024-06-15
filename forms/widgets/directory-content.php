@@ -1,6 +1,10 @@
 <?php
 
-use Dev4Press\v47\Core\UI\Elements;
+use Dev4Press\v49\Core\UI\Elements;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 $list_user_roles  = gdmed()->get_filter_roles_values();
 $list_sort_column = gdmed()->get_sort_orderby_values();

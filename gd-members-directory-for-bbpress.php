@@ -2,14 +2,15 @@
 /**
  * Plugin Name:       GD Members Directory for bbPress
  * Plugin URI:        https://plugins.dev4press.com/gd-members-directory-for-bbpress/
- * Description:       Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
+ * Description:       Add forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
  * Author:            Milan Petrovic
  * Author URI:        https://www.dev4press.com/
  * Text Domain:       gd-members-directory-for-bbpress
- * Version:           2.6
+ * Version:           2.7
  * Requires at least: 5.8
- * Tested up to:      6.4
+ * Tested up to:      6.6
  * Requires PHP:      7.4
+ * Requires Plugins:  bbpress
  * License:           GPLv3 or later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -30,7 +31,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 
-use Dev4Press\v47\WordPress;
+use Dev4Press\v49\WordPress;
 
 $gdmed_dirname_basic = __DIR__ . '/';
 $gdmed_urlname_basic = plugins_url( '/', __FILE__ );

@@ -1,6 +1,10 @@
 <?php
 
-use Dev4Press\v47\Core\Quick\WPR;
+use Dev4Press\v49\Core\Quick\WPR;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 ?>
 <div class="d4p-install-block">

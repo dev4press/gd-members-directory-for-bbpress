@@ -1,15 +1,15 @@
 === GD Members Directory for bbPress ===
 Contributors: GDragoN
 Donate link: https://buymeacoffee.com/millan
-Tags: dev4press, bbpress, members, directory, widget, filter, search, users
-Stable tag: 2.6
+Tags: dev4press, bbpress, directory, filter, users
+Stable tag: 2.7
 Requires at least: 5.8
-Tested up to: 6.4
+Tested up to: 6.6
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
+Add forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
 
 == Description ==
 Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar. The plugin adds new URL endpoint based on the existing bbPress 'users' profile URL, and using theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
@@ -43,6 +43,9 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 * [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD bbPress Tools](https://wordpress.org/plugins/gd-bbpress-tools/) - various expansion tools for forums
+
+= Dev4Press Pro plugins for bbPress =
+Get Premium plugins for bbPress to enhance bbPress powered forums. More information is available here: [bbPress Plugins Club](https://bbpress.dev4press.com/?utm_source=wporg&utm_medium=link&utm_campaign=gd-forum-manager-for-bbpress).
 
 == Installation ==
 = General Requirements =
@@ -145,6 +148,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.7 =
+Various updates and improvements
+
 = 2.6 =
 Various updates and improvements
 
@@ -157,13 +163,10 @@ Various updates and improvements
 = 2.3 =
 Various updates and improvements
 
-= 2.2 =
-Various updates and improvements
-
 == Screenshots ==
 1. Members Directory page
 2. Members Directory page when using GD Quantum Theme Pro for bbPress
-3. Responsive view for the Members Directory page
+3. Responsive view for Members Directory page
 4. Members Directory widget
 5. Plugin main admin panel
 6. Plugin settings admin panel
