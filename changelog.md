@@ -4,6 +4,7 @@
 
 ### Version: 2.8 / September 16 2024
 
+* **new** tested and compatible with `PHP` 8.4 Beta 5
 * **edit** updates to the plugin front end templates
 * **edit** Dev4Press Library 5.1
 

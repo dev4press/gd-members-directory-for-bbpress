@@ -67,6 +67,7 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 
 == Changelog ==
 = Version: 2.8 / september 16 2024 =
+* New: tested and compatible with `PHP` 8.4 Beta 5
 * Edit: updates to the plugin front end templates
 * Edit: Dev4Press Library 5.1
 
