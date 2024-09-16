@@ -66,6 +66,10 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
 
 == Changelog ==
+= Version: 2.8 / september 16 2024 =
+* Edit: updates to the plugin front end templates
+* Edit: Dev4Press Library 5.1
+
 = Version: 2.7 / june 14 2024 =
 * Edit: several small improvements to the plugin core code
 * Edit: minor updates to the plugin readme file
@@ -155,6 +159,9 @@ Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' p
 * New: first official version
 
 == Upgrade Notice ==
+= 2.8 =
+Various updates and improvements
+
 = 2.7 =
 Various updates and improvements
 
@@ -165,9 +172,6 @@ Various updates and improvements
 Various updates and improvements
 
 = 2.4 =
-Various updates and improvements
-
-= 2.3 =
 Various updates and improvements
 
 == Screenshots ==

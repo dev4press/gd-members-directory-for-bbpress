@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="d4p-about-minor">
     <h3><?php esc_html_e( 'Maintenance and Security Releases', 'gd-members-directory-for-bbpress' ); ?></h3>
     <p>
-        <strong><?php esc_html_e( 'Version', 'gd-members-directory-for-bbpress' ); ?> <span>2.4 / 2.5 / 2.6 / 2.7</span></strong> &minus;
+        <strong><?php esc_html_e( 'Version', 'gd-members-directory-for-bbpress' ); ?> <span>2.4 / 2.5 / 2.6 / 2.7 / 2.8</span></strong> &minus;
         Updated shared library. Various updates and fixes.
     </p>
     <p>

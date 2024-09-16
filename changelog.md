@@ -2,6 +2,11 @@
 
 ## Changelog
 
+### Version: 2.8 / September 16 2024
+
+* **edit** updates to the plugin front end templates
+* **edit** Dev4Press Library 5.1
+
 ### Version: 2.7 / June 14 2024
 
 * **edit** several small improvements to the plugin core code

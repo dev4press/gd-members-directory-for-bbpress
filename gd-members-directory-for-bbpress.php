@@ -6,8 +6,8 @@
  * Author:            Milan Petrovic
  * Author URI:        https://www.dev4press.com/
  * Text Domain:       gd-members-directory-for-bbpress
- * Version:           2.7
- * Requires at least: 5.8
+ * Version:           2.8
+ * Requires at least: 5.9
  * Tested up to:      6.6
  * Requires PHP:      7.4
  * Requires Plugins:  bbpress
