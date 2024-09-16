@@ -2,14 +2,14 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v49\Core\Plugins\Core;
+use Dev4Press\v51\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Plugin extends Core {
-	public $plugin = 'gd-members-directory-for-bbpress';
+	public string $plugin = 'gd-members-directory-for-bbpress';
 
 	public $members_id;
 	public $theme_package = 'default';

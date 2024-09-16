@@ -31,21 +31,23 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 
-use Dev4Press\v49\WordPress;
+use Dev4Press\v51\WordPress;
 
-$gdmed_dirname_basic = __DIR__ . '/';
-$gdmed_urlname_basic = plugins_url( '/', __FILE__ );
+const GDMED_FILE        = __FILE__;
+const GDMED_PATH        = __DIR__ . '/';
+const GDMED_D4PLIB_PATH = __DIR__ . '/library/';
 
-define( 'GDMED_PATH', $gdmed_dirname_basic );
+$gdmed_urlname_basic = plugins_url( '/', GDMED_FILE );
+
 define( 'GDMED_URL', $gdmed_urlname_basic );
 
-require_once GDMED_PATH . 'd4plib/core.php';
+require_once GDMED_D4PLIB_PATH . 'core.php';
+
 require_once GDMED_PATH . 'core/autoload.php';
 require_once GDMED_PATH . 'core/bridge.php';
 require_once GDMED_PATH . 'core/functions.php';
 
 gdmed();
-
 gdmed_settings();
 
 if ( WordPress::instance()->is_admin() ) {

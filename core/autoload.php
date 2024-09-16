@@ -8,7 +8,7 @@ function d4p_plugin_gdmed_autoload( $class ) {
 	$path = __DIR__ . '/';
 	$base = 'Dev4Press\\Plugin\\GDMED\\';
 
-	dev4press_v49_autoload_for_plugin( $class, $base, $path );
+	dev4press_v51_autoload_for_plugin( $class, $base, $path );
 }
 
 spl_autoload_register( 'd4p_plugin_gdmed_autoload' );

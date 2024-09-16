@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v49\Core\Options\Element as EL;
-use Dev4Press\v49\Core\Options\Settings as BaseSettings;
-use Dev4Press\v49\Core\Options\Type;
+use Dev4Press\v51\Core\Options\Element as EL;
+use Dev4Press\v51\Core\Options\Settings as BaseSettings;
+use Dev4Press\v51\Core\Options\Type;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -111,5 +111,9 @@ class Settings extends BaseSettings {
 				),
 			),
 		);
+	}
+
+	protected function admin() {
+		return Plugin::instance();
 	}
 }

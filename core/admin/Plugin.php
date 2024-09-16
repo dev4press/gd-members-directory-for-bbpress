@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v49\Core\Admin\Submenu\Plugin as BasePlugin;
+use Dev4Press\v51\Core\Admin\Submenu\Plugin as BasePlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
