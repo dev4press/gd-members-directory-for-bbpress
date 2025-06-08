@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v51\Core\Quick\Sanitize;
+use Dev4Press\v54\Core\Quick\Sanitize;
 use stdClass;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -10,31 +10,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Query {
-	private $_r = array();
+	private array $_r = array();
 
-	private $_f = array(
+	private array $_f = array(
 		'orderby' => 'name',
 		'order'   => 'ASC',
 		'search'  => '',
 		'role'    => '',
 	);
 
-	/** @var null|\Dev4Press\Plugin\GDMED\Directory\MemberQuery */
-	private $_query = null;
+	private ?MemberQuery $_query = null;
 
-	/** @var null|\stdClass */
-	private $_pager = null;
+	private ?stdClass $_pager = null;
 
 	/** @var null|\Dev4Press\Plugin\GDMED\Directory\Member|\WP_User */
 	private $_member = null;
 
-	public $members = array();
-	public $members_ids = array();
-	public $current_member = - 1;
-	public $members_count = 0;
-	public $in_the_loop = false;
+	public array $members = array();
+	public array $members_ids = array();
+	public int $current_member = - 1;
+	public int $members_count = 0;
+	public bool $in_the_loop = false;
 
-	public $members_latest = array();
+	public array $members_latest = array();
 
 	public function __construct( $args = array(), $parse_request = true ) {
 		$this->_parse_args( $args, $parse_request );

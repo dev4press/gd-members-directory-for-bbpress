@@ -31,17 +31,15 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 
-use Dev4Press\v51\WordPress;
+use Dev4Press\v54\WordPress;
 
-const GDMED_FILE        = __FILE__;
-const GDMED_PATH        = __DIR__ . '/';
-const GDMED_D4PLIB_PATH = __DIR__ . '/library/';
+define( 'GDMED_FILE', __FILE__ );
+define( 'GDMED_PATH', __DIR__ . '/' );
+define( 'GDMED_URL', plugins_url( '/', __FILE__ ) );
 
-$gdmed_urlname_basic = plugins_url( '/', GDMED_FILE );
+require_once GDMED_PATH . 'vendor/autoload.php';
 
-define( 'GDMED_URL', $gdmed_urlname_basic );
-
-require_once GDMED_D4PLIB_PATH . 'core.php';
+require_once GDMED_PATH . 'vendor/dev4press/library/core.php';
 
 require_once GDMED_PATH . 'core/autoload.php';
 require_once GDMED_PATH . 'core/bridge.php';
