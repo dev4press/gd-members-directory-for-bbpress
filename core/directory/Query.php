@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+
 namespace Dev4Press\Plugin\GDMED\Directory;
 
 use Dev4Press\v54\Core\Quick\Sanitize;
@@ -62,31 +64,31 @@ class Query {
 		);
 
 		if ( $parse_request ) {
-			if ( ! empty( $_GET['orderby'] ) ) {
+			if ( ! empty( $_GET['orderby'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				$valid = array_keys( gdmed()->get_sort_orderby_values() );
-				$value = Sanitize::slug( $_GET['orderby'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+				$value = Sanitize::slug( $_GET['orderby'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput,WordPress.Security.NonceVerification.Recommended
 
 				if ( in_array( $value, $valid ) ) {
 					$default['orderby'] = $value;
 				}
 			}
 
-			if ( ! empty( $_GET['order'] ) ) {
+			if ( ! empty( $_GET['order'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				$valid = array_keys( gdmed()->get_sort_order_values() );
-				$value = strtoupper( Sanitize::slug( $_GET['order'] ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+				$value = strtoupper( Sanitize::slug( $_GET['order'] ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput,WordPress.Security.NonceVerification.Recommended
 
 				if ( in_array( $value, $valid ) ) {
 					$default['order'] = $value;
 				}
 			}
 
-			if ( ! empty( $_GET['search'] ) ) {
-				$default['search'] = sanitize_title( $_GET['search'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+			if ( ! empty( $_GET['search'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+				$default['search'] = sanitize_title( $_GET['search'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput,WordPress.Security.NonceVerification.Recommended
 			}
 
-			if ( ! empty( $_GET['role'] ) ) {
+			if ( ! empty( $_GET['role'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				$valid = array_keys( gdmed()->get_filter_roles_values() );
-				$value = Sanitize::slug( $_GET['role'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+				$value = Sanitize::slug( $_GET['role'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput,WordPress.Security.NonceVerification.Recommended
 
 				if ( in_array( $value, $valid ) ) {
 					$default['role'] = $value;

@@ -104,7 +104,7 @@ function gdmed_is_members_directory() : bool {
 		$retval = true;
 	}
 
-	if ( empty( $retval ) && isset( $_REQUEST[ gdmed_get_members_rewrite_id() ] ) && empty( $_REQUEST[ gdmed_get_members_rewrite_id() ] ) ) {
+	if ( empty( $retval ) && isset( $_REQUEST[ gdmed_get_members_rewrite_id() ] ) && empty( $_REQUEST[ gdmed_get_members_rewrite_id() ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		$retval = true;
 	}
 
