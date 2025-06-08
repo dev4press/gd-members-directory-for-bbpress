@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       GD Members Directory: plugin for WordPress and bbPress
+ * Plugin Name:       membersDirectory for bbPress
  * Plugin URI:        https://plugins.dev4press.com/gd-members-directory-for-bbpress/
  * Description:       Add forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
  * Author:            Milan Petrovic

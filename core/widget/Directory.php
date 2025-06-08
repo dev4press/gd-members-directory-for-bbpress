@@ -24,7 +24,7 @@ class Directory extends Widget {
 	);
 
 	public function __construct( $id_base = false, $name = '', $widget_options = array(), $control_options = array() ) {
-		$this->widget_name        = 'GD Members Directory';
+		$this->widget_name        = 'membersDirectory for bbPress';
 		$this->widget_description = __( 'Show list of forum members.', 'gd-members-directory-for-bbpress' );
 
 		parent::__construct( $id_base, $name, $widget_options, $control_options );

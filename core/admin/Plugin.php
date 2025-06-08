@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Plugin extends BasePlugin {
 	public string $plugin = 'gd-members-directory-for-bbpress';
 	public string $plugin_prefix = 'gdmed';
-	public string $plugin_menu = 'GD Members Directory';
-	public string $plugin_title = 'GD Members Directory for bbPress';
+	public string $plugin_menu = 'membersDirectory';
+	public string $plugin_title = 'membersDirectory for bbPress';
 
 	public bool $buy_me_a_coffee = true;
 	public bool $auto_mod_interface_colors = true;

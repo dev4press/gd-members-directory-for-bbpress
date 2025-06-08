@@ -1,4 +1,4 @@
-# GD Members Directory for bbPress
+# membersDirectory for bbPress
 
 ## Changelog
 

@@ -1,10 +1,10 @@
-=== GD Members Directory: plugin for WordPress and bbPress ===
+=== membersDirectory for bbPress ===
 Contributors: GDragoN
 Donate link: https://buymeacoffee.com/millan
 Tags: dev4press, bbpress, directory, filter, users
-Stable tag: 2.7
-Requires at least: 5.8
-Tested up to: 6.6
+Stable tag: 3.0
+Requires at least: 6.0
+Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -28,24 +28,24 @@ Plugin default templates and styling are based on the default bbPress theme pack
 https://www.youtube.com/watch?v=IoU_s5-cBfU
 
 = Home and GitHub =
-* Learn more: [GD Members Directory for bbPress](https://plugins.dev4press.com/gd-members-directory-for-bbpress/) Website
-* Contribute: [GD Members Directory for bbPress](https://github.com/dev4press/gd-members-directory-for-bbpress) on GitHub
+* Learn more: [membersDirectory for bbPress](https://plugins.dev4press.com/gd-members-directory-for-bbpress/) Website
+* Contribute: [membersDirectory for bbPress](https://github.com/dev4press/gd-members-directory-for-bbpress) on GitHub
 
 = Documentation and Support =
 To get help with the plugin, you can use WordPress.org support forums, or you can use Dev4Press.com support forums.
 
-* Documentation: [GD Members Directory for bbPress](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
+* Documentation: [membersDirectory for bbPress](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
 * Support Forum: [Dev4Press Support](https://support.dev4press.com/forums/forum/plugins/gd-members-directory-for-bbpress/)
 
 = More free dev4Press.com plugins for bbPress =
+* [powerSearch for bbPress](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
+* [topicPolls for bbPress](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 * [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
-* [GD Power Search](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
-* [GD Topic Polls](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD bbPress Tools](https://wordpress.org/plugins/gd-bbpress-tools/) - various expansion tools for forums
 
 = Dev4Press Pro plugins for bbPress =
-Get Premium plugins for bbPress to enhance bbPress powered forums. More information is available here: [bbPress Plugins Club](https://bbpress.dev4press.com/?utm_source=wporg&utm_medium=link&utm_campaign=gd-forum-manager-for-bbpress).
+Get Premium plugins for bbPress to enhance bbPress powered forums. More information is available here: [bbPress Plugins Club](https://www.dev4press.com/bbpress-club/?utm_source=wporg&utm_medium=link&utm_campaign=gd-forum-manager-for-bbpress).
 
 == Installation ==
 = General Requirements =
@@ -53,7 +53,7 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 * bbPress 2.6 or newer
 
 = WordPress Requirements =
-* WordPress: 5.8 or newer
+* WordPress: 6.0 or newer
 
 = Basic Installation =
 * Plugin folder in the WordPress plugins folder should be `gd-members-directory-for-bbpress`.
@@ -63,7 +63,7 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 
 == Frequently Asked Questions ==
 = Where can I configure the plugin? =
-Open the WordPress 'Settings' menu, there you will find 'GD Members Directory' panel.
+Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bbPress' panel.
 
 == Changelog ==
 = Version: 2.8 / september 16 2024 =
