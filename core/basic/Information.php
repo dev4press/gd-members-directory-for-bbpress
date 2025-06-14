@@ -15,7 +15,7 @@ class Information extends BaseInformation {
 	public int $build = 300;
 	public string $edition = 'free';
 	public string $status = 'stable';
-	public string $updated = '2025.06.13';
+	public string $updated = '2025.06.14';
 	public string $released = '2019.10.14';
 
 	public bool $is_bbpress_plugin = true;

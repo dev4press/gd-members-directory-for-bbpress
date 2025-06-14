@@ -9,30 +9,30 @@ Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Add forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar.
+Add a forum members directory page into bbPress powered forums, including members filtering and additional widgets for listing members in the sidebar.
 
 == Description ==
-Easy to use plugin for adding forum members directory page into bbPress powered forums including members filtering and additional widgets for listing members in the sidebar. The plugin adds new URL endpoint based on the existing bbPress 'users' profile URL, and using theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
+Easy to use plugin for adding a forum members directory page into bbPress powered forums, including members filtering and additional widgets for listing members in the sidebar. The plugin adds a new URL endpoint based on the existing bbPress 'users' profile URL, and using the theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
 
-The plugin has few settings to control the number of users per page, URL endpoint slug and a few more things. The plugin features are listed here:
+The plugin has a few settings to control the number of users per page, URL endpoint slug, and a few more things. The plugin features are listed here:
 
-* Members list shows various user information
-* Options to a filter list by role or keyword
+* The member list shows various user information
+* Options to filter a list by role or keyword
 * Change results sorting (activity, registration, name...)
 * Full RTL support for the directory styling
 * Simple Widget for showing a list of members
 
-Plugin default templates and styling are based on the default bbPress theme package. And, like with bbPress, all the templates used by the plugin can be replaced via theme. The plugin has full support for [GD Quantum Theme Pro for bbPress](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) plugin by Dev4Press, including additional templates and styling.
+Plugin default templates and styling are based on the default bbPress theme package. And, like with bbPress, all the templates used by the plugin can be replaced via the theme. The plugin has full support for [GD Quantum Theme Pro for bbPress](https://plugins.dev4press.com/gd-quantum-theme-for-bbpress/) plugin by Dev4Press, including additional templates and styling.
 
 = Quick Overview Video =
 https://www.youtube.com/watch?v=IoU_s5-cBfU
 
 = Home and GitHub =
-* Learn more: [membersDirectory for bbPress](https://plugins.dev4press.com/gd-members-directory-for-bbpress/) Website
+* Learn more: [membersDirectory for bbPress](https://www.dev4press.com/plugins/gd-members-directory-for-bbpress/) Website
 * Contribute: [membersDirectory for bbPress](https://github.com/dev4press/gd-members-directory-for-bbpress) on GitHub
 
 = Documentation and Support =
-To get help with the plugin, you can use WordPress.org support forums, or you can use Dev4Press.com support forums.
+To get help with the plugin, you can use WordPress.org support forums or Dev4Press.com support forums.
 
 * Documentation: [membersDirectory for bbPress](https://support.dev4press.com/kb/product/gd-members-directory-for-bbpress/)
 * Support Forum: [Dev4Press Support](https://support.dev4press.com/forums/forum/plugins/gd-members-directory-for-bbpress/)
@@ -40,7 +40,7 @@ To get help with the plugin, you can use WordPress.org support forums, or you ca
 = More free dev4Press.com plugins for bbPress =
 * [powerSearch for bbPress](https://wordpress.org/plugins/gd-power-search-for-bbpress/) - add advanced search to the bbPress topics
 * [topicPolls for bbPress](https://wordpress.org/plugins/gd-topic-polls/) - add polls to the bbPress topics
-* [GD Forum Manager](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
+* [forumManager for bbPress](https://wordpress.org/plugins/gd-forum-manager-for-bbpress/) - quick and bulk forums and topics edit
 * [GD bbPress Attachments](https://wordpress.org/plugins/gd-bbpress-attachments/) - attachments for topics and replies
 * [GD bbPress Tools](https://wordpress.org/plugins/gd-bbpress-tools/) - various expansion tools for forums
 
@@ -66,6 +66,14 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bbPress' panel.
 
 == Changelog ==
+= Version: 3.0 / june 14 2025 =
+* New: tested with WordPress 6.8
+* New: tested and compatible with `PHP` 8.4
+* New: tested with bbPress up to 2.6.13
+* New: loading of `Dev4Press Library` via Composer
+* New: refactoring namespaces and plugin structure
+* Edit: Dev4Press Library 5.4
+
 = Version: 2.8 / september 16 2024 =
 * New: tested and compatible with `PHP` 8.4 Beta 5
 * Edit: updates to the plugin front end templates
@@ -137,7 +145,7 @@ Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bb
 = Version: 2.0 / december 29 2020 =
 * New: the plugin is now available for free
 * New: mostly rewritten with autoloader and namespaces
-* Edit: few improvements to the main members query
+* Edit: a few improvements to the main members query
 * Edit: d4pLib 3.3.1
 * Fix: members search issue when using paged results
 
@@ -146,13 +154,13 @@ Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bb
 * Edit: support for all Quantum theme variants
 * Fix: few minor issues with the default Quantum styling
 
-= Version: 1.0.2 / november 14 2019 = 
+= Version: 1.0.2 / november 14 2019 =
 * New: bbPress 2.5.x compatibility functions
 * Fix: several missing functions under bbPress 2.5.x
 
 = Version: 1.0.1 / october 30 2019 =
 * Edit: responsive styling for the filter and order elements
-* Fix: quantum theme template had wrong header title
+* Fix: quantum theme template had the wrong header title
 * Fix: minor styling issues with the filter elements
 * Fix: broken links on the main settings page
 
@@ -160,6 +168,9 @@ Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bb
 * New: first official version
 
 == Upgrade Notice ==
+= 3.0 =
+Various updates and improvements
+
 = 2.8 =
 Various updates and improvements
 
@@ -167,12 +178,6 @@ Various updates and improvements
 Various updates and improvements
 
 = 2.6 =
-Various updates and improvements
-
-= 2.5 =
-Various updates and improvements
-
-= 2.4 =
 Various updates and improvements
 
 == Screenshots ==
