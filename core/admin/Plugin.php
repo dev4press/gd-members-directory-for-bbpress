@@ -2,21 +2,21 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin;
 
-use Dev4Press\v51\Core\Admin\Submenu\Plugin as BasePlugin;
+use Dev4Press\v54\Core\Admin\Submenu\Plugin as BasePlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Plugin extends BasePlugin {
-	public $plugin = 'gd-members-directory-for-bbpress';
-	public $plugin_prefix = 'gdmed';
-	public $plugin_menu = 'GD Members Directory';
-	public $plugin_title = 'GD Members Directory for bbPress';
+	public string $plugin = 'gd-members-directory-for-bbpress';
+	public string $plugin_prefix = 'gdmed';
+	public string $plugin_menu = 'membersDirectory';
+	public string $plugin_title = 'membersDirectory for bbPress';
 
-	public $buy_me_a_coffee = true;
-	public $auto_mod_interface_colors = true;
-	public $has_widgets = true;
+	public bool $buy_me_a_coffee = true;
+	public bool $auto_mod_interface_colors = true;
+	public bool $has_widgets = true;
 
 	public function constructor() {
 		$this->url  = GDMED_URL;

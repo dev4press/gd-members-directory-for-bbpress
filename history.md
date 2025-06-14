@@ -1,6 +1,21 @@
-# GD Members Directory for bbPress
+# membersDirectory for bbPress
 
 ## Changelog
+
+### Version: 2.5 / July 16 2023
+
+* **new** tested with WordPress 6.2 and 6.3
+* **edit** Dev4Press Library 4.2
+
+### Version: 2.4 / february 14 2023
+
+* **new** updated plugin system requirements
+* **new** various updates for the plugin interface
+* **new** tested with WordPress 6.1
+* **new** tested with PHP 8.0, 8.1 and 8.2
+* **edit** d4pLib 3.9.3
+* **fix** dashboard shows wrong Directory URL in some cases
+* **fix** function to determine Directory URL returns wrong value
 
 ### Version: 2.3 / may 17 2022
 

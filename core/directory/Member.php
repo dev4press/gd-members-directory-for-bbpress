@@ -13,8 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @property string    $user_registered
  */
 class Member {
-	/** @var WP_User|null */
-	private $_user;
+	private ?WP_User $_user;
 
 	public function __construct( WP_User $user ) {
 		$this->_user = $user;

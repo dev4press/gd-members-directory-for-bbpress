@@ -2,9 +2,9 @@
 
 namespace Dev4Press\Plugin\GDMED\Widget;
 
-use Dev4Press\v51\WordPress\Legacy\Widget;
-use Dev4Press\v51\Core\Quick\Sanitize;
-use Dev4Press\v51\Core\UI\Widgets;
+use Dev4Press\v54\WordPress\Legacy\Widget;
+use Dev4Press\v54\Core\Quick\Sanitize;
+use Dev4Press\v54\Core\UI\Widgets;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -24,7 +24,7 @@ class Directory extends Widget {
 	);
 
 	public function __construct( $id_base = false, $name = '', $widget_options = array(), $control_options = array() ) {
-		$this->widget_name        = 'GD Members Directory';
+		$this->widget_name        = 'membersDirectory for bbPress';
 		$this->widget_description = __( 'Show list of forum members.', 'gd-members-directory-for-bbpress' );
 
 		parent::__construct( $id_base, $name, $widget_options, $control_options );

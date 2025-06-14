@@ -1,6 +1,6 @@
 <?php
 
-use Dev4Press\v51\Core\Quick\WPR;
+use Dev4Press\v54\Core\Quick\WPR;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

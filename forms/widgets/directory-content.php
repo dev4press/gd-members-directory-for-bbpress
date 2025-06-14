@@ -1,6 +1,6 @@
 <?php
 
-use Dev4Press\v51\Core\UI\Elements;
+use Dev4Press\v54\Core\UI\Elements;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

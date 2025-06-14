@@ -2,17 +2,17 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v51\Core\Plugins\Settings as BaseSettings;
+use Dev4Press\v54\Core\Plugins\Settings as BaseSettings;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Settings extends BaseSettings {
-	public $base = 'gdmed';
-	public $plugin = 'gd-members-directory-for-bbpress';
+	public string $base = 'gdmed';
+	public string $plugin = 'gd-members-directory-for-bbpress';
 
-	public $settings = array(
+	public array $settings = array(
 		'core'     => array(
 			'activated' => 0,
 		),

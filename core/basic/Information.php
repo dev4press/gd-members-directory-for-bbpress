@@ -2,24 +2,24 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v51\Core\Plugins\Information as BaseInformation;
+use Dev4Press\v54\Core\Plugins\Information as BaseInformation;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Information extends BaseInformation {
-	public $code = 'gd-members-directory-for-bbpress';
+	public string $code = 'gd-members-directory-for-bbpress';
 
-	public $version = '2.8';
-	public $build = 280;
-	public $edition = 'free';
-	public $status = 'stable';
-	public $updated = '2024.09.16';
-	public $released = '2019.10.14';
+	public string $version = '3.0';
+	public int $build = 300;
+	public string $edition = 'free';
+	public string $status = 'stable';
+	public string $updated = '2025.06.14';
+	public string $released = '2019.10.14';
 
-	public $is_bbpress_plugin = true;
+	public bool $is_bbpress_plugin = true;
 
-	public $github_url = 'https://github.com/dev4press/gd-members-directory-for-bbpress';
-	public $wp_org_url = 'https://wordpress.org/plugins/gd-members-directory-for-bbpress/';
+	public string $github_url = 'https://github.com/dev4press/gd-members-directory-for-bbpress';
+	public string $wp_org_url = 'https://wordpress.org/plugins/gd-members-directory-for-bbpress/';
 }
