@@ -2,14 +2,14 @@
 
 namespace Dev4Press\Plugin\GDMED\Admin\Panel;
 
-use Dev4Press\v54\Core\UI\Admin\PanelSettings;
+use Dev4Press\v56\Core\UI\Admin\PanelSettings;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class Settings extends PanelSettings {
-	public $settings_class = '\\Dev4Press\\Plugin\\GDMED\\Admin\\Settings';
+	public string $settings_class = '\\Dev4Press\\Plugin\\GDMED\\Admin\\Settings';
 
 	public function __construct( $admin ) {
 		parent::__construct( $admin );

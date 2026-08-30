@@ -1,6 +1,6 @@
 <?php
 
-use Dev4Press\v54\Core\Quick\WPR;
+use Dev4Press\v56\Core\Quick\WPR;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div>
 		<?php
 
-		WPR::flush_rewrite_rules();
+		flush_rewrite_rules();
 
 		esc_html_e( 'Rewrite rules flushed.', 'gd-members-directory-for-bbpress' );
 

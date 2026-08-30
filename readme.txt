@@ -2,17 +2,17 @@
 Contributors: GDragoN
 Donate link: https://buymeacoffee.com/millan
 Tags: dev4press, bbpress, directory, filter, users
-Stable tag: 3.0
-Requires at least: 6.0
-Tested up to: 6.8
-Requires PHP: 7.4
+Stable tag: 3.1
+Requires at least: 6.4
+Tested up to: 7.1
+Requires PHP: 8.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Add a forum members directory page into bbPress powered forums, including members filtering and additional widgets for listing members in the sidebar.
 
 == Description ==
-Easy to use plugin for adding a forum members directory page into bbPress powered forums, including members filtering and additional widgets for listing members in the sidebar. The plugin adds a new URL endpoint based on the existing bbPress 'users' profile URL, and using the theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
+Easy-to-use plugin for adding a forum members directory page into bbPress powered forums, including members filtering and additional widgets for listing members in the sidebar. The plugin adds a new URL endpoint based on the existing bbPress 'users' profile URL, and using the theme compatibility method (the same as in bbPress), it adds the members directory with additional filters and sorting options.
 
 The plugin has a few settings to control the number of users per page, URL endpoint slug, and a few more things. The plugin features are listed here:
 
@@ -66,6 +66,13 @@ Get Premium plugins for bbPress to enhance bbPress powered forums. More informat
 Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bbPress' panel.
 
 == Changelog ==
+= Version: 3.1 / august 31 2026 =
+* New: tested with WordPress 7.1
+* New: tested and compatible with `PHP` 8.5
+* Edit: improved escaping when rendering
+* Edit: Dev4Press Library 5.6.2
+* Fix: a small potential XSS vulnerability
+
 = Version: 3.0 / june 14 2025 =
 * New: tested with WordPress 6.8
 * New: tested and compatible with `PHP` 8.4
@@ -103,7 +110,7 @@ Open the WordPress 'Settings' menu, there you will find 'membersDirectory for bb
 * New: updated plugin system requirements
 * New: various updates for the plugin interface
 * New: tested with WordPress 6.1
-* New: tested with PHP 8.0, 8.1 and 8.2
+* New: tested with PHP 8.0, 8.1, and 8.2
 * Edit: d4pLib 3.9.3
 * Fix: dashboard shows wrong Directory URL in some cases
 * Fix: function to determine Directory URL returns wrong value

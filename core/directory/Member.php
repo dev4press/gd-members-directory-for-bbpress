@@ -41,7 +41,7 @@ class Member {
 	}
 
 	public function get_meta_info_role() : string {
-		return '<span class="role ' . esc_attr( $this->role() ) . '">' . bbp_get_dynamic_role_name( $this->role() ) . '</span>';
+		return '<span class="role ' . esc_attr( $this->role() ) . '">' . esc_html( bbp_get_dynamic_role_name( $this->role() ) ) . '</span>';
 	}
 
 	public function get_meta_info_registered() : string {
@@ -54,7 +54,7 @@ class Member {
 		if ( $count == 0 ) {
 			return sprintf( _x( 'Topics: %s', 'User statistics column, topics count', 'gd-members-directory-for-bbpress' ), '<strong>0</strong>' );
 		} else {
-			return sprintf( _x( 'Topics: %s', 'User statistics column, topics count', 'gd-members-directory-for-bbpress' ), '<a href="' . bbp_get_user_topics_created_url( $this->ID ) . '"><strong>' . $count . '</strong></a>' );
+			return sprintf( _x( 'Topics: %s', 'User statistics column, topics count', 'gd-members-directory-for-bbpress' ), '<a href="' . esc_url( bbp_get_user_topics_created_url( $this->ID ) ) . '"><strong>' . esc_html( $count ) . '</strong></a>' );
 		}
 	}
 
@@ -64,7 +64,7 @@ class Member {
 		if ( $count == 0 ) {
 			return sprintf( _x( 'Replies: %s', 'User statistics column, replies count', 'gd-members-directory-for-bbpress' ), '<strong>0</strong>' );
 		} else {
-			return sprintf( _x( 'Replies: %s', 'User statistics column, replies count', 'gd-members-directory-for-bbpress' ), '<a href="' . bbp_get_user_replies_created_url( $this->ID ) . '"><strong>' . $count . '</strong></a>' );
+			return sprintf( _x( 'Replies: %s', 'User statistics column, replies count', 'gd-members-directory-for-bbpress' ), '<a href="' . esc_url( bbp_get_user_replies_created_url( $this->ID ) ) . '"><strong>' . esc_html( $count ) . '</strong></a>' );
 		}
 	}
 
@@ -84,7 +84,7 @@ class Member {
 				$date  = bbp_get_topic_post_date( $id );
 			}
 
-			return sprintf( $what, '<a href="' . esc_url( $url ) . '">' . $title . '</a>', $date );
+			return sprintf( $what, '<a href="' . esc_url( $url ) . '">' . esc_html( $title ) . '</a>', esc_html( $date ) );
 		} else {
 			return __( 'No activity found', 'gd-members-directory-for-bbpress' );
 		}

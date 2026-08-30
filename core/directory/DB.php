@@ -2,23 +2,13 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v54\Core\Plugins\DBLite;
+use Dev4Press\v56\Core\Plugins\DBLite;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 class DB extends DBLite {
-	public static function instance() : DB {
-		static $instance = false;
-
-		if ( ! $instance ) {
-			$instance = new DB();
-		}
-
-		return $instance;
-	}
-
 	public function get_users_last_posts( $user_ids ) : array {
 		$user_ids = $this->clean_ids_list( $user_ids );
 

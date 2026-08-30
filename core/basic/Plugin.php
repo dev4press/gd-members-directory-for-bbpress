@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Basic;
 
-use Dev4Press\v54\Core\Plugins\Core;
+use Dev4Press\v56\Core\Plugins\Core;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Plugin extends Core {
 	public string $plugin = 'gd-members-directory-for-bbpress';
 
-	public $members_id;
-	public $theme_package = 'default';
+	public string $members_id;
+	public string $theme_package = 'default';
 
 	public function __construct() {
 		$this->url  = GDMED_URL;
@@ -51,7 +51,7 @@ class Plugin extends Core {
 		register_widget( 'Dev4Press\Plugin\GDMED\Widget\Directory' );
 	}
 
-	public function after_setup_theme() {
+	public function after_setup_theme() : void {
 		if ( get_option( '_bbp_theme_package_id' ) == 'quantum' ) {
 			$this->theme_package = 'quantum';
 		}
