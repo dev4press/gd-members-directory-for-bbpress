@@ -2,7 +2,7 @@
 
 namespace Dev4Press\Plugin\GDMED\Directory;
 
-use Dev4Press\v54\WordPress;
+use Dev4Press\v56\WordPress;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -58,11 +58,11 @@ class Expand {
 		return $_instance;
 	}
 
-	public function add_rewrite_tags() {
+	public function add_rewrite_tags() : void {
 		add_rewrite_tag( '%' . gdmed_get_members_rewrite_id() . '%', '([^/]+)' );
 	}
 
-	public function add_rewrite_rules() {
+	public function add_rewrite_rules() : void {
 		$priority = 'top';
 
 		$paged_id     = bbp_get_paged_rewrite_id();
@@ -78,7 +78,7 @@ class Expand {
 		add_rewrite_rule( $members_slug . $members_root_rule, 'index.php?' . $members_id, $priority );
 	}
 
-	public function parse_query( $posts_query ) {
+	public function parse_query( $posts_query ) : void {
 		if ( ! $posts_query->is_main_query() ) {
 			return;
 		}
@@ -183,7 +183,7 @@ class Expand {
 
 	public function default_styles( $styles ) : array {
 		$rtl = is_rtl() ? '-rtl' : '';
-		$min = WordPress::instance()->is_debug() ? '' : '.min';
+		$min = WordPress::i()->is_debug() ? '' : '.min';
 
 		$styles['gdmed-members-directory'] = array(
 			'file'         => 'css/members' . $rtl . $min . '.css',
@@ -193,7 +193,7 @@ class Expand {
 		return (array) $styles;
 	}
 
-	public function enqueue_style() {
+	public function enqueue_style() : void {
 		wp_enqueue_style( 'gdmed-members-directory' );
 	}
 }

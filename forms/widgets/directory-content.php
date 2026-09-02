@@ -1,6 +1,6 @@
 <?php
 
-use Dev4Press\v54\Core\UI\Elements;
+use Dev4Press\v56\Core\UI\Elements;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -18,7 +18,7 @@ $list_sort_order  = gdmed()->get_sort_order_values();
     <tr>
         <td class="cell-left">
             <label for="<?php echo esc_attr( $this->get_field_id( 'role' ) ); ?>"><?php esc_html_e( 'User Role Filter', 'gd-members-directory-for-bbpress' ); ?>:</label>
-			<?php Elements::instance()->select( $list_user_roles, array(
+			<?php Elements::i()->select( $list_user_roles, array(
 				'id'       => $this->get_field_id( 'role' ),
 				'class'    => 'widefat',
 				'name'     => $this->get_field_name( 'role' ),
@@ -39,7 +39,7 @@ $list_sort_order  = gdmed()->get_sort_order_values();
     <tr>
         <td class="cell-left">
             <label for="<?php echo esc_attr( $this->get_field_id( 'orderby' ) ); ?>"><?php esc_html_e( 'Sort Method', 'gd-members-directory-for-bbpress' ); ?>:</label>
-			<?php Elements::instance()->select( $list_sort_column, array(
+			<?php Elements::i()->select( $list_sort_column, array(
 				'id'       => $this->get_field_id( 'orderby' ),
 				'class'    => 'widefat',
 				'name'     => $this->get_field_name( 'orderby' ),
@@ -48,7 +48,7 @@ $list_sort_order  = gdmed()->get_sort_order_values();
         </td>
         <td class="cell-right">
             <label for="<?php echo esc_attr( $this->get_field_id( 'order' ) ); ?>"><?php esc_html_e( 'Sort Order', 'gd-members-directory-for-bbpress' ); ?>:</label>
-			<?php Elements::instance()->select( $list_sort_order, array(
+			<?php Elements::i()->select( $list_sort_order, array(
 				'id'       => $this->get_field_id( 'order' ),
 				'class'    => 'widefat',
 				'name'     => $this->get_field_name( 'order' ),

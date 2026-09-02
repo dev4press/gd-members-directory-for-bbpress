@@ -17,7 +17,7 @@ class MemberQuery extends WP_User_Query {
 		parent::__construct( $query );
 	}
 
-	public function override_pre_user_query( &$query ) {
+	public function override_pre_user_query( &$query ) : void {
 		if ( ! empty( $query->query_vars['meta_key'] ) && $query->query_vars['orderby'] == 'meta_value_num' ) {
 			global $wpdb;
 

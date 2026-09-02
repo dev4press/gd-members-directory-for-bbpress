@@ -197,16 +197,16 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) : arra
 	$name = $multi ? $name . '[]' : $name;
 
 	$attributes = array(
-		'id="' . $id . '"',
-		'name="' . $name . '"',
+		'id="' . esc_attr( $id ) . '"',
+		'name="' . esc_attr( $name ) . '"',
 	);
 
 	if ( $class != '' ) {
-		$attributes[] = 'class="' . $class . '"';
+		$attributes[] = 'class="' . esc_attr( $class ) . '"';
 	}
 
 	if ( $style != '' ) {
-		$attributes[] = 'style="' . $style . '"';
+		$attributes[] = 'style="' . esc_attr( $style ) . '"';
 	}
 
 	if ( $multi ) {
@@ -218,7 +218,7 @@ function gdmed_form_select_attributes( $args = array(), $attr = array() ) : arra
 	}
 
 	foreach ( $attr as $key => $value ) {
-		$attributes[] = $key . '="' . esc_attr( $value ) . '"';
+		$attributes[] = esc_attr( $key ) . '="' . esc_attr( $value ) . '"';
 	}
 
 	return $attributes;
@@ -232,7 +232,7 @@ function gdmed_form_select( $values, $s, $args = array(), $attr = array(), $echo
 
 	foreach ( $values as $value => $display ) {
 		$sel    = in_array( $value, $selected ) ? ' selected="selected"' : '';
-		$render .= '<option value="' . $value . '"' . $sel . '>' . $display . '</option>';
+		$render .= '<option value="' . esc_attr( $value ) . '"' . $sel . '>' . esc_html( $display ) . '</option>';
 	}
 
 	$render .= '</select>';

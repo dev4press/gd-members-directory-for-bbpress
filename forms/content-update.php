@@ -1,6 +1,6 @@
 <?php
 
-use function Dev4Press\v54\Functions\panel;
+use function Dev4Press\v56\Functions\panel;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             </div>
 
             <div class="d4p-install-confirm">
-                <a class="button-primary" href="<?php echo panel()->a()->panel_url( 'about' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>&update"><?php esc_html_e( 'Click here to continue', 'gd-members-directory-for-bbpress' ); ?></a>
+                <a class="button-primary" href="<?php echo esc_url( panel()->a()->panel_url( 'about' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>&update"><?php esc_html_e( 'Click here to continue', 'gd-members-directory-for-bbpress' ); ?></a>
             </div>
         </div>
     </div>
